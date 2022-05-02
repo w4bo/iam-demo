@@ -7,15 +7,6 @@ plugins {
     id 'com.github.johnrengelman.shadow' version '6.1.0'
 }
 
-//tasks {
-//    withType<Copy> {
-//        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-//    }
-//}
-
-//tasks.withType<Jar>() {
-//    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-//}
 
 rootProject.tasks.named("processResources") {
     duplicatesStrategy = 'include'
@@ -38,9 +29,6 @@ repositories {
 
 sourceSets {
     main { resources { srcDirs 'src/main/resources' } }
-    // main { resources { srcDirs 'src/main/sql' } }
-    // main { resources { srcDirs 'resources' } }
-    // test { resources { srcDirs 'resources' } }
 }
 
 dependencies {
