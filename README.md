@@ -1,8 +1,6 @@
-# Intentional OLAP: ASSESS
+# Intentional Analytics Model
 
-[![build](https://github.com/big-unibo/assess/actions/workflows/build.yml/badge.svg)](https://github.com/big-unibo/assess/actions/workflows/build.yml)
-
-Implementation of the intentional operation from the TKDE ASSESS paper.
+[![build](https://github.com/w4bo/iam-demo/actions/workflows/build.yml/badge.svg)](https://github.com/w4bo/iam-demo/actions/workflows/build.yml)
 
 ## Running the experiments
 
