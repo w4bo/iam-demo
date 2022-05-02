@@ -16,7 +16,7 @@ intentional/src/main/resources/credentials.yml
 intentional/.idea/
 intentional/resources/assess/output/*.json
 intentional/libs/
-intentional/src/main/java/it/unibo/antlr/gen/*
+!intentional/libs/.dummy
 
 # Created by https://www.gitignore.io/api/java,scala,linux,macos,python,gradle,kotlin,windows,eclipse,intellij,virtualenv,jupyternotebooks
 # Edit at https://www.gitignore.io/?templates=java,scala,linux,macos,python,gradle,kotlin,windows,eclipse,intellij,virtualenv,jupyternotebooks
