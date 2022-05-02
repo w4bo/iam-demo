@@ -1,4 +1,4 @@
-# Intentional OLAP: ASSESS
+# Intentional Analytics Model
 
 [![build](https://github.com/w4bo/iam-demo/actions/workflows/build.yml/badge.svg)](https://github.com/w4bo/iam-demo/actions/workflows/build.yml)
 
