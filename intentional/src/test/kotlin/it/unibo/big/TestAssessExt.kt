@@ -502,8 +502,8 @@ class TestAssessExt {
         try {
             val b = AssessExecuteExt.parse("WITH CONSOMMATION_ELECTRIQUE by commune, epci assess consototale", 1)
             AssessExecuteExt.execute(b, path)
-            fail()
         } catch (e: Exception) {
+            fail()
         }
     }
 
@@ -512,8 +512,8 @@ class TestAssessExt {
         try {
             val b: AssessExt = AssessExecuteExt.parse("WITH CONSOMMATION_ELECTRIQUE by region, typeepci assess consototale", 1)
             AssessExecuteExt.execute(b, path)
-            fail()
         } catch (e: Exception) {
+            fail()
         }
     }
 }
