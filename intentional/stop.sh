@@ -1,3 +1,5 @@
 #!/bin/bash
-set -e
+rm -rf .gradle
+rm -rf build
+rm resources/.ready
 docker-compose down

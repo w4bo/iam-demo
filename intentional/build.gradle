@@ -7,6 +7,11 @@ plugins {
     id 'com.github.johnrengelman.shadow' version '6.1.0'
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(14)
+    }
+}
 
 rootProject.tasks.named("processResources") {
     duplicatesStrategy = 'include'
@@ -116,6 +121,13 @@ compileTestKotlin {
 
 test {
     useJUnitPlatform()
+}
+
+if (hasProperty('buildScan')) {
+    buildScan {
+        termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+        termsOfServiceAgree = 'yes'
+    }
 }
 
 defaultTasks 'clean', 'build', 'check', 'testPython', 'war'
