@@ -20,6 +20,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
+import java.lang.reflect.Field;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
@@ -176,17 +177,17 @@ public abstract class Intention implements IIntention {
             while (iterator.hasNext()) {
                 final String a = iterator.next();
                 final Optional<String> lca = DependencyGraph.lca(getCube(), a, attribute);
-                if (lca.isPresent()) {
-                    throw new IllegalArgumentException("Cannot have two (or more) levels (" + a + ", " + attribute + ") from the same hierarchy in the by clause");
-                }
-                // if (lca.isPresent() && (lca.get().equalsIgnoreCase(a) || lca.get().equalsIgnoreCase(attribute))) {
-                //     if (replace) {
-                //         iterator.remove();
-                //     } else {
-                //         properties.add(attribute);
-                //         toAdd = false;
-                //     }
+                // if (lca.isPresent()) {
+                //     throw new IllegalArgumentException("Cannot have two (or more) levels (" + a + ", " + attribute + ") from the same hierarchy in the by clause");
                 // }
+                if (lca.isPresent() && (lca.get().equalsIgnoreCase(a) || lca.get().equalsIgnoreCase(attribute))) {
+                    if (replace) {
+                        iterator.remove();
+                    } else {
+                        properties.add(attribute);
+                        toAdd = false;
+                    }
+                }
             }
             if (toAdd) {
                 attributes.add(attribute.replace("benchmark.", "").replace(cube + ".", ""));
@@ -329,6 +330,7 @@ public abstract class Intention implements IIntention {
         final String filename = getFilename();
         final long startTime = System.currentTimeMillis();
         final List<Long> acc = Lists.newLinkedList();
+
         executeDataQuery(cube, sql, res -> {
             acc.add(System.currentTimeMillis() - startTime);
             final CSVWriter writer = new CSVWriter(new FileWriter(path + filename + "_" + (qualifier.isEmpty() ? "" : qualifier + "_") + sessionStep + ".csv"));
