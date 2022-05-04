@@ -3,20 +3,18 @@ start.sh
 .ready
 .env
 config.yml
-config.orig.yml
 *.DMP
 *.dmp
 *.sql
-intentional/resources/**/log.txt
 *.twbr
-dump.sql
-intentional/src/main/resources/assess/cube_0_*.csv
-intentional/resources/**/output/*.csv
-intentional/src/main/resources/credentials.yml
-intentional/.idea/
-intentional/resources/assess/output/*.json
-intentional/libs/
-!intentional/libs/.dummy
+**/src/main/resources/assess/cube_0_*.csv
+**/resources/**/log.txt
+**/resources/**/output/*.csv
+**/resources/**/output/*.json
+**/credentials.yml
+**/.idea/
+**/libs/
+!**/libs/.dummy
 
 # Created by https://www.gitignore.io/api/java,scala,linux,macos,python,gradle,kotlin,windows,eclipse,intellij,virtualenv,jupyternotebooks
 # Edit at https://www.gitignore.io/?templates=java,scala,linux,macos,python,gradle,kotlin,windows,eclipse,intellij,virtualenv,jupyternotebooks
