@@ -24,7 +24,7 @@ import javax.servlet.http.HttpServletResponse
  * Servlet interface for intentions.
  */
 @WebServlet("/IAM")
-class AssessServlet : HttpServlet() {
+class IAMServlet : HttpServlet() {
     val cache: MutableMap<String, Intention> = mutableMapOf()
 
     /**
