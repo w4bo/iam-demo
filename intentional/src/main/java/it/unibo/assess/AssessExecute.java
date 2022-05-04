@@ -2,8 +2,6 @@ package it.unibo.assess;
 
 import com.google.common.collect.Lists;
 import edu.stanford.nlp.util.Sets;
-import it.unibo.antlr.gen.AssessLexer;
-import it.unibo.antlr.gen.AssessParser;
 import it.unibo.antlr.gen.ThrowingErrorListener;
 import it.unibo.conversational.Utils;
 import org.antlr.v4.runtime.ANTLRInputStream;
@@ -15,8 +13,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 import static it.unibo.conversational.Utils.*;
 

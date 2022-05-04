@@ -1,8 +1,7 @@
 package it.unibo.describe
 
 import com.google.common.base.Optional
-import it.unibo.antlr.gen.DescribeBaseListener
-import it.unibo.antlr.gen.DescribeParser
+import it.unibo.Intention
 import it.unibo.antlr.gen.DescribeParser.CContext
 import it.unibo.antlr.gen.DescribeParser.DescribeContext
 import org.antlr.v4.runtime.Token
@@ -13,7 +12,7 @@ import java.util.stream.Collectors
 /**
  * How to interpret a Describe syntax
  */
-class DescribeListenerCustom(d: Describe?, accumulateAttributes: Boolean) : DescribeBaseListener() {
+class DescribeListenerCustom(d: Intention?, accumulateAttributes: Boolean) : DescribeBaseListener() {
     var describe: Describe? = null
 
     override fun visitErrorNode(node: ErrorNode) {

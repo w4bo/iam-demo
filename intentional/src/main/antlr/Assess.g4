@@ -4,8 +4,8 @@ package it.unibo.antlr.gen;
 }
 
 assess : ('with' | 'WITH') cube=id
-         (('for' | 'FOR') sc=clause)? ('by' gc+=id (',' gc+=id)*)? (('for' | 'FOR') sc=clause)?
          ('assess' | 'ASSESS') mcs+=id (',' mcs+=id)*
+         (('for' | 'FOR') sc=clause)? ('by' gc+=id (',' gc+=id)*)? (('for' | 'FOR') sc=clause)?
          (('against' | 'AGAINST') bc=benchmark)?
          (('using' | 'USING') as=function)?
          (('labels' | 'labels') l=label)?

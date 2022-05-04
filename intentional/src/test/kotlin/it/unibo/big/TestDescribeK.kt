@@ -1,6 +1,7 @@
 package it.unibo.big
 
 import it.unibo.Intention
+import it.unibo.assessext.AssessExecuteExt
 import it.unibo.describe.Describe
 import it.unibo.describe.DescribeExecute
 import it.unibo.describe.DescribeExecute.Vcoord
@@ -13,7 +14,7 @@ import kotlin.math.roundToInt
 
 class TestDescribeK {
 
-    val path = "resources/describe/output/"
+    val path = "resources/intention/output/"
     
     @BeforeEach
     fun before() {
@@ -829,4 +830,18 @@ class TestDescribeK {
         DescribeExecute.parse("with sales_fact_1997 describe unit_sales for customer_id = 10 and store_id = 11 and the_date = '1997-01-20' by customer_id")
     }
 
+    @Test
+    fun integration() {
+        var i: Intention = DescribeExecute.parse("with COVID-19 describe deaths by month")
+        DescribeExecute.execute(i, path)
+        i = DescribeExecute.parse(i, "with COVID-19 describe deaths by year")
+        DescribeExecute.execute(i, path)
+        i = AssessExecuteExt.parse("with COVID-19 assess deaths by year", k=1)
+        AssessExecuteExt.execute(i, path)
+        i = DescribeExecute.parse(i, "with COVID-19 describe deaths by month")
+        val c: DataFrame  = DescribeExecute.execute(i, path).second
+        assertTrue(c["peculiarity"].sum() as Double > 0.0)
+        // assertTrue(c["novelty"].sum() as Double > 0.0)
+        // assertTrue(c["surprise"].sum() as Double > 0.0)
+    }
 }

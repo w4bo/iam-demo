@@ -9,7 +9,7 @@ class Describe : Intention {
     private var models: Set<String> = Sets.newLinkedHashSet()
     var k = Optional.absent<Int>()
 
-    constructor(d: Describe?, accumulateAttributes: Boolean) : super(d, accumulateAttributes) {}
+    constructor(d: Intention?, accumulateAttributes: Boolean) : super(d, accumulateAttributes) {}
     constructor(accumulateAttributes: Boolean) : super(null, accumulateAttributes) {}
 
     fun getModels(): Set<String> {

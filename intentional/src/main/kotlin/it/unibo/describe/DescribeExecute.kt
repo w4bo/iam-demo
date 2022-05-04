@@ -4,8 +4,6 @@ import com.google.common.collect.Lists
 import com.google.common.collect.Maps
 import com.google.common.collect.Sets
 import it.unibo.Intention
-import it.unibo.antlr.gen.DescribeLexer
-import it.unibo.antlr.gen.DescribeParser
 import it.unibo.conversational.database.QueryGenerator
 import it.unibo.conversational.datatypes.DependencyGraph
 import krangl.*
@@ -41,11 +39,11 @@ object DescribeExecute {
         return parse(null, input, accumulateAttributes)
     }
 
-    fun parse(d: Describe?, input: String?): Describe {
+    fun parse(d: Intention?, input: String?): Describe {
         return parse(d, input, true)
     }
 
-    fun parse(d: Describe?, input: String?, accumulateAttributes: Boolean): Describe {
+    fun parse(d: Intention?, input: String?, accumulateAttributes: Boolean): Describe {
         val lexer = DescribeLexer(ANTLRInputStream(input)) // new ANTLRInputStream(System.in);
         val tokens = CommonTokenStream(lexer) // create a buffer of tokens pulled from the lexer
         val parser = DescribeParser(tokens) // create a parser that feeds off the tokens buffer
@@ -62,7 +60,7 @@ object DescribeExecute {
      * @param d the current intention
      * @param cube the current cube
      */
-    fun extendCubeWithProxy(d: Describe, c: DataFrame, p: DataFrame): Triple<DataFrame, DataFrame, Set<String>> {
+    fun extendCubeWithProxy(d: Intention, c: DataFrame, p: DataFrame): Triple<DataFrame, DataFrame, Set<String>> {
         val prevGc = d.previousAttributes // get the previous coordinate
         val coordinate = d.attributes
         val gencoord: MutableSet<String> = Sets.newLinkedHashSet()
@@ -102,7 +100,7 @@ object DescribeExecute {
 
     @JvmOverloads
     @Throws(Exception::class)
-    fun execute(d: Describe, path: String, pythonPath: String = "src/main/python/", makePivot: Boolean = true, oldInterest: Boolean = true): Triple<JSONObject, DataFrame, Triple<String, Any, Double>> {
+    fun execute(d: Intention, path: String, pythonPath: String = "src/main/python/", makePivot: Boolean = true, oldInterest: Boolean = true): Triple<JSONObject, DataFrame, Triple<String, Any, Double>> {
         val timeQuery = d.writeMultidimensionalCube(path)
         L.warn("Computing models...")
         val timeModel = d.computePython(pythonPath, path, "describe.py")
@@ -301,7 +299,7 @@ object DescribeExecute {
         return Triple(json, cube, bestModel)
     }
 
-    fun getPivot(d: Describe, cube: DataFrame): JSONObject {
+    fun getPivot(d: Intention, cube: DataFrame): JSONObject {
         val header = cube.names
         val currSchema = cube.names.withIndex().filter { d.attributes.contains(it.value) }.map { it.index }.toIntArray()
         val data: MutableList<List<String>> = Lists.newArrayList()

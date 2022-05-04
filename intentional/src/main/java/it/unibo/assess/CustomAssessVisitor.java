@@ -1,8 +1,5 @@
 package it.unibo.assess;
 
-import it.unibo.antlr.gen.AssessBaseVisitor;
-import it.unibo.antlr.gen.AssessParser;
-import it.unibo.conversational.datatypes.DependencyGraph;
 import org.antlr.v4.runtime.RuleContext;
 import org.antlr.v4.runtime.Token;
 import org.apache.commons.lang3.tuple.Triple;

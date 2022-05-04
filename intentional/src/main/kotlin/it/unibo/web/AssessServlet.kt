@@ -1,9 +1,10 @@
 package it.unibo.web
 
+import it.unibo.Intention
 import it.unibo.assessext.AssessExecuteExt
-import it.unibo.assessext.AssessExt
 import it.unibo.conversational.database.Config
 import it.unibo.conversational.database.DBmanager
+import it.unibo.describe.DescribeExecute
 import kotlinx.coroutines.sync.Semaphore
 import org.apache.commons.io.FileUtils
 import org.apache.commons.io.filefilter.AgeFileFilter
@@ -22,9 +23,9 @@ import javax.servlet.http.HttpServletResponse
 /**
  * Servlet interface for intentions.
  */
-@WebServlet("/Assess")
+@WebServlet("/IAM")
 class AssessServlet : HttpServlet() {
-    val cache: MutableMap<String, AssessExt> = mutableMapOf()
+    val cache: MutableMap<String, Intention> = mutableMapOf()
 
     /**
      * Given a sentence returns the string representing the parsing tree.
@@ -43,46 +44,30 @@ class AssessServlet : HttpServlet() {
         try {
             cleanOldFiles(servletContext.getRealPath("WEB-INF/classes"))
             val value: String = manipulateInString(request.getParameter("value"))
-            val k: String = request.getParameter("k")
             val actiontype: String = request.getParameter("actiontype")
             val sessionID: String = request.getParameter("sessionid")
-            // val curid: String = request.getParameter("curid")
-            // val previd: String = request.getParameter("previd")
             error.put("value", value)
-            error.put("k", k)
             error.put("actiontype", actiontype)
             if (!empty(value)) {
-                val key = value2key(value)
-                val d: AssessExt =
-                    if (cache.containsKey("$sessionID-$key") && actiontype != "exe") {
-                        cache["$sessionID-$key"]!!
+                val intention: Intention =
+                    if (value.lowercase().contains("describe")) {
+                        val session = cache[sessionID]
+                        if (session == null) {
+                            DescribeExecute.Vcoord.clear()
+                            DescribeExecute.Vmemb.clear()
+                        }
+                        val d = DescribeExecute.parse(cache[sessionID], value, false)
+                        result = DescribeExecute.execute(d, servletContext.getRealPath("WEB-INF/classes/"), PYTHON_PATH, makePivot = true, oldInterest = false).first
+                        d
                     } else {
-                        AssessExecuteExt.parse(value2key(value), k.toInt())
+                        val a = AssessExecuteExt.parse(value2key(value), 1)
+                        result = AssessExecuteExt.execute(a, servletContext.getRealPath("WEB-INF/classes/"), PYTHON_PATH)
+                        a
                     }
+                cache[sessionID] = intention
                 status = OK
                 val curCounter = ++counter
-                DBmanager.executeQuery(d.cube, "insert into assess_sessions values('$sessionID', '${System.currentTimeMillis()}', '$curCounter', '${value.replace("'", "''").replace("\n", "")}', '$actiontype', $k)")
-                if (actiontype != "done" && actiontype != "start") {
-                    d.k = k.toInt()
-                    // clear the previous refinements (if any)
-                    d.partialRefinements.clear()
-                    // execute the intention
-                    result = AssessExecuteExt.execute(d, servletContext.getRealPath("WEB-INF/classes/"), PYTHON_PATH)
-                    // if the action involves refinements
-                    if (actiontype != "exe") {
-                        d.partialRefinements.withIndex().forEach {
-                            // cache them
-                            cache[sessionID + "-" + value2key(it.value.toString())] = it.value
-                            // and store the results in the database
-                            DBmanager.executeQuery(d.cube, "insert into assess_sessions values('$sessionID', '${System.currentTimeMillis()}', '$curCounter', '${it.value.toString().replace("'", "''").replace("\n", "")}', 'intention-execution', ${it.index})")
-                        }
-                    } else {
-                        // store the exe result in the database
-                        DBmanager.executeQuery(d.cube, "insert into assess_sessions values('$sessionID', '${System.currentTimeMillis()}', '$curCounter', '${value.replace("'", "''").replace("\n", "")}', 'intention-execution', $k)")
-                    }
-                } else {
-                    cache.keys.filter { it.startsWith(sessionID) }.forEach { cache.remove(it) }
-                }
+                DBmanager.executeQuery(intention.cube, "insert into intention_sessions values('$sessionID', '${System.currentTimeMillis()}', '$curCounter', '${value.replace("'", "''").replace("\n", "")}', '$actiontype', 1)")
             } else {
                 status = ERROR
                 result = JSONObject()

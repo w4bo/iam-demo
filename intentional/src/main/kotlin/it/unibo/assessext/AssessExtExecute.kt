@@ -1,8 +1,7 @@
 package it.unibo.assessext
 
 import com.google.common.collect.Lists
-import it.unibo.antlr.gen.AssessLexer
-import it.unibo.antlr.gen.AssessParser
+import it.unibo.Intention
 import it.unibo.antlr.gen.ThrowingErrorListener
 import it.unibo.assess.Assess
 import it.unibo.assess.Assess.BenchmarkType
@@ -41,55 +40,57 @@ object AssessExecuteExt {
 
     @JvmOverloads
     @Throws(Exception::class)
-    fun execute(d: AssessExt, path: String?, pythonPath: String? = "src/main/python/"): JSONObject {
+    fun execute(d: Intention, path: String?, pythonPath: String? = "src/main/python/"): JSONObject {
         println(path)
         d.computePython(pythonPath, path, "assess_ext.py")
         val ret = JSONObject()
-        (0 until d.k).map {
-            val newPath = path + "${d.filename}_$it.json"
-            if (File(newPath).exists()) {
-                val json = File(newPath).readText(Charsets.UTF_8)
-                val jsonObj = JSONObject(json)
-                val newd: AssessExt = AssessExt.from(d as Assess, d.k)
+        // (0 until d.k).map { // TODO: undo these comments to enable the partial refinement
+            // val newPath = path + "${d.filename}_$it.json"
+        val newPath = path + "${d.filename}_${d.sessionStep}.json"
+        if (File(newPath).exists()) {
+            val json = File(newPath).readText(Charsets.UTF_8)
+            val jsonObj = JSONObject(json)
+            // val newd: AssessExt = AssessExt.from(d as Assess, d.k) // TODO: undo these comments to enable the partial refinement
+            val newd: AssessExt = AssessExt.from(d as Assess, 1)
 
-                // verify if we are dealing with SIBLING or PARENT
-                val benchmark: String = Lists.newArrayList(jsonObj.get("against"))[0].toString()
-                // if the benchmark contains an attribute rolling up the current group by... then it is a parent benchmark
-                if (DependencyGraph.getDependencies(d.cube).containsVertex(benchmark.replace("'", "").toLowerCase())) {
-                    newd.benchmark = benchmark.replace("'", "")
-                    newd.benchmarkType = BenchmarkType.PARENT
-                } else {
-                    // else we are dealing with a sibling
-                    val possibleAttributes = QueryGenerator.getLevelsFromMember(newd.cube, benchmark.replace("'", "")).map { it.toLowerCase() }
-                    val forclause = d.clauses.filter { possibleAttributes.contains(it.left.toLowerCase()) }[0]
-                    newd.benchmark = Triple.of(forclause.left, forclause.middle, listOf(benchmark))
-                    newd.benchmarkType = BenchmarkType.SIBLING
-                }
-
-                if (!jsonObj.getJSONObject("using").isEmpty) {
-                    val func = jsonObj.getJSONObject("using")
-                    val functionName: String = func.getString("fun")
-                    val params: Array<String> = func.getJSONArray("params").map { it.toString() }.toTypedArray()
-                    newd.setFunction(newd.prepareFunction(functionName, params))
-                }
-
-                if (jsonObj.getString("label").isNotEmpty()) {
-                    val label: String = jsonObj.getString("label")
-                    newd.labelingFunction = label
-                }
-
-                if (jsonObj.getString("scaled").isNotEmpty()) {
-                    newd.scaled = jsonObj.getString("scaled")
-                }
-
-                newd.defaultFunctions = jsonObj.getString("def_using")
-                newd.defaultLabelingFunction = jsonObj.getString("def_label")
-                newd.filename = "${d.filename}_$it.json"
-                d.partialRefinements += newd
-                jsonObj.put("intention", newd.toString())
-                ret.put(newd.id, jsonObj)
+            // verify if we are dealing with SIBLING or PARENT
+            val benchmark: String = Lists.newArrayList(jsonObj.get("against"))[0].toString()
+            // if the benchmark contains an attribute rolling up the current group by... then it is a parent benchmark
+            if (DependencyGraph.getDependencies(d.cube).containsVertex(benchmark.replace("'", "").toLowerCase())) {
+                newd.benchmark = benchmark.replace("'", "")
+                newd.benchmarkType = BenchmarkType.PARENT
+            } else {
+                // else we are dealing with a sibling
+                val possibleAttributes = QueryGenerator.getLevelsFromMember(newd.cube, benchmark.replace("'", "")).map { it.toLowerCase() }
+                val forclause = d.clauses.filter { possibleAttributes.contains(it.left.toLowerCase()) }[0]
+                newd.benchmark = Triple.of(forclause.left, forclause.middle, listOf(benchmark))
+                newd.benchmarkType = BenchmarkType.SIBLING
             }
+
+            if (!jsonObj.getJSONObject("using").isEmpty) {
+                val func = jsonObj.getJSONObject("using")
+                val functionName: String = func.getString("fun")
+                val params: Array<String> = func.getJSONArray("params").map { it.toString() }.toTypedArray()
+                newd.setFunction(newd.prepareFunction(functionName, params))
+            }
+
+            if (jsonObj.getString("label").isNotEmpty()) {
+                val label: String = jsonObj.getString("label")
+                newd.labelingFunction = label
+            }
+
+            if (jsonObj.getString("scaled").isNotEmpty()) {
+                newd.scaled = jsonObj.getString("scaled")
+            }
+
+            newd.defaultFunctions = jsonObj.getString("def_using")
+            newd.defaultLabelingFunction = jsonObj.getString("def_label")
+            newd.filename = "${d.filename}_${d.sessionStep}.json"
+            // d.partialRefinements += newd // TODO: undo these comments to enable the partial refinement
+            jsonObj.put("intention", newd.toString())
+            ret.put(newd.id, jsonObj)
         }
+        // }
         return ret
     }
 }

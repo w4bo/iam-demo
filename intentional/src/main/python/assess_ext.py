@@ -183,6 +183,13 @@ def write_to_file(i, byclause, forclause, measure, df, sibling, using, label):
     byclause = [x for x in byclause if x not in forclause]
     if len(byclause) == 0:
         byclause = [forclause[0]]
+
+    # print(args.path + "_" + str(i) + ".csv")
+    X = df.copy(True)
+    X["zscore_" + measure + "_bc"] = (X[measure] - X[measure].mean()) / X[measure].std()
+    X.columns = [x.lower() for x in X.columns]
+    X.to_csv(args.path + "_" + str(i) + "_enhanced.csv", index=False)
+    # sys.exit(1)
     enhcube = {
         "raw": json.loads(df.to_json(orient="records", double_precision=5)),
         "dimensions": byclause,
@@ -307,8 +314,8 @@ if __name__ == '__main__':
             write_to_file(i, byclause, forclause, measure, df, sibling, using, label)
     toprint["label_time"] = time.time() - start_time
 
-    exists = os.path.exists('resources/assess/time.csv')
-    with open("resources/assess/time.csv", 'a+') as o:
+    exists = os.path.exists('resources/intention/time.csv')
+    with open("resources/intention/time.csv", 'a+') as o:
         header = []
         values = []
         for key, value in toprint.items():
