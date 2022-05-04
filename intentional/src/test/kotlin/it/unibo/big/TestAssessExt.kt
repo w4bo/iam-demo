@@ -15,7 +15,7 @@ import it.w4bo.database.waitForIt
 class TestAssessExt {
 
     companion object {
-        private const val path = "resources/assess/output/"
+        private const val path = "resources/intention/output/"
         val dotenv = Dotenv.load()
         val WAIT: Int = 1000 * 60 * 1
 
