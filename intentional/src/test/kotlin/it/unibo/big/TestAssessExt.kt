@@ -35,11 +35,11 @@ class TestAssessExt {
     @Test
     fun testRefinement1() {
         try {
-            val c: AssessExt = AssessExecuteExt.parse("with consommation_electrique by secteurnaf2 assess consototale")
+            val c: AssessExt = AssessExecuteExt.parse("with consommation_electrique assess consototale by secteurnaf2")
             AssessExecuteExt.execute(c, path)
             val d = c.partialRefinements[0]
             AssessExecuteExt.execute(d, path)
-            val a: AssessExt = AssessExecuteExt.parse("with ssbora by nation, category assess quantity")
+            val a: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation, category")
             AssessExecuteExt.execute(a, path)
             val b = a.partialRefinements[0]
             AssessExecuteExt.execute(b, path)
@@ -52,19 +52,19 @@ class TestAssessExt {
     @Test
     fun testParents() {
         try {
-            val a: AssessExt = AssessExecuteExt.parse("with ssbora by nation assess quantity")
+            val a: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation")
             AssessExecuteExt.execute(a, path)
-            // val b: AssessExt = AssessExecuteExt.parse("with ssbora by nation, brand assess quantity")
+            // val b: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation, brand")
             // AssessExecuteExt.execute(b, path)
-            val c: AssessExt = AssessExecuteExt.parse("with ssbora by nation, category assess quantity")
+            val c: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation, category")
             AssessExecuteExt.execute(c, path)
-            val g: AssessExt = AssessExecuteExt.parse("with ssbora by nation assess quantity against region scaled population using difference(quantity, benchmark.quantity) labels quartile")
+            val g: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation against region scaled population using difference(quantity, benchmark.quantity) labels quartile")
             AssessExecuteExt.execute(g, path)
-            val j: AssessExt = AssessExecuteExt.parse("with ssbora by nation assess quantity against region using difference(quantity, benchmark.quantity) labels quartile")
+            val j: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation against region using difference(quantity, benchmark.quantity) labels quartile")
             AssessExecuteExt.execute(j, path)
-            val d: AssessExt = AssessExecuteExt.parse("with ssbora by category assess quantity")
+            val d: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by category")
             AssessExecuteExt.execute(d, path)
-            val e: AssessExt = AssessExecuteExt.parse("with ssbora by category assess quantity against allproduct")
+            val e: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by category against allproduct")
             AssessExecuteExt.execute(e, path)
         } catch (e: Exception) {
             e.printStackTrace()
@@ -75,7 +75,7 @@ class TestAssessExt {
     @Test
     fun testFailure1() {
         try {
-            val f: AssessExt = AssessExecuteExt.parse("with ssbora by nation for nation = 'GERMANY' assess quantity against region = 'FRANCE' using difference(quantity, benchmark.quantity) labels quartile")
+            val f: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation for nation = 'GERMANY' against region = 'FRANCE' using difference(quantity, benchmark.quantity) labels quartile")
             AssessExecuteExt.execute(f, path)
             fail()
         } catch (e: Exception) {
@@ -86,7 +86,7 @@ class TestAssessExt {
     @Test
     fun testFailure2() {
         try {
-            val f: AssessExt = AssessExecuteExt.parse("with ssbora by nation assess quantity against category using difference(quantity, benchmark.quantity) labels quartile")
+            val f: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation against category using difference(quantity, benchmark.quantity) labels quartile")
             AssessExecuteExt.execute(f, path)
             fail()
         } catch (e: Exception) {
@@ -118,8 +118,8 @@ class TestAssessExt {
 //
 //                            // refine(AssessExecuteExt.parse("with $c by nation for nation = 'GERMANY' assess quantity", k))
 //                            // refine(AssessExecuteExt.parse("with $c by category for category = 'MFGR#31' assess quantity", k))
-//                            // refine(AssessExecuteExt.parse("with $c by nation assess quantity", k))
-//                            // refine(AssessExecuteExt.parse("with $c by nation, category assess quantity", k))
+//                            // refine(AssessExecuteExt.parse("with $c assess quantity by nation", k))
+//                            // refine(AssessExecuteExt.parse("with $c assess quantity by nation, category", k))
 //                            // refine(AssessExecuteExt.parse("with $c by nation, category, year assess quantity", k))
 //
 //                            refine(AssessExecuteExt.parse("with $c by nation, category, year for nation = 'GERMANY' and category = 'MFGR#12' and year = '1992' assess quantity", k))
@@ -141,17 +141,17 @@ class TestAssessExt {
     @Test
     fun testAssess1() {
         try {
-            val i: AssessExt = AssessExecuteExt.parse("with ssbora by nation assess quantity against region scaled population using difference(quantity, benchmark.quantity) labels quartile")
+            val i: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation against region scaled population using difference(quantity, benchmark.quantity) labels quartile")
             AssessExecuteExt.execute(i, path)
-            val h: AssessExt = AssessExecuteExt.parse("with ssbora by nation for nation = 'GERMANY' assess quantity against nation = 'FRANCE' scaled population using difference(quantity, benchmark.quantity) labels quartile")
+            val h: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation for nation = 'GERMANY' against nation = 'FRANCE' scaled population using difference(quantity, benchmark.quantity) labels quartile")
             AssessExecuteExt.execute(h, path)
-            val d: AssessExt = AssessExecuteExt.parse("with ssbora by nation, brand for nation = 'GERMANY' and category = 'MFGR#31' assess quantity")
+            val d: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation, brand for nation = 'GERMANY' and category = 'MFGR#31'")
             AssessExecuteExt.execute(d, path)
-            val c: AssessExt = AssessExecuteExt.parse("with ssbora by region, category for category = 'MFGR#31' assess quantity")
+            val c: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by region, category for category = 'MFGR#31'")
             AssessExecuteExt.execute(c, path)
-            val b: AssessExt = AssessExecuteExt.parse("with ssbora by nation, category for nation = 'GERMANY' and category = 'MFGR#31' assess quantity")
+            val b: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation, category for nation = 'GERMANY' and category = 'MFGR#31'")
             AssessExecuteExt.execute(b, path)
-            val a: AssessExt = AssessExecuteExt.parse("with ssbora by nation, category for nation = 'GERMANY' assess quantity")
+            val a: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation, category for nation = 'GERMANY'")
             AssessExecuteExt.execute(a, path)
         } catch (e: Exception) {
             e.printStackTrace()
@@ -162,13 +162,13 @@ class TestAssessExt {
     @Test
     fun testIncremental1() {
         try {
-            val a: AssessExt = AssessExecuteExt.parse("with ssbora by nation assess quantity")
+            val a: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation")
             AssessExecuteExt.execute(a, path)
-            val b: AssessExt = AssessExecuteExt.parse("with ssbora by nation assess quantity against region scaled population")
+            val b: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation against region scaled population")
             AssessExecuteExt.execute(b, path)
-            val c: AssessExt = AssessExecuteExt.parse("with ssbora by nation assess quantity against REGION scaled POPULATION using difference(QUANTITY, benchmark.QUANTITY)")
+            val c: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation against REGION scaled POPULATION using difference(QUANTITY, benchmark.QUANTITY)")
             AssessExecuteExt.execute(c, path)
-            val d: AssessExt = AssessExecuteExt.parse("with ssbora by nation assess quantity against region scaled population using difference(quantity, benchmark.quantity) labels quartile")
+            val d: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation against region scaled population using difference(quantity, benchmark.quantity) labels quartile")
             AssessExecuteExt.execute(d, path)
         } catch (e: Exception) {
             e.printStackTrace()
@@ -181,11 +181,11 @@ class TestAssessExt {
         try {
             // val a: AssessExt = AssessExecuteExt.parse("with ssbora by nation for nation = 'FRANCE' assess quantity")
             // AssessExecuteExt.execute(a, path)
-            val b: AssessExt = AssessExecuteExt.parse("with ssbora by nation for nation = 'FRANCE' assess quantity against nation = 'GERMANY' scaled population")
+            val b: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation for nation = 'FRANCE' against nation = 'GERMANY' scaled population")
             AssessExecuteExt.execute(b, path)
-            val c: AssessExt = AssessExecuteExt.parse("with ssbora by nation for nation = 'FRANCE' assess quantity against nation = 'GERMANY' scaled population using difference(quantity, benchmark.quantity)")
+            val c: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation for nation = 'FRANCE' against nation = 'GERMANY' scaled population using difference(quantity, benchmark.quantity)")
             AssessExecuteExt.execute(c, path)
-            val d: AssessExt = AssessExecuteExt.parse("with ssbora by nation for nation = 'FRANCE' assess quantity against nation = 'GERMANY' scaled population using difference(quantity, benchmark.quantity) labels quartile")
+            val d: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation for nation = 'FRANCE' against nation = 'GERMANY' scaled population using difference(quantity, benchmark.quantity) labels quartile")
             AssessExecuteExt.execute(d, path)
         } catch (e: Exception) {
             e.printStackTrace()
@@ -196,15 +196,15 @@ class TestAssessExt {
     @Test
     fun testIncremental3() {
         try {
-            var b: AssessExt = AssessExecuteExt.parse("with covid19 by country assess deaths against continent")
+            var b: AssessExt = AssessExecuteExt.parse("with covid19 assess deaths by country against continent")
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with COVID19 by country for country='Bosnia And Herzegovina' assess deaths against country='France'")
+            b = AssessExecuteExt.parse("with COVID19 assess deaths by country for country='Bosnia And Herzegovina' against country='France'")
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with COVID19 by country for country='Bosnia And Herzegovina' assess deaths against country='France' using ratio(deaths, benchmark.deaths)")
+            b = AssessExecuteExt.parse("with COVID19 assess deaths by country for country='Bosnia And Herzegovina' against country='France' using ratio(deaths, benchmark.deaths)")
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with COVID19 by country for country='Bosnia And Herzegovina' assess deaths against country='France' using ratio(deaths, benchmark.deaths) labels quartile")
+            b = AssessExecuteExt.parse("with COVID19 assess deaths by country for country='Bosnia And Herzegovina' against country='France' using ratio(deaths, benchmark.deaths) labels quartile")
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with COVID19 by country for country='Bosnia And Herzegovina' assess deaths")
+            b = AssessExecuteExt.parse("with COVID19 assess deaths by country for country='Bosnia And Herzegovina'")
             AssessExecuteExt.execute(b, path)
         } catch (e: Exception) {
             e.printStackTrace()
@@ -215,13 +215,13 @@ class TestAssessExt {
     @Test
     fun testIncremental4() {
         try {
-            var b: AssessExt = AssessExecuteExt.parse("with covid19 by country assess deaths against continent")
+            var b: AssessExt = AssessExecuteExt.parse("with covid19 assess deaths by country against continent")
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with COVID19 by country for country='Bosnia And Herzegovina' assess deaths against country='France' scaled population")
+            b = AssessExecuteExt.parse("with COVID19 assess deaths by country for country='Bosnia And Herzegovina' against country='France' scaled population")
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with COVID19 by country for country='Bosnia And Herzegovina' assess deaths against country='France' scaled population using ratio(deaths, benchmark.deaths)")
+            b = AssessExecuteExt.parse("with COVID19 assess deaths by country for country='Bosnia And Herzegovina' against country='France' scaled population using ratio(deaths, benchmark.deaths)")
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with COVID19 by country for country='Bosnia And Herzegovina' assess deaths against country='France' scaled population using ratio(deaths, benchmark.deaths) labels quartile")
+            b = AssessExecuteExt.parse("with COVID19 assess deaths by country for country='Bosnia And Herzegovina' against country='France' scaled population using ratio(deaths, benchmark.deaths) labels quartile")
             AssessExecuteExt.execute(b, path)
         } catch (e: Exception) {
             e.printStackTrace()
@@ -232,11 +232,11 @@ class TestAssessExt {
     @Test
     fun testIncremental5() {
         try {
-            var b: AssessExt = AssessExecuteExt.parse("with covid19 by country assess deaths against continent")
+            var b: AssessExt = AssessExecuteExt.parse("with covid19 assess deaths by country against continent")
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with covid19 by country assess deaths against continent using ratio(deaths, benchmark.deaths)")
+            b = AssessExecuteExt.parse("with covid19 assess deaths by country against continent using ratio(deaths, benchmark.deaths)")
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with covid19 by country assess deaths against continent using ratio(deaths, benchmark.deaths) labels quartile")
+            b = AssessExecuteExt.parse("with covid19 assess deaths by country against continent using ratio(deaths, benchmark.deaths) labels quartile")
             AssessExecuteExt.execute(b, path)
         } catch (e: Exception) {
             e.printStackTrace()
@@ -252,15 +252,15 @@ class TestAssessExt {
                 // TODO This is BROKEN, cannot compare against grand parent but only against parent
                 // b = AssessExecuteExt.parse("with COVID19 by country assess cases against allcountry")
                 // AssessExecuteExt.execute(b, path)
-                b = AssessExecuteExt.parse("with COVID19 by country, year for country='France' assess deaths against country='United Kingdom' using difference(DEATHS, benchmark.DEATHS)")
+                b = AssessExecuteExt.parse("with COVID19 assess deaths by country, year for country='France' against country='United Kingdom' using difference(DEATHS, benchmark.DEATHS)")
                 AssessExecuteExt.execute(b, path)
-                b = AssessExecuteExt.parse("with COVID19 by country, month for country='Italy' assess cases")
+                b = AssessExecuteExt.parse("with COVID19 assess cases by country, month for country='Italy'")
                 AssessExecuteExt.execute(b, path)
-                b = AssessExecuteExt.parse("with covid19 by country assess deaths against continent scaled population")
+                b = AssessExecuteExt.parse("with covid19 assess deaths by country against continent scaled population")
                 AssessExecuteExt.execute(b, path)
-                b = AssessExecuteExt.parse("with covid19 by country assess deaths against continent scaled population using ratio(deaths, benchmark.deaths)")
+                b = AssessExecuteExt.parse("with covid19 assess deaths by country against continent scaled population using ratio(deaths, benchmark.deaths)")
                 AssessExecuteExt.execute(b, path)
-                b = AssessExecuteExt.parse("with covid19 by country assess deaths against continent scaled population using ratio(deaths, benchmark.deaths) labels quartile")
+                b = AssessExecuteExt.parse("with covid19 assess deaths by country against continent scaled population using ratio(deaths, benchmark.deaths) labels quartile")
                 AssessExecuteExt.execute(b, path)
             } catch (e: Exception) {
                 e.printStackTrace()
@@ -279,15 +279,15 @@ class TestAssessExt {
                 var b: AssessExt
                 listOf("deaths", "cases").forEach {
                     m ->
-                    b = AssessExecuteExt.parse("with covid19 by week for continent = 'Europe' assess $m")
+                    b = AssessExecuteExt.parse("with covid19 assess $m by week for continent = 'Europe'")
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with COVID19 by country for country='France' assess $m")
+                    b = AssessExecuteExt.parse("with COVID19 assess $m by country for country='France'")
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with covid19 by week for continent = 'Europe' assess $m")
+                    b = AssessExecuteExt.parse("with covid19 assess $m by week for continent = 'Europe'")
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with COVID19 by country, year for country='France' assess $m")
+                    b = AssessExecuteExt.parse("with COVID19 assess $m by country, year for country='France'")
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with COVID19 by country for country='France' assess $m")
+                    b = AssessExecuteExt.parse("with COVID19 assess $m by country for country='France'")
                     AssessExecuteExt.execute(b, path)
                 }
                 // b = AssessExecuteExt.parse("with covid19 by week assess deaths")
@@ -319,7 +319,7 @@ class TestAssessExt {
                                     a2
                                 }
                             }
-                            val i = "with covid19 by $attrs for continent = 'Europe' and year='2020' assess $m"
+                            val i = "with covid19 assess $m by $attrs for continent = 'Europe' and year='2020'"
                             println(i)
                             b = AssessExecuteExt.parse(i)
                         }
@@ -338,31 +338,31 @@ class TestAssessExt {
             listOf(1, 3).forEach { k ->
                 listOf("deaths", "cases").forEach { m ->
                     var b: AssessExt
-                    b = AssessExecuteExt.parse("with COVID19 by country, month for country='Italy' and year='2020' assess $m against country='Andorra' scaled population using reldifference($m, benchmark.$m)", k)
+                    b = AssessExecuteExt.parse("with COVID19 assess $m by country, month for country='Italy' and year='2020' against country='Andorra' scaled population using reldifference($m, benchmark.$m)", k)
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with COVID19 by country, month for country='Italy' assess $m against country='Andorra' scaled population using reldifference($m, benchmark.$m)", k)
+                    b = AssessExecuteExt.parse("with COVID19 assess $m by country, month for country='Italy' against country='Andorra' scaled population using reldifference($m, benchmark.$m)", k)
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with COVID19 by country, month for country='Italy' assess $m against country='Malta' scaled population using reldifference($m, benchmark.$m)", k)
+                    b = AssessExecuteExt.parse("with COVID19 assess $m by country, month for country='Italy' against country='Malta' scaled population using reldifference($m, benchmark.$m)", k)
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with COVID19 by country, month for country='Italy' and year='2020' assess $m against country = 'Malta' scaled population", k)
+                    b = AssessExecuteExt.parse("with COVID19 assess $m by country, month for country='Italy' and year='2020' against country = 'Malta' scaled population", k)
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with COVID19 by country, month for country='Italy' and year='2020' assess $m against continent scaled population", k)
+                    b = AssessExecuteExt.parse("with COVID19 assess $m by country, month for country='Italy' and year='2020' against continent scaled population", k)
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with COVID19 by country, month for country='Italy' and year='2020' assess $m", k)
+                    b = AssessExecuteExt.parse("with COVID19 assess $m by country, month for country='Italy' and year='2020'", k)
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with covid19 by country for country='France' assess $m", k)
+                    b = AssessExecuteExt.parse("with covid19 assess $m by country for country='France'", k)
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with covid19 by month, country for country='Italy' assess $m", k)
+                    b = AssessExecuteExt.parse("with covid19 assess $m by month, country for country='Italy'", k)
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with covid19 by week, country for week='2020-JAN-01' assess $m", k)
+                    b = AssessExecuteExt.parse("with covid19 assess $m by week, country for week='2020-JAN-01'", k)
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with covid19 by month, country for month='2020-JAN' assess $m", k)
+                    b = AssessExecuteExt.parse("with covid19 assess $m by month, country for month='2020-JAN'", k)
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with covid19 by year, country for continent = 'Europe' and year='2020' assess $m", k)
+                    b = AssessExecuteExt.parse("with covid19 assess $m by year, country for continent = 'Europe' and year='2020'", k)
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with covid19 by year, continent for continent = 'Europe' and year='2020' assess $m", k)
+                    b = AssessExecuteExt.parse("with covid19 by year, continent for continent = 'Europe' and year='2020'", k)
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with covid19 by year for continent = 'Europe' and year='2020' assess $m", k)
+                    b = AssessExecuteExt.parse("with covid19 by year for continent = 'Europe' and year='2020'", k)
                     AssessExecuteExt.execute(b, path)
                 }
             }
@@ -376,7 +376,7 @@ class TestAssessExt {
     fun testIncremental10() {
         try {
             var b: AssessExt
-            b = AssessExecuteExt.parse("with covid19 by year, country for continent = 'Europ' and year='2020' assess deaths", 1)
+            b = AssessExecuteExt.parse("with covid19 assess deaths by year, country for continent = 'Europ' and year='2020'", 1)
             AssessExecuteExt.execute(b, path)
             fail()
         } catch (e: Exception) {
@@ -388,7 +388,7 @@ class TestAssessExt {
     fun testIncremental11() {
         try {
             var b: AssessExt
-            b = AssessExecuteExt.parse("with covid19 by year, country for continent = 'Europe' and month='2020-JAN' assess deaths", 1)
+            b = AssessExecuteExt.parse("with covid19 assess deaths by year, country for continent = 'Europe' and month='2020-JAN'", 1)
             AssessExecuteExt.execute(b, path)
             fail()
         } catch (e: Exception) {
@@ -400,7 +400,7 @@ class TestAssessExt {
     fun testIncremental12() {
         try {
             var b: AssessExt
-            b = AssessExecuteExt.parse("with covid19 by week, country for week='2020-JAN-10' assess deaths", 1)
+            b = AssessExecuteExt.parse("with covid19 assess deaths by week, country for week='2020-JAN-10'", 1)
             AssessExecuteExt.execute(b, path)
             fail()
         } catch (e: Exception) {
@@ -412,7 +412,7 @@ class TestAssessExt {
     fun testIncremental14() {
         try {
             var b: AssessExt
-            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE_EXT by epci assess consototale against epci='248200099 CA Grand Montauban'", 1)
+            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE_EXT assess consototale by epci against epci='248200099 CA Grand Montauban'", 1)
             AssessExecuteExt.execute(b, path)
             fail()
         } catch (e: Exception) {
@@ -424,34 +424,34 @@ class TestAssessExt {
     fun testIncremental13() {
         try {
             var b: AssessExt
-            b = AssessExecuteExt.parse("with consommation_electrique_ext by annee, categorieconsommation for categorieconsommation='Entreprise' assess consototale against ALLANNEE", 1)
+            b = AssessExecuteExt.parse("with consommation_electrique_ext assess consototale by annee, categorieconsommation for categorieconsommation='Entreprise' against ALLANNEE", 1)
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with consommation_electrique by typeEPCI assess consototale", 1)
+            b = AssessExecuteExt.parse("with consommation_electrique assess consototale by typeEPCI ", 1)
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with consommation_electrique by typeIRIS assess consototale", 1)
+            b = AssessExecuteExt.parse("with consommation_electrique assess consototale by typeIRIS ", 1)
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with consommation_electrique by typeIRIS, annee assess consototale", 1)
+            b = AssessExecuteExt.parse("with consommation_electrique assess consototale by typeIRIS, annee ", 1)
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE by commune for commune = '35238 Rennes' assess consototale", 1)
+            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE assess consototale by commune for commune = '35238 Rennes' ", 1)
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE by commune for commune = '35238 Rennes' assess consototale against epci scaled popcomm", 1)
+            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE assess consototale by commune for commune = '35238 Rennes' against epci scaled popcomm", 1)
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE by commune, categorieconsommation, annee for commune='35238 Rennes' and categorieconsommation = 'Entreprise' assess consototale", 1)
+            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE assess consototale by commune, categorieconsommation, annee for commune='35238 Rennes' and categorieconsommation = 'Entreprise' ", 1)
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE by iris for commune = '35238 Rennes' assess consototale", 1)
+            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE assess consototale by iris for commune = '35238 Rennes' ", 1)
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE_EXT by epci for epci='244400404 Nantes Metropole' assess consototale against epci='248200099 CA Grand Montauban'", 1)
+            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE_EXT assess consototale by epci for epci='244400404 Nantes Metropole' against epci='248200099 CA Grand Montauban'", 1)
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE by secteurnaf2 assess consototale", 1)
+            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE assess consototale by secteurnaf2 ", 1)
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE by annee assess consototale", 1)
+            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE assess consototale by annee ", 1)
             AssessExecuteExt.execute(b, path)
             // The last three tests will fail if looking for duplicates in the cube. EPCIs are not unique in the database!!
-            b = AssessExecuteExt.parse("with consommation_electrique by EPCI, annee for categorieconsommation = 'Entreprise' assess consototale", 1)
+            b = AssessExecuteExt.parse("with consommation_electrique assess consototale by EPCI, annee for categorieconsommation = 'Entreprise' ", 1)
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE by epci assess consototale", 1)
+            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE assess consototale by epci ", 1)
             AssessExecuteExt.execute(b, path)
-            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE by epci assess consototale against typeepci", 1)
+            b = AssessExecuteExt.parse("with CONSOMMATION_ELECTRIQUE assess consototale by epci against typeepci", 1)
             AssessExecuteExt.execute(b, path)
         } catch (e: Exception) {
             e.printStackTrace()
@@ -463,7 +463,7 @@ class TestAssessExt {
     fun testIncremental15() {
         try {
             var b: AssessExt
-            b = AssessExecuteExt.parse("with consommation_electrique by commune assess consototale", 1)
+            b = AssessExecuteExt.parse("WITH CONSOMMATION_ELECTRIQUE consototale by commune ", 1)
             var vertexes = DependencyGraph.getDependencies(b.cube).vertexSet().filter { !it.startsWith("pop") && !it.startsWith("all") }.toList()
             vertexes += ""
             vertexes.withIndex().forEach { i1 ->
@@ -474,7 +474,7 @@ class TestAssessExt {
                     if ((i2.index < 4 && i1.index < i2.index) && (a1.isEmpty() || a2.isEmpty() || !DependencyGraph.lca(b.cube, a1, a2).isPresent)) {
                         val attrList = listOf(a1, a2).filter { it.isNotEmpty() }
                         val attrs = attrList.stream().reduce { a, b -> "$a,$b" }.get()
-                        val i = "WITH CONSOMMATION_ELECTRIQUE by $attrs ASSESS consototale"
+                        val i = "WITH CONSOMMATION_ELECTRIQUE consototale by $attrs "
                         println(i)
                         b = AssessExecuteExt.parse(i)
                         AssessExecuteExt.execute(b, path)
@@ -490,7 +490,7 @@ class TestAssessExt {
     @Test
     fun testIncremental16() {
         try {
-            val b = AssessExecuteExt.parse("WITH CONSOMMATION_ELECTRIQUE_EXT by epci FOR epci='200065597 CU Caen la Mer' assess consototale", 1)
+            val b = AssessExecuteExt.parse("WITH CONSOMMATION_ELECTRIQUE_EXT consototale by epci FOR epci='200065597 CU Caen la Mer' ", 1)
             AssessExecuteExt.execute(b, path)
             fail()
         } catch (e: Exception) {
@@ -500,7 +500,7 @@ class TestAssessExt {
     @Test
     fun testIncremental17() {
         try {
-            val b = AssessExecuteExt.parse("WITH CONSOMMATION_ELECTRIQUE by commune, epci assess consototale", 1)
+            val b = AssessExecuteExt.parse("WITH CONSOMMATION_ELECTRIQUE consototale by commune, epci ", 1)
             AssessExecuteExt.execute(b, path)
         } catch (e: Exception) {
             fail()
@@ -510,7 +510,7 @@ class TestAssessExt {
     @Test
     fun testIncremental18() {
         try {
-            val b: AssessExt = AssessExecuteExt.parse("WITH CONSOMMATION_ELECTRIQUE by region, typeepci assess consototale", 1)
+            val b: AssessExt = AssessExecuteExt.parse("WITH CONSOMMATION_ELECTRIQUE consototale by region, typeepci ", 1)
             AssessExecuteExt.execute(b, path)
         } catch (e: Exception) {
             fail()

@@ -34,7 +34,7 @@ class TestDescribeK {
             var d = DescribeExecute.parse("with sales_fact_1997 describe unit_sales by the_month for country = 'USA' and store_country = 'USA'")
             d.writeMultidimensionalCube(path)
             var cube = DataFrame.readCSV(path + "debug_0.csv")
-            cube = cube.rename(*cube.names.map { it to it.toLowerCase() }.toTypedArray())
+            cube = cube.rename(*cube.names.map { it to it.lowercase() }.toTypedArray())
             var c = dataFrameOf("unit_sales", "the_month")(
                     23775, "1997-01",
                     22357, "1997-02",
@@ -52,7 +52,7 @@ class TestDescribeK {
             d = DescribeExecute.parse("with sales_fact_1997 describe unit_sales by the_year for country = 'USA' and store_country = 'USA'")
             d.writeMultidimensionalCube(path)
             cube = DataFrame.readCSV(path + "debug_0.csv")
-            cube = cube.rename(*cube.names.map { it to it.toLowerCase() }.toTypedArray())
+            cube = cube.rename(*cube.names.map { it to it.lowercase() }.toTypedArray())
             c = dataFrameOf("unit_sales", "the_year")(294750, 1997)
             assertEquals(c, cube)
         } catch (e: Exception) {

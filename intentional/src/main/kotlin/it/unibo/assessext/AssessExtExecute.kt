@@ -58,13 +58,13 @@ object AssessExecuteExt {
             // verify if we are dealing with SIBLING or PARENT
             val benchmark: String = Lists.newArrayList(jsonObj.get("against"))[0].toString()
             // if the benchmark contains an attribute rolling up the current group by... then it is a parent benchmark
-            if (DependencyGraph.getDependencies(d.cube).containsVertex(benchmark.replace("'", "").toLowerCase())) {
+            if (DependencyGraph.getDependencies(d.cube).containsVertex(benchmark.replace("'", "").lowercase())) {
                 newd.benchmark = benchmark.replace("'", "")
                 newd.benchmarkType = BenchmarkType.PARENT
             } else {
                 // else we are dealing with a sibling
-                val possibleAttributes = QueryGenerator.getLevelsFromMember(newd.cube, benchmark.replace("'", "")).map { it.toLowerCase() }
-                val forclause = d.clauses.filter { possibleAttributes.contains(it.left.toLowerCase()) }[0]
+                val possibleAttributes = QueryGenerator.getLevelsFromMember(newd.cube, benchmark.replace("'", "")).map { it.lowercase() }
+                val forclause = d.clauses.filter { possibleAttributes.contains(it.left.lowercase()) }[0]
                 newd.benchmark = Triple.of(forclause.left, forclause.middle, listOf(benchmark))
                 newd.benchmarkType = BenchmarkType.SIBLING
             }

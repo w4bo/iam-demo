@@ -112,7 +112,7 @@ class AssessExt(var k: Int = 3) : Assess(null) {
                         "pivot (sum($measure) for $attr in (" +
                         members
                             .filter { a -> (pivotId++ == 0 || pivotId > 0 && a != value) && (a.contains(value.replace("'", "")) || a.length < 30) }
-                            .map { "'${it.split("_")[0]}' as \"${if (it.contains(value.replace("'", ""))) { measure.toUpperCase() } else { it }}\"" }
+                            .map { "'${it.split("_")[0]}' as \"${if (it.contains(value.replace("'", ""))) { measure.uppercase() } else { it }}\"" }
                             .reduce { a, b -> "$a, $b"} +
                         ")) t"
             }.forEach { a ->
@@ -304,7 +304,7 @@ class AssessExt(var k: Int = 3) : Assess(null) {
                     + " --cube " + cubeName //
                     + " --measure " + measures.toList()[0] //
                     + " --byclause " + attributes.stream().reduce { a, b -> "$a,$b" }.get().replace(" ", "")
-                    + " --forclause " + clauses.map{ it.left.toUpperCase() }.toList().toString().replace(" ", "") //
+                    + " --forclause " + clauses.map{ it.left.uppercase() }.toList().toString().replace(" ", "") //
                     + " --benchmark " + benchmark.toString().replace(" ", "!") //
                     + " --using " + function //
                     + " --labels " + labelingFunction //

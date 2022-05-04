@@ -168,7 +168,7 @@ class IAMServlet : HttpServlet() {
          */
         fun manipulateInString(v: String): String {
             var value = v
-            if (v.toLowerCase().startsWith("with sales ")) {
+            if (v.lowercase().startsWith("with sales ")) {
                 value = "$value " //
                     .replace(",", " , ") //
                     .replace(" customer ", " customer_id ") //
