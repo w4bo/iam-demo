@@ -4,6 +4,8 @@ import com.google.common.collect.Lists
 import com.google.common.collect.Maps
 import com.google.common.collect.Sets
 import it.unibo.Intention
+import it.unibo.antlr.gen.DescribeLexer
+import it.unibo.antlr.gen.DescribeParser
 import it.unibo.conversational.database.QueryGenerator
 import it.unibo.conversational.datatypes.DependencyGraph
 import krangl.*

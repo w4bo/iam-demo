@@ -2,6 +2,8 @@ package it.unibo.describe
 
 import com.google.common.base.Optional
 import it.unibo.Intention
+import it.unibo.antlr.gen.DescribeBaseListener
+import it.unibo.antlr.gen.DescribeParser
 import it.unibo.antlr.gen.DescribeParser.CContext
 import it.unibo.antlr.gen.DescribeParser.DescribeContext
 import org.antlr.v4.runtime.Token

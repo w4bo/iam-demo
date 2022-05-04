@@ -2,6 +2,8 @@ package it.unibo.assessext
 
 import com.google.common.collect.Lists
 import it.unibo.Intention
+import it.unibo.antlr.gen.AssessLexer
+import it.unibo.antlr.gen.AssessParser
 import it.unibo.antlr.gen.ThrowingErrorListener
 import it.unibo.assess.Assess
 import it.unibo.assess.Assess.BenchmarkType

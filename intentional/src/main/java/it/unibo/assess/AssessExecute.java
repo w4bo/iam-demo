@@ -2,6 +2,8 @@ package it.unibo.assess;
 
 import com.google.common.collect.Lists;
 import edu.stanford.nlp.util.Sets;
+import it.unibo.antlr.gen.AssessLexer;
+import it.unibo.antlr.gen.AssessParser;
 import it.unibo.antlr.gen.ThrowingErrorListener;
 import it.unibo.conversational.Utils;
 import org.antlr.v4.runtime.ANTLRInputStream;
