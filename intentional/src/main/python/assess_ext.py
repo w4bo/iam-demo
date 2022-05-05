@@ -314,13 +314,13 @@ if __name__ == '__main__':
             write_to_file(i, byclause, forclause, measure, df, sibling, using, label)
     toprint["label_time"] = time.time() - start_time
 
-    exists = os.path.exists('resources/intention/time.csv')
-    with open("resources/intention/time.csv", 'a+') as o:
-        header = []
-        values = []
-        for key, value in toprint.items():
-            header.append(key)
-            values.append(str(value))
-        if not exists:
-            o.write(','.join(header) + "\n")
-        o.write(','.join(values) + "\n")
+    # exists = os.path.exists('resources/intention/time.csv')
+    # with open("resources/intention/time.csv", 'a+') as o:
+    #     header = []
+    #     values = []
+    #     for key, value in toprint.items():
+    #         header.append(key)
+    #         values.append(str(value))
+    #     if not exists:
+    #         o.write(','.join(header) + "\n")
+    #     o.write(','.join(values) + "\n")
