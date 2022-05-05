@@ -128,26 +128,6 @@ def compute_label(Y, label):
     Z["label"] = label(Z["comparison"])
     return Z
 
-
-# def compute_auto_labels(Y):
-#     Ys = []
-#     curlabels = {}
-#     for l in labels:
-#         Z = compute_label(Y, l)
-#         curlabels[l] = Z["label"]
-#         Ys.append((Z, l))
-#     # return Ys
-#     df = pd.DataFrame(data=curlabels)
-#     n = np.array(df)
-#     result = rk.center(n, method='kendalltau')
-#     rankedYs = []
-#     for Z, l in Ys:
-#         tau, p = sp.stats.kendalltau(Z["label"], result)
-#         rankedYs.append((Z, l, tau))
-#     rankedYs = sorted(rankedYs, key=lambda t: t[2], reverse=True)[:3]
-#     return [(Z, l) for (Z, l, tau) in rankedYs]
-
-
 def compute_auto_labels(Y, k, measure, byclause, using):
     def kendall_tau_distance(values1, values2):
         """Compute the Kendall tau distance."""

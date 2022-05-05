@@ -3,6 +3,7 @@ start.sh
 .ready
 .env
 config.yml
+config.js
 *.DMP
 *.dmp
 *.sql
