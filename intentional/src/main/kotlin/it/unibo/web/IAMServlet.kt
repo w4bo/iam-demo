@@ -44,10 +44,8 @@ class IAMServlet : HttpServlet() {
         try {
             cleanOldFiles(servletContext.getRealPath("WEB-INF/classes"))
             val value: String = manipulateInString(request.getParameter("value"))
-            val actiontype: String = request.getParameter("actiontype")
             val sessionID: String = request.getParameter("sessionid")
             error.put("value", value)
-            error.put("actiontype", actiontype)
             if (!empty(value)) {
                 val intention: Intention =
                     if (value.lowercase().contains("describe")) {
@@ -67,7 +65,7 @@ class IAMServlet : HttpServlet() {
                 cache[sessionID] = intention
                 status = OK
                 val curCounter = ++counter
-                DBmanager.executeQuery(intention.cube, "insert into intention_sessions values('$sessionID', '${System.currentTimeMillis()}', '$curCounter', '${value.replace("'", "''").replace("\n", "")}', '$actiontype', 1)")
+                //DBmanager.executeQuery(intention.cube, "insert into intention_sessions values('$sessionID', '${System.currentTimeMillis()}', '$curCounter', '${value.replace("'", "''").replace("\n", "")}', 'this is the actiontype', 1)")
             } else {
                 status = ERROR
                 result = JSONObject()
