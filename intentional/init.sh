@@ -9,7 +9,6 @@ cp ../intentional-web/js/config.example.js ../intentional-web/js/config.js
 echo "Replacing ../intentional-assess/js/config.example.js ../intentional-assess/js/config.js"
 cp ../intentional-assess/js/config.example.js ../intentional-assess/js/config.js
 
-
 P=$(pwd)
 echo $P
 sed -i "s+\!HOME\!+${P}+g" src/main/resources/config.yml
