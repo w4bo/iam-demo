@@ -1,12 +1,13 @@
 function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent, highlightColor, colorFun) {
     d3.select("#" + id).html("");
+    console.log(data["dimensions"][0]);
+    console.log(data["measures"]);
     const n = data["dimensions"].length;
     const prop = {}
     prop["margin"] = {top: 40, right: 90, bottom: 90, left: 90};
     prop["width"] = 600 - prop["margin"]["left"] - prop["margin"]["right"];
     prop["height"] = 400 - prop["margin"]["top"] - prop["margin"]["bottom"];
 
-    console.log(data)
     if (n == 1) {
         // drawMultiline(
         //     id,
@@ -18,7 +19,7 @@ function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent
             id,
             prop,
             data,
-            data["dimensions"][0],
+            data["dimensions"][0]["attribute"] ? data["dimensions"][0]["attribute"] : data["dimensions"][0],
             data["measures"][0],
             model,
             1, selectedModel, selectedComponent, highlightColor);
@@ -27,12 +28,12 @@ function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent
             id,
             prop,
             data,
-            data["dimensions"][1],
-            data["dimensions"][0],
+            data["dimensions"][1]["attribute"] ? data["dimensions"][1]["attribute"] : data["dimensions"][1],
+            data["dimensions"][0]["attribute"] ? data["dimensions"][0]["attribute"] : data["dimensions"][0],
             data["measures"][0],
             model,
             1);
-    } else if (n == 3) {
+    } else if (n >= 3) {
         alert("3D visualization is not implemented in this demo yet");
     }
 }
