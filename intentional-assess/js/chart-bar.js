@@ -94,5 +94,5 @@ function drawBar(id, prop, data, d1, d2, c, mode, selectedModel, selectedCompone
         })
         .text(function(d) { return d[d1] })
         .style("font-size", "10px");
-    appendLegend(data, svg, M, 20, -40, color);
+    // appendLegend(data, svg, M, 20, -40, color);
 }
