@@ -90,6 +90,7 @@ object AssessExecuteExt {
             newd.filename = "${d.filename}_${d.sessionStep}.json"
             // d.partialRefinements += newd // TODO: undo these comments to enable the partial refinement
             jsonObj.put("intention", newd.toString())
+            jsonObj.put("type", "assess")
             ret.put(newd.id, jsonObj)
         }
         // }

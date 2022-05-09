@@ -292,13 +292,21 @@ object DescribeExecute {
                     }
                 }
             }
-            json.put("pivot", getPivot(d, cube))
+
+            val p = getPivot(d, cube)
+            json.put("pivot", p)
+            json.put("measures", p.getJSONObject("headers").getJSONArray("measures"))
+            json.put("dimensions", p.getJSONObject("headers").getJSONArray("dimensions"))
+            json.put("intention", d.toString())
+            json.put("type", "describe")
             d.statistics["pivot_time"] = System.currentTimeMillis() - startTime
         } else {
             d.statistics["pivot_time"] = 1 // set default time to 1 ms (otherwise charts with logarithmic scale won't work)
         }
         cube.writeCSV(File(path + d.filename + "_" + d.sessionStep + "_enhanced.csv"))
-        return Triple(json, cube, bestModel)
+        val ret = JSONObject()
+        ret.put(d.id, json)
+        return Triple(ret, cube, bestModel)
     }
 
     fun getPivot(d: Intention, cube: DataFrame): JSONObject {

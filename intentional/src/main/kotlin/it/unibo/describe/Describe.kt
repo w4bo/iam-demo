@@ -3,6 +3,7 @@ package it.unibo.describe
 import com.google.common.base.Optional
 import com.google.common.collect.Sets
 import it.unibo.Intention
+import org.apache.commons.lang3.tuple.Triple
 import java.io.File
 
 class Describe : Intention {
@@ -38,5 +39,23 @@ class Describe : Intention {
     companion object {
         var id = 0
         var computeProperty = true
+    }
+
+    fun clauseToString(o: Any): String {
+        return if (o is Triple<*, *, *>) {
+            val c = o as Triple<String, String, List<String>>
+            return c.left + c.middle + c.right[0]
+        } else {
+            o.toString()
+        }
+    }
+
+    override fun toString(): String {
+        val mea = measures.toList()[0]
+        return "with ${cubeSyn} " +
+                "describe $mea " +
+                "by ${attributes.reduce { a, b -> "$a, $b" }} " +
+                if (clauses.isEmpty()) { "" } else { "for ${clauses.toList().map { clauseToString(it) }.reduce { a, b -> "$a and $b"} } " } +
+                "using ${getModels()}"
     }
 }

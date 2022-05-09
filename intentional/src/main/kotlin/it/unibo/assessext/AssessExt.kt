@@ -21,7 +21,6 @@ import java.util.*
  */
 class AssessExt(var k: Int = 3) : Assess(null) {
 
-    val id: String = UUID.randomUUID().toString()
     var defaultLabelingFunction: String? = null
     var defaultFunctions: String? = null
     val partialRefinements: MutableList<AssessExt> = mutableListOf()
@@ -328,9 +327,9 @@ class AssessExt(var k: Int = 3) : Assess(null) {
     override fun toString(): String {
         val mea = measures.toList()[0]
         return "with ${cubeSyn} " +
+                "assess $mea " +
                 "by ${attributes.reduce { a, b -> "$a, $b" }} " +
                 if (clauses.isEmpty()) { "" } else { "for ${clauses.toList().map { clauseToString(it) }.reduce { a, b -> "$a and $b"} } " } +
-                "assess $mea " +
                 "against ${clauseToString(benchmark)} " +
                 (if (scaled.isEmpty()) {""} else {"scaled $scaled "}).replace("\"", "") +
                 (if (function == null) "<using $defaultFunctions> " else "using ${getFunctionAsString(function)} ").replace("\"", "") +
