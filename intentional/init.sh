@@ -6,6 +6,9 @@ echo "Replacing src/main/resources/config.example.yml src/main/resources/config.
 cp src/main/resources/config.example.yml src/main/resources/config.yml
 echo "Replacing ../intentional-web/js/config.example.js ../intentional-web/js/config.js"
 cp ../intentional-web/js/config.example.js ../intentional-web/js/config.js
+echo "Replacing ../intentional-assess/js/config.example.js ../intentional-assess/js/config.js"
+cp ../intentional-assess/js/config.example.js ../intentional-assess/js/config.js
+
 
 P=$(pwd)
 echo $P
