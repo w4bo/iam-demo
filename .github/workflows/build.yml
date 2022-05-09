@@ -20,8 +20,9 @@ jobs:
       - uses: actions/checkout@v3.0.2
       - name: Run init
         run: |
-          cd intentional
-          ./init.sh
+          cd intentional-assess/js
+          echo "config = { \"ip\": \"${{secrets.TOMCAT_IP}}\" }" >> config.js
+          cat config.js
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
