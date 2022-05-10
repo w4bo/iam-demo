@@ -10,12 +10,17 @@ import it.unibo.assess.Assess.BenchmarkType
 import it.unibo.assess.CustomAssessVisitor
 import it.unibo.conversational.database.QueryGenerator
 import it.unibo.conversational.datatypes.DependencyGraph
+import it.unibo.describe.DescribeExecute
+import it.unibo.describe.DescribeExecute.getPivot
+import krangl.*
 import org.antlr.v4.runtime.ANTLRInputStream
 import org.antlr.v4.runtime.CommonTokenStream
 import org.antlr.v4.runtime.tree.ParseTree
+import org.apache.commons.lang3.tuple.Pair
 import org.apache.commons.lang3.tuple.Triple
 import org.json.JSONObject
 import java.io.File
+import kotlin.math.roundToInt
 
 /**
  * Assess operator in action
@@ -91,6 +96,19 @@ object AssessExecuteExt {
             // d.partialRefinements += newd // TODO: undo these comments to enable the partial refinement
             jsonObj.put("intention", newd.toString())
             jsonObj.put("type", "assess")
+            val cube = DataFrame.readCSV(newPath.replace(".json", "_enhanced.csv"))
+            val p = getPivot(d, cube)
+            jsonObj.put("pivot", p)
+
+            var properties = cube.groupBy("label").summarize("properties") { Pair.of("mean", it["comparison"].mean()) }
+            properties = properties.addColumn("interest") { "-" }
+            properties.rows.forEach {
+                val rowJson = JSONObject()
+                rowJson.put("component", "label=" + it["label"].toString())
+                rowJson.put("properties", it["properties"])
+                jsonObj.append("components", rowJson)
+            }
+
             ret.put(newd.id, jsonObj)
         }
         // }
