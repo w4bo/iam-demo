@@ -33,6 +33,8 @@ function buildHtmlPivot(arr, measures) {
                     Object.keys(jsonObj).sort(function(a, b) { return a.localeCompare(b); }).forEach(function(key) {
                         if (key.includes("model")) {
                             td.setAttribute(header2att(key), jsonObj[key]);
+                        } else if (key.includes("label")) {
+                            td.setAttribute("label", jsonObj[key]);
                         }
                     });
                     td.appendChild(document.createTextNode(txt.substr(0, txt.length - 2))); 
@@ -102,6 +104,10 @@ function buildHtmlTable(arr, behavior) {
                         if (key == columns[j]) {
                             td.setAttribute("content", header2att(key) + "=" + jsonObj[key]);
                         }
+                    } else {
+                        if (key.includes("label")) {
+                            td.setAttribute("label", jsonObj[key]);
+                        }
                     }
                 } else {
                     var input = jsonObj["component"].split("=");
@@ -109,6 +115,7 @@ function buildHtmlTable(arr, behavior) {
                     var component = input[1];
                     td.setAttribute(model, component);
                     td.setAttribute("content", model + "=" + component);
+                    td.setAttribute("label", component);
                 }
                 td.onclick = function(e) { update(e.target.getAttribute("content")); };
             });
