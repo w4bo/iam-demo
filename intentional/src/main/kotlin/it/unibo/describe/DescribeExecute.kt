@@ -278,6 +278,7 @@ object DescribeExecute {
              * WRITE TO FILE
              * **********************************************************************/
             startTime = System.currentTimeMillis()
+            cube = cube.addColumn("label") { it[model] }
             cube.rows.forEach {
                 val rowJson = JSONObject()
                 cube.names.forEach { name -> rowJson.put(name, it[name]) }
