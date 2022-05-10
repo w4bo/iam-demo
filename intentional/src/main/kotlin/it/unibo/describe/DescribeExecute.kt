@@ -263,7 +263,9 @@ object DescribeExecute {
                             pair.left / pair.right
                         }
             }
-            properties.sortedByDescending("interest").rows.forEach {
+            properties = properties.sortedByDescending("interest")
+            val model: String = properties["model"].get(0).toString()
+            properties.filterByRow { it["model"] == model }.rows.forEach {
                 val rowJson = JSONObject()
                 rowJson.put("component", it["model"] as String + "=" + it["component"].toString().lowercase())
                 rowJson.put("interest", (it["interest"] as Double * 1000).roundToInt() / 1000.0)
@@ -292,13 +294,21 @@ object DescribeExecute {
                     }
                 }
             }
-            json.put("pivot", getPivot(d, cube))
+
+            val p = getPivot(d, cube)
+            json.put("pivot", p)
+            json.put("measures", p.getJSONObject("headers").getJSONArray("measures"))
+            json.put("dimensions", p.getJSONObject("headers").getJSONArray("dimensions"))
+            json.put("intention", d.toString())
+            json.put("type", "describe")
             d.statistics["pivot_time"] = System.currentTimeMillis() - startTime
         } else {
             d.statistics["pivot_time"] = 1 // set default time to 1 ms (otherwise charts with logarithmic scale won't work)
         }
         cube.writeCSV(File(path + d.filename + "_" + d.sessionStep + "_enhanced.csv"))
-        return Triple(json, cube, bestModel)
+        val ret = JSONObject()
+        ret.put(d.id, json)
+        return Triple(ret, cube, bestModel)
     }
 
     fun getPivot(d: Intention, cube: DataFrame): JSONObject {

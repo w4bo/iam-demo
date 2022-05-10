@@ -34,6 +34,7 @@ import static it.unibo.conversational.database.DBmanager.executeDataQuery;
  * A generic intentional operator
  */
 public abstract class Intention implements IIntention {
+
     protected static final Logger L = LoggerFactory.getLogger(Intention.class);
     protected Cube cube;
     protected String cubeSyn;
@@ -48,7 +49,7 @@ public abstract class Intention implements IIntention {
     private final Set<Triple<String, String, List<String>>> prevClause;
     protected final int sessionStep;
     public final Map<String, Object> statistics = Maps.newHashMap();
-
+    public final String id = UUID.randomUUID().toString();
 
     /**
      * Create an intention from the previous intention
