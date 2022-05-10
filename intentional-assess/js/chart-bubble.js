@@ -85,5 +85,5 @@ function drawBubble(id, prop, data, c1, c2, c3, c4, mode) {
     appendXlabel(svg, c1, width, height);
     appendYaxis(svg, y, x);
     appendYlabel(svg, c2, width, height, x);
-    appendLegend(data, svg, domain, 20, -40, color);
+    // appendLegend(data, svg, domain, 20, -40, color);
 }
