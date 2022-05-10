@@ -263,7 +263,9 @@ object DescribeExecute {
                             pair.left / pair.right
                         }
             }
-            properties.sortedByDescending("interest").rows.forEach {
+            properties = properties.sortedByDescending("interest")
+            val model: String = properties["model"].get(0).toString()
+            properties.filterByRow { it["model"] == model }.rows.forEach {
                 val rowJson = JSONObject()
                 rowJson.put("component", it["model"] as String + "=" + it["component"].toString().lowercase())
                 rowJson.put("interest", (it["interest"] as Double * 1000).roundToInt() / 1000.0)
