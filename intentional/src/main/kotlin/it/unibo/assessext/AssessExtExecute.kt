@@ -100,11 +100,11 @@ object AssessExecuteExt {
             val p = getPivot(d, cube)
             jsonObj.put("pivot", p)
 
-            var properties = cube.groupBy("label").summarize("properties") { Pair.of("mean", it["comparison"].mean()) }
+            var properties = cube.groupBy("label").summarize("properties") { Pair.of("mean", (it["comparison"].mean() as Double * 100.0).roundToInt() / 100.0) }
             properties = properties.addColumn("interest") { "-" }
             properties.rows.forEach {
                 val rowJson = JSONObject()
-                rowJson.put("component", "label=" + it["label"].toString())
+                rowJson.put("label", "label=" + it["label"].toString())
                 rowJson.put("properties", it["properties"])
                 jsonObj.append("components", rowJson)
             }
