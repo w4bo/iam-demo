@@ -299,7 +299,9 @@ object DescribeExecute {
             val p = getPivot(d, cube)
             json.put("pivot", p)
             json.put("measures", p.getJSONObject("headers").getJSONArray("measures"))
-            json.put("dimensions", p.getJSONObject("headers").getJSONArray("dimensions"))
+            if (p.getJSONObject("headers").has("dimensions")) {
+                json.put("dimensions", p.getJSONObject("headers").getJSONArray("dimensions"))
+            }
             json.put("intention", d.toString())
             json.put("type", "describe")
             d.statistics["pivot_time"] = System.currentTimeMillis() - startTime

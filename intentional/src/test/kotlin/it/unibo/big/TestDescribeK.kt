@@ -102,14 +102,14 @@ class TestDescribeK {
             d = DescribeExecute.parse("with sales_fact_1997 describe unit_sales by the_year")
             cube = DescribeExecute.execute(d, path).second
             assertEquals(1, cube.nrow)
-            // attr, mea, zscore, 3 models (no skyline/clustering), peculiarity
-            assertEquals(7, cube.ncol, cube.names.toString())
+            // attr, mea, zscore, 3 models (no skyline/clustering), peculiarity, label
+            assertEquals(8, cube.ncol, cube.names.toString())
 
             d = DescribeExecute.parse(d, "with sales_fact_1997 describe unit_sales by the_month", false)
             cube = DescribeExecute.execute(d, path).second
             assertEquals(12, cube.nrow)
-            // attr, mea, zscore, 4 models (no skyline), peculiarity
-            assertEquals(8, cube.ncol, cube.names.toString())
+            // attr, mea, zscore, 4 models (no skyline), peculiarity, label
+            assertEquals(9, cube.ncol, cube.names.toString())
         } catch (e: Exception) {
             e.printStackTrace()
             fail<String>(e.message)
@@ -125,14 +125,14 @@ class TestDescribeK {
             d = DescribeExecute.parse("with sales_fact_1997 describe unit_sales by the_month")
             cube = DescribeExecute.execute(d, path).second
             assertEquals(12, cube.nrow)
-            // attr, mea, zscore, 4 models (no skyline), peculiarity
-            assertEquals(8, cube.ncol, cube.names.toString())
+            // attr, mea, zscore, 4 models (no skyline), peculiarity, label
+            assertEquals(9, cube.ncol, cube.names.toString())
 
             d = DescribeExecute.parse(d, "with sales_fact_1997 describe unit_sales by the_year", false)
             cube = DescribeExecute.execute(d, path).second
             assertEquals(1, cube.nrow)
-            // attr, mea, zscore, 3 models (no skyline/clustering), peculiarity
-            assertEquals(7, cube.ncol, cube.names.toString())
+            // attr, mea, zscore, 3 models (no skyline/clustering), peculiarity, label
+            assertEquals(8, cube.ncol, cube.names.toString())
         } catch (e: Exception) {
             e.printStackTrace()
             fail<String>(e.message)
@@ -441,8 +441,8 @@ class TestDescribeK {
             d = DescribeExecute.parse("with sales_fact_1997 describe unit_sales, store_sales by the_month for country = 'USA' and store_country = 'USA' using top-k size 3")
             cube = DescribeExecute.execute(d, path).second
             assertEquals(12, cube.nrow)
-            // attr, 2 * mea, 2 * zscore, 1 model * 2 mea, peculiarity
-            assertEquals(8, cube.ncol, cube.names.toString())
+            // attr, 2 * mea, 2 * zscore, 1 model * 2 mea, peculiarity, label
+            assertEquals(9, cube.ncol, cube.names.toString())
             cube.select("the_month", "peculiarity", "model_top_unit_sales", "model_top_store_sales").print(maxRows = 12)
             var c = dataFrameOf("store_sales", "unit_sales", "the_month", "zscore_store_sales", "zscore_unit_sales", "peculiarity", "model_top_unit_sales", "model_top_store_sales")(
                     47687.41, 23775, "1997-01", -0.34,  -0.271, -0.271, false, false,//
