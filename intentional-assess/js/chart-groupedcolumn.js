@@ -1,5 +1,4 @@
 function drawGroupedColumn(id, prop, data, d1, d2, c, mode, selectedModel, selectedComponent, highlightColor) {
-
     var rawData = data["raw"]
     var X = rawData.map(function(d) { return d[d1]; });
     var M = rawData.map(function(d) { return d[c]; });
@@ -65,10 +64,10 @@ function drawGroupedColumn(id, prop, data, d1, d2, c, mode, selectedModel, selec
 
     appendXaxis(svg, x0, height);
     appendXlabel(svg, d1, width, height);
-    appendYaxis(svg, y);
-    appendYlabel(svg, d2, width, height);
+    appendYaxis(svg, y, x0);
+    appendYlabel(svg, d2, width, height, x0);
 
     // if (mode == 2) {
-    appendLegend(data, svg, M, width, height, color);
+    // appendLegend(data, svg, M, width, height, color);
     //}
 }
