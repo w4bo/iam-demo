@@ -342,22 +342,27 @@
     function checkButton(key, disabled) {
         const textarea = $("#text_" + key)
         const text = textarea[0].value
-        if (text === "") {
-            $("#btn_exe_" + key).addClass('disabled')
-            $("#btn_ref_" + key).addClass('disabled')
-            $("#btn_com_" + key).addClass('disabled')
-        } else if (text.includes("<") || text.includes(">") || !text.includes("labels") || !text.includes("using") || !text.includes("against")) {
-            $("#btn_exe_" + key).addClass('disabled')
-            $("#btn_ref_" + key).removeClass('disabled')
-            $("#btn_com_" + key).removeClass('disabled')
-        } else {
-            $("#btn_exe_" + key).removeClass('disabled')
-            $("#btn_ref_" + key).addClass('disabled')
-            $("#btn_com_" + key).addClass('disabled')
+        if (text.includes("using")) {
+            $("#btn_exe_" + key).hide();
+            $("#btn_ref_" + key).hide();
+            $("#btn_com_" + key).hide();
         }
-        if (disabled) { // textarea.hasClass('disabled')
-            $("#btn_exe_" + key).addClass('disabled')
-        }
+        // if (text === "") {
+        //     $("#btn_exe_" + key).addClass('disabled')
+        //     $("#btn_ref_" + key).addClass('disabled')
+        //     $("#btn_com_" + key).addClass('disabled')
+        // } else if (text.includes("<") || text.includes(">") || !text.includes("labels") || !text.includes("using") || !text.includes("against")) {
+        //     $("#btn_exe_" + key).addClass('disabled')
+        //     $("#btn_ref_" + key).removeClass('disabled')
+        //     $("#btn_com_" + key).removeClass('disabled')
+        // } else {
+        //     $("#btn_exe_" + key).removeClass('disabled')
+        //     $("#btn_ref_" + key).addClass('disabled')
+        //     $("#btn_com_" + key).addClass('disabled')
+        // }
+        // if (disabled) { // textarea.hasClass('disabled')
+        //     $("#btn_exe_" + key).addClass('disabled')
+        // }
     }
 
     function createCard(intention, siblings, prevId, disabled) {
@@ -371,14 +376,14 @@
         $(
             '<div class="card mb-1 p-1 ' + colWidth + '" id="card_' + curid + '" style="float: left">' +
             '    <div class="card-header">' +
-            '        <h5 class="card-title d-flex justify-content-between align-items-center">Intention ' + curid +
-            '        </h5 >' +
-            '        <h6 class="card-subtitle text-muted">' + getCardDescription(prevId, text) + '</h6>' +
+            '        <h5 class="card-title d-flex justify-content-between align-items-center">Intention ' + (curid ? curid : "") + '</h5 >' +
+            // '        <h6 class="card-subtitle text-muted">' + getCardDescription(prevId, text) + '</h6>' +
             '    </div>' +
             '    <div class="card-body input-group input-group-sm overflow-auto align-items-center">' +
-            '        <textarea oninput="checkButton(' + curid + ')" ' + disabledTextAread + ' class="form-control" id="text_' + curid + '" rows="' + newlines + '">' + text + '</textarea>' +
+            '        <textarea oninput="checkButton(' + curid + ')" ' + disabledTextAread + ' class="form-control" id="text_' + curid + '" rows="1">' + text + '</textarea>' +
+            // '        <textarea oninput="checkButton(' + curid + ')" ' + disabledTextAread + ' class="form-control" id="text_' + curid + '" rows="' + newlines + '">' + text + '</textarea>' +
             '        <div class="btn-group-vertical btn-group-sm">' +
-            '         <button id="btn_com_' + curid + '" onclick="return send(\'com\', ' + curid + ',' + prevId + ', 1);" class="btn m-1 btn-primary">Complete</button>' +
+            '            <button id="btn_com_' + curid + '" onclick="return send(\'com\', ' + curid + ',' + prevId + ', 1);" class="btn m-1 btn-primary">Complete</button>' +
             '        </div>' +
             '    </div>' +
             '</div>'
@@ -434,7 +439,8 @@
     }
 
     function splitLine(intention) {
-        return intention.replace(/by|describe|assess|against|<using|using|<labels|labels/gi, function(x) { return '\n' + x})
+        return intention;
+        // return intention.replace(/by|describe|assess|against|<using|using|<labels|labels/gi, function(x) { return '\n' + x})
     }
 
     $(document).ready(function() {
