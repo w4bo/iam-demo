@@ -18,11 +18,11 @@ jobs:
     #     java: [ '14', '16' ]
     steps:
       - uses: actions/checkout@v3.0.2
-      - name: Run init
-        run: |
-          cd intentional-assess/js
-          echo "config = { \"ip\": \"${{secrets.TOMCAT_IP}}\" }" >> config.js
-          cat config.js
+      # - name: Run init
+      #   run: |
+      #     cd intentional-assess/js
+      #     echo "config = { \"ip\": \"${{secrets.TOMCAT_IP}}\" }" >> config.js
+      #     cat config.js
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
@@ -45,6 +45,7 @@ jobs:
       - name: Run docker
         run: |
           cd intentional
+          ./init.sh
           ./build.sh
           ./download.sh
           ./start.sh
