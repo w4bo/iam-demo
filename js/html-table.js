@@ -53,17 +53,18 @@ function buildHtmlPivot(arr, measures) {
 function componentToString(model, component) {
     if (model.includes("clustering")) {
         return "cluster " + component;
-    } else if (model.includes("labeling")) {
-        return "label " + component;
+    } else if (model.includes("label")) {
+        return component;
     } else {
         var text = model.replace("model_", "").replace("_", " ");
-        if (component == "True") {
+        if (component == "True" || component == "true") {
             return text;
         } else {
             return "not " + text;
         }
     }
 }
+
 // Builds the HTML Table out of myList json data from Ivy restful service.
 function buildHtmlTable(arr, behavior) {
     var table = _table_.cloneNode(false);
@@ -76,27 +77,15 @@ function buildHtmlTable(arr, behavior) {
         for (var j=0, maxj=columns.length; j < maxj ; ++j) {
             var td = _td_.cloneNode(false);
             // console.log(columns[j]);
-            if (columns[j] == "component") {
-                var input = jsonObj["component"].split("=");
-                
+            if (columns[j] == "component" || columns[j] == "label") {
+                var input = (jsonObj["component"] ? jsonObj["component"] : jsonObj["label"]).split("=");
                 var model = input[0];
                 var component = input[1];
-                console.log(model);
-                console.log(component);
                 td.appendChild(document.createTextNode(componentToString(model, component)));
             } else {
                 td.appendChild(document.createTextNode(
-                    JSON.stringify(arr[i][columns[j]])
-                        .replace('"', "") // no
-                        .replace("\":\"", ": ") // fucking
-                        .replace("{", "") // idea
-                        .replace("\"}", "") // why
-                        .replace("}", "") // need this
-                )); //  || '' cellvalue = arr[i][columns[j]];
-            }
-            // console.log(arr[i]);
-            // console.log(columns[j]);
-            // console.log(arr[i][columns[j]]);
+                    JSON.stringify(arr[i][columns[j]]).replace(/"|\(|\)|{|}/gi, function(x) { return '' }).replace(/,|:/gi, function(x) { return ' = ' })
+                ));            }
             Object.keys(jsonObj).forEach(function(key) {
                 if (behavior == "raw") {
                     if (key.includes("model")) {
@@ -104,13 +93,11 @@ function buildHtmlTable(arr, behavior) {
                         if (key == columns[j]) {
                             td.setAttribute("content", header2att(key) + "=" + jsonObj[key]);
                         }
-                    } else {
-                        if (key.includes("label")) {
-                            td.setAttribute("label", jsonObj[key]);
-                        }
+                    } else if (key.includes("label")) {
+                        td.setAttribute("label", jsonObj[key]);
                     }
                 } else {
-                    var input = jsonObj["component"].split("=");
+                    var input = (jsonObj["component"] ? jsonObj["component"] : jsonObj["label"]).split("=");
                     var model = header2att(input[0]);
                     var component = input[1];
                     td.setAttribute(model, component);
