@@ -9,20 +9,26 @@ function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent
     prop["height"] = 400 - prop["margin"]["top"] - prop["margin"]["bottom"];
 
     if (n == 1) {
-        // drawMultiline(
-        //     id,
-        //     prop,
-        //     data,
-        //     data["dimensions"][0],
-        //     data["measures"]);
-        drawBar( //drawGroupedColumn(
-            id,
-            prop,
-            data,
-            data["dimensions"][0]["attribute"] ? data["dimensions"][0]["attribute"] : data["dimensions"][0],
-            data["measures"][0],
-            model,
-            1, selectedModel, selectedComponent, highlightColor);
+        if (data["type"] == "assess") {
+            drawBar(
+                id,
+                prop,
+                data,
+                data["dimensions"][0]["attribute"] ? data["dimensions"][0]["attribute"] : data["dimensions"][0],
+                data["measures"][0],
+                model,
+                1, selectedModel, selectedComponent, highlightColor);
+        } else {
+            drawGroupedColumn(
+                id,
+                prop,
+                data,
+                data["dimensions"][0]["attribute"] ? data["dimensions"][0]["attribute"] : data["dimensions"][0],
+                data["measures"][0],
+                model,
+                1, selectedModel, selectedComponent, highlightColor);
+        }
+
     } else if (n == 2) {
         drawBubble(
             id,
