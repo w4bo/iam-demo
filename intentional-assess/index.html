@@ -177,6 +177,7 @@
 <div style="width:95%; margin: auto">
     <div style="text-align: center" id="div_image"></div>
     <p></p>
+    <div id="firstintention"></div>
     <div id="notebook"></div>
 </div>
 
@@ -313,13 +314,25 @@
                 }
             });
         
-        $('[label]').each(function(i) {
-            var c = this.style.background = color(this.getAttribute("label"));
-            c = d3.color(c);
-            $(this)
-                .css('border', "1px dotted")
-                .css("background-color", c + "");
-        });
+        d3
+            .select("#component_" + key)
+            .selectAll("[label]")
+            .each(function(i) {
+                const c = d3.color(this.style.background = color(this.getAttribute("label")));
+                $(this).css('border', "1px dotted").css("background-color", c + "");
+            });
+        
+        d3
+            .select("#pivot_" + key)
+            .selectAll("[label]")
+            .each(function(i) {
+                const c = d3.color(this.style.background = color(this.getAttribute("label")));
+                $(this).css('border', "1px dotted").css("background-color", c + "");
+            });
+        // $('[label]').each(function(i) {
+        //     const c = d3.color(this.style.background = color(this.getAttribute("label")));
+        //     $(this).css('border', "1px dotted").css("background-color", c + "");
+        // });
     }
 
     /**
@@ -380,22 +393,14 @@
             '        </div>' +
             '    </div>' +
             '</div>'
-        ).appendTo("#notebook");
-        //$('input').highlightTextarea({
-        //    // color: '#ADF0FF',
-        //    // words: ['<.+>'],
-        //    // words: [/\<([^\)]+)\>/],
-        //    words: ['{[\\w\\s\\(\\),\\.]+}'],
-        //    caseSensitive: false
-        //});
-        // $('#text_' + curid).highlight("assess");
+        ).prependTo(intention ? "#notebook" : "#firstintention");
     }
 
     function createSmallMultipleCards(groupid) {
         $('<div class="card mb-1 p-1 w-100" id="card_container_' + groupid + '">' +
           '<div class="row" id="card_sm_' + groupid + '"></div>' +
           '</div>'
-        ).appendTo("#notebook");
+        ).prependTo("#notebook");
     }
 
     function createSmallMultipleCard(groupid, type) {
@@ -440,7 +445,7 @@
             '        <div class="d-flex flex-row">' +
             '            <div class="p-1"><h5  class="card-title d-flex justify-content-between align-items-center">' + type + '</h5></div>' +
             '        </div>' +
-            '        <div class="dataviz" id="viz_' + curid + '"></div>' +
+            '        <div class="dataviz" id="' + type + '_' + curid + '"></div>' +
             '    </div>' +
             '</div>'
             ).appendTo("#card_sm_" + groupid);   
@@ -494,31 +499,29 @@
                         alert("ERROR: " + newdata["error"]);
                     } else {
                         const groupid = curid
+                        createSmallMultipleCards(groupid)
+
                         for (const [key, value] of Object.entries(newdata)) {
                             curid += 1
                             createCard(value["intention"], Object.keys(newdata).length, id, true)
                             checkButton(curid, true)
                         }
-                        createSmallMultipleCards(groupid)
+
                         curid = groupid
                         let v;
-                        let cid;
                         for (const [key, value] of Object.entries(newdata)) {
                             curid += 1
                             createSmallMultipleCard(groupid, value["type"])
-                            cid = curid;
                             v = value;
                         }
-                        curid = groupid + 1
-                        curid += 1
+
                         createSmallMultipleCard(groupid, "component");
-                        $("#viz_" + curid).html(buildHtmlTable(v["components"], "components"));
+                        $("#component_" + curid).html(buildHtmlTable(v["components"], "components"));
 
-                        curid += 1
                         createSmallMultipleCard(groupid, "pivot");
-                        $("#viz_" + curid).html(buildHtmlPivot(v["pivot"]["table"], v["pivot"]["headers"]["measures"]));
+                        $("#pivot_" + curid).html(buildHtmlPivot(v["pivot"]["table"], v["pivot"]["headers"]["measures"]));
 
-                        update(cid, v)
+                        update(curid, v)
                     }
                 }
                 if (actiontype === "done") {
