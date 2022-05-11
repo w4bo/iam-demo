@@ -13,6 +13,8 @@ cd -
 cd libs
 curl -k -o instantclient-basic-linux.x64-21.1.0.0.0.zip https://big.csr.unibo.it/projects/nosql-datasets/instantclient-basic-linux.x64-21.1.0.0.0.zip
 unzip instantclient-basic-linux.x64-21.1.0.0.0.zip
+curl -k -o instantclient-basic-windows.x64-21.3.0.0.0.zip https://big.csr.unibo.it/projects/nosql-datasets/instantclient-basic-windows.x64-21.3.0.0.0.zip
+unzip instantclient-basic-windows.x64-21.3.0.0.0.zip
 curl -k -o db-migration-0.1.0.jar https://big.csr.unibo.it/projects/nosql-datasets/db-migration-0.1.0.jar
 ls -las
 cd -
