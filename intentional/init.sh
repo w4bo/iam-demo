@@ -9,5 +9,21 @@ cp ../web/js/config.example.js ../web/js/config.js
 
 P=$(pwd)
 echo $P
+
+if [ -d "src/main/python/ven" ] 
+then
+    echo "The virtual environment already exists" 
+else
+    echo "Creating the virtual environment" 
+    cd src/main/python
+    python -m venv venv
+    source venv/bin/activate
+    source venv/Scripts/activate
+    pip install -r requirements.txt
+    chmod -R 777 .
+    cd -
+fi
+
+
 sed -i "s+\!HOME\!+${P}+g" src/main/resources/config.yml
 sed -i "s+\!HOME\!+${P}+g" start.sh
