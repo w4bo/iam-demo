@@ -35,3 +35,5 @@ Once the software is installed, execute the following code to run the tests.
         ./gradlew clean war
         rm -rf "C:\Program Files\Apache Software Foundation\Tomcat 9.0_Tomcat9-8083\webapps\IAM-Demo"
         cp build/libs/IAM-Demo.war "C:\Program Files\Apache Software Foundation\Tomcat 9.0_Tomcat9-8083\webapps"
+
+- Remember to `chmod -R 777` the folders `scr/main/python` and the one containing the Oracle client 
