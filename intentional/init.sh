@@ -10,7 +10,7 @@ cp ../web/js/config.example.js ../web/js/config.js
 P=$(pwd)
 echo $P
 
-if [ -d "src/main/python/ven" ] 
+if [ -d "src/main/python/venv" ] 
 then
     echo "The virtual environment already exists" 
 else
