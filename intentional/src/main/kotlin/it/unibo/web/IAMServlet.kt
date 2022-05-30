@@ -1,3 +1,4 @@
+@file:JvmName("IAMServlet")
 package it.unibo.web
 
 import it.unibo.Intention

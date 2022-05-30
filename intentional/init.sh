@@ -17,8 +17,12 @@ else
     echo "Creating the virtual environment" 
     cd src/main/python
     python -m venv venv
-    source venv/bin/activate
-    source venv/Scripts/activate
+    if [ -d "venv/bin" ]
+    then
+        source venv/bin/activate
+    else
+        source venv/Scripts/activate
+    fi
     pip install -r requirements.txt
     chmod -R 777 .
     cd -
