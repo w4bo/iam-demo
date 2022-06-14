@@ -50,6 +50,16 @@ class TestAssessExt {
 //    }
 
     @Test
+    fun testMeasure() {
+        try {
+            AssessExecuteExt.parse("with covid19 assess cases, deaths by country against continent")
+            fail("This should fail, assess does not accept two measures")
+        } catch (e: Exception) {
+            e.message?.let { assertTrue(it.isNotEmpty()) }
+        }
+    }
+
+    @Test
     fun testParents() {
         try {
             val a: AssessExt = AssessExecuteExt.parse("with ssbora assess quantity by nation")
