@@ -6,7 +6,7 @@ if [ -f .env ]; then
   export $(cat .env | sed 's/#.*//g' | xargs)
 fi
 
-docker-compose down
+./stop.sh
 docker-compose up --build -d
 
 ./wait-for-it.sh ${ORACLE_IP}:${ORACLE_PORT} --strict --timeout=0 -- echo "ORACLE is up"
@@ -20,4 +20,4 @@ do
 done
 echo "All databases have been imported!"
 
-./gradlew --stacktrace
+./gradlew --stacktrace --scan
