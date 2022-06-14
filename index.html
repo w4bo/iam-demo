@@ -378,15 +378,12 @@
         $(
             '<div class="card mb-1 p-1 ' + colWidth + '" id="card_' + curid + '" style="float: left">' +
             '    <div class="card-header">' +
-            '        <h5 class="card-title d-flex justify-content-between align-items-center">Intention ' + (curid ? curid : "") + '</h5 >' +
+            '        <h5 class="card-title d-flex justify-content-between align-items-center">Intention ' + (curid ? curid : "") + '</h5>' +
             // '        <h6 class="card-subtitle text-muted">' + getCardDescription(prevId, text) + '</h6>' +
             '    </div>' +
             '    <div class="card-body input-group input-group-sm overflow-auto align-items-center">' +
-            '        <textarea oninput="checkButton(' + curid + ')" ' + disabledTextAread + ' class="form-control" id="text_' + curid + '" rows="1">' + text + '</textarea>' +
-            // '        <textarea oninput="checkButton(' + curid + ')" ' + disabledTextAread + ' class="form-control" id="text_' + curid + '" rows="' + newlines + '">' + text + '</textarea>' +
-            '        <div class="btn-group-vertical btn-group-sm">' +
-            '            <button id="btn_com_' + curid + '" onclick="return send(\'com\', ' + curid + ',' + prevId + ', 1);" class="btn m-1 btn-primary">Complete</button>' +
-            '        </div>' +
+            '        <textarea ' + disabledTextAread + ' class="form-control" id="text_' + curid + '" rows="1">' + text + '</textarea>' + // oninput="checkButton(' + curid + ')"
+            '        <button id="btn_com_' + curid + '" onclick="return send(\'com\', ' + curid + ',' + prevId + ', 1);" class="btn m-1 btn-primary">Execute</button>' +
             '    </div>' +
             '</div>'
         ).prependTo(intention ? "#notebook" : "#firstintention");
