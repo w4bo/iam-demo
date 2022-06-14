@@ -1,14 +1,15 @@
 function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent, highlightColor, colorFun) {
     d3.select("#" + id).html("");
+    console.log(data["dimensions"][0]);
+    console.log(data["measures"]);
     const n = data["dimensions"].length;
-    const z = data["measures"].length;
     const prop = {}
     prop["margin"] = {top: 40, right: 90, bottom: 90, left: 90};
     prop["width"] = 600 - prop["margin"]["left"] - prop["margin"]["right"];
     prop["height"] = 400 - prop["margin"]["top"] - prop["margin"]["bottom"];
 
-    if (n === 1) {
-        if (data["type"] === "assess") {
+    if (n == 1) {
+        if (data["type"] == "assess") {
             drawBar(
                 id,
                 prop,
@@ -17,16 +18,6 @@ function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent
                 data["measures"][0],
                 model,
                 1, selectedModel, selectedComponent, highlightColor);
-        } else if (z === 2) {
-            drawBubble(
-                id,
-                prop,
-                data,
-                data["measures"][0],
-                data["measures"][1],
-                undefined,
-                model,
-                2);
         } else {
             drawGroupedColumn(
                 id,
@@ -37,7 +28,8 @@ function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent
                 model,
                 1, selectedModel, selectedComponent, highlightColor);
         }
-    } else if (n === 2) {
+
+    } else if (n == 2) {
         drawBubble(
             id,
             prop,
