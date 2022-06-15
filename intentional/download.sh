@@ -10,7 +10,7 @@ if [ ! -f "foodmart-mysql-schema.sql" ]; then
     curl -k -o foodmart-mysql-schema.sql https://big.csr.unibo.it/projects/nosql-datasets/foodmart-mysql-schema.sql
 fi
 if [ ! -f "COVID_WEEKLY.DMP" ]; then 
-    curl -k -o COVID_WEEKLY.DMP https://github.com/w4bo/covid-dataset/releases/download/1.0.0/COVID_WEEKLY.DMP
+    curl -k -o COVID_WEEKLY.DMP -L https://github.com/w4bo/covid-dataset/releases/download/1.0.0/COVID_WEEKLY.DMP
 fi
 if [ ! -f "FOODMART.DMP" ]; then 
     curl -k -o FOODMART.DMP https://big.csr.unibo.it/projects/nosql-datasets/FOODMART.DMP
