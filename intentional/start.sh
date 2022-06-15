@@ -11,7 +11,7 @@ docker-compose up --build -d
 
 ./wait-for-it.sh ${ORACLE_IP}:${ORACLE_PORT} --strict --timeout=0 -- echo "ORACLE is up"
 
-export LD_LIBRARY_PATH=!HOME!/libs/instantclient_21_1
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}
 
 until [ -f resources/.ready ]
 do
