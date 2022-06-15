@@ -301,7 +301,7 @@ class TestDescribeK {
         var cube: DataFrame
         var c: DataFrame
 
-        d = DescribeExecute.parse("with COVID-19 describe deaths by month, country for country in ('United States Of America', 'Italy') and month in ('2020-NOV', '2020-DEC')", false)
+        d = DescribeExecute.parse("with COVID-19 describe deaths by month, country for country in ('United States Of America', 'Italy') and month in ('2020-11', '2020-12')", false)
         cube = DescribeExecute.execute(d, path, oldInterest = false).second
         cube = cube.sortedBy("month", "country")
         c = dataFrameOf("deaths", "month", "country", "novelty", "surprise", "zscore_deaths", "peculiarity")(
@@ -309,23 +309,23 @@ class TestDescribeK {
 //                37165,	"2020-11",	"United States Of America",	1.000,	1.000,	 1.313, 1.000,
 //                 8483,	"2020-12",	"Italy",	                1.000,	1.000,	-1.294, 0.986,
 //                28649,	"2020-12",	"United States Of America",	1.000,	1.000,	 0.539, 0.411,
-            15254, "2020-DEC",	"Italy",	                1.000,	1.000,	-0.995, 0.673, //
-            69280, "2020-DEC",	"United States Of America",	1.000,	1.000,	 1.478, 1.000, //
-            18684, "2020-NOV",	"Italy",	                1.000,	1.000,	-0.838, 0.567, //
-            44738, "2020-NOV",	"United States Of America",	1.000,	1.000,	 0.355, 0.240, //
+            15254, "2020-12",	"Italy",	                1.000,	1.000,	-0.995, 0.673, //
+            69280, "2020-12",	"United States Of America",	1.000,	1.000,	 1.478, 1.000, //
+            18684, "2020-11",	"Italy",	                1.000,	1.000,	-0.838, 0.567, //
+            44738, "2020-11",	"United States Of America",	1.000,	1.000,	 0.355, 0.240, //
         )
         equals(c, cube)
 
-        d = DescribeExecute.parse(d, "with COVID-19 describe deaths by month, country for country in ('United States Of America', 'Italy', 'Spain') and month in ('2020-NOV', '2020-DEC')", false)
+        d = DescribeExecute.parse(d, "with COVID-19 describe deaths by month, country for country in ('United States Of America', 'Italy', 'Spain') and month in ('2020-11', '2020-12')", false)
         cube = DescribeExecute.execute(d, path, oldInterest = false).second
         cube = cube.sortedBy("month", "country")
         c = dataFrameOf("deaths", "month", "country", "novelty", "surprise", "peculiarity")(
-            15254, "2020-DEC", "Italy",                    0.0, 0.0, 0.525, //
-             4432, "2020-DEC", "Spain",                    1.0, 0.5, 1.000, //
-            69280, "2020-DEC", "United States Of America", 0.0, 0.0, 0.383, //
-            18684, "2020-NOV", "Italy",                    0.0, 0.0, 0.516, //
-             7301, "2020-NOV", "Spain",                    1.0, 0.5, 0.871, //
-            44738, "2020-NOV", "United States Of America", 0.0, 0.0, 0.447, //
+            15254, "2020-12", "Italy",                    0.0, 0.0, 0.525, //
+             4432, "2020-12", "Spain",                    1.0, 0.5, 1.000, //
+            69280, "2020-12", "United States Of America", 0.0, 0.0, 0.383, //
+            18684, "2020-11", "Italy",                    0.0, 0.0, 0.516, //
+             7301, "2020-11", "Spain",                    1.0, 0.5, 0.871, //
+            44738, "2020-11", "United States Of America", 0.0, 0.0, 0.447, //
         )
         equals(c, cube)
     }
