@@ -301,7 +301,7 @@ class TestDescribeK {
         var cube: DataFrame
         var c: DataFrame
 
-        d = DescribeExecute.parse("with COVID-19 describe deaths by month, country for country in ('United States Of America', 'Italy') and month in ('2020-NOV', '2020-DEC')", false)
+        d = DescribeExecute.parse("with COVID-19 describe deaths by month, country for country in ('United States Of America', 'Italy') and month in ('2020-11', '2020-12')", false)
         cube = DescribeExecute.execute(d, path, oldInterest = false).second
         cube = cube.sortedBy("month", "country")
         c = dataFrameOf("deaths", "month", "country", "novelty", "surprise", "zscore_deaths", "peculiarity")(
@@ -309,23 +309,23 @@ class TestDescribeK {
 //                37165,	"2020-11",	"United States Of America",	1.000,	1.000,	 1.313, 1.000,
 //                 8483,	"2020-12",	"Italy",	                1.000,	1.000,	-1.294, 0.986,
 //                28649,	"2020-12",	"United States Of America",	1.000,	1.000,	 0.539, 0.411,
-            15254, "2020-DEC",	"Italy",	                1.000,	1.000,	-0.995, 0.673, //
-            69280, "2020-DEC",	"United States Of America",	1.000,	1.000,	 1.478, 1.000, //
-            18684, "2020-NOV",	"Italy",	                1.000,	1.000,	-0.838, 0.567, //
-            44738, "2020-NOV",	"United States Of America",	1.000,	1.000,	 0.355, 0.240, //
+            20249, "2020-11",	"Italy",	                1.000,	1.000,	-0.789, 0.533, //
+            44738, "2020-11",	"United States Of America",	1.000,	1.000,	 0.344, 0.233, //
+            14940, "2020-12",	"Italy",	                1.000,	1.000,	-1.035, 0.700, //
+            69280, "2020-12",	"United States Of America",	1.000,	1.000,	 1.479, 1.000, //
         )
         equals(c, cube)
 
-        d = DescribeExecute.parse(d, "with COVID-19 describe deaths by month, country for country in ('United States Of America', 'Italy', 'Spain') and month in ('2020-NOV', '2020-DEC')", false)
+        d = DescribeExecute.parse(d, "with COVID-19 describe deaths by month, country for country in ('United States Of America', 'Italy', 'Spain') and month in ('2020-11', '2020-12')", false)
         cube = DescribeExecute.execute(d, path, oldInterest = false).second
         cube = cube.sortedBy("month", "country")
         c = dataFrameOf("deaths", "month", "country", "novelty", "surprise", "peculiarity")(
-            15254, "2020-DEC", "Italy",                    0.0, 0.0, 0.525, //
-             4432, "2020-DEC", "Spain",                    1.0, 0.5, 1.000, //
-            69280, "2020-DEC", "United States Of America", 0.0, 0.0, 0.383, //
-            18684, "2020-NOV", "Italy",                    0.0, 0.0, 0.516, //
-             7301, "2020-NOV", "Spain",                    1.0, 0.5, 0.871, //
-            44738, "2020-NOV", "United States Of America", 0.0, 0.0, 0.447, //
+            20249, "2020-11", "Italy",                    0.0, 0.0, 0.512, //
+             7957, "2020-11", "Spain",                    1.0, 0.5, 0.866, //
+            44738, "2020-11", "United States Of America", 0.0, 0.0, 0.447, //
+            14940, "2020-12", "Italy",                    0.0, 0.0, 0.526, //
+             5002, "2020-12", "Spain",                    1.0, 0.5, 1.000, //
+            69280, "2020-12", "United States Of America", 0.0, 0.0, 0.382, //
         )
         equals(c, cube)
     }
@@ -833,13 +833,13 @@ class TestDescribeK {
     @Test
     fun integration() {
         var i: Intention = DescribeExecute.parse("with COVID-19 describe deaths by month")
-        DescribeExecute.execute(i, path)
+        DescribeExecute.execute(i, path, oldInterest = false)
         i = DescribeExecute.parse(i, "with COVID-19 describe deaths by year")
-        DescribeExecute.execute(i, path)
+        DescribeExecute.execute(i, path, oldInterest = false)
         i = AssessExecuteExt.parse("with COVID-19 assess deaths by year", k=1)
         AssessExecuteExt.execute(i, path)
         i = DescribeExecute.parse(i, "with COVID-19 describe deaths by month")
-        val c: DataFrame  = DescribeExecute.execute(i, path).second
+        val c: DataFrame  = DescribeExecute.execute(i, path, oldInterest = false).second
         assertTrue(c["peculiarity"].sum() as Double > 0.0)
         // assertTrue(c["novelty"].sum() as Double > 0.0)
         // assertTrue(c["surprise"].sum() as Double > 0.0)

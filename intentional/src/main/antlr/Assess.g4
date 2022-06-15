@@ -4,11 +4,11 @@ package it.unibo.antlr.gen;
 }
 
 assess : ('with' | 'WITH') cube=id
-         ('assess' | 'ASSESS') mcs+=id (',' mcs+=id)*
+         ('assess' | 'ASSESS') mcs+=id // (',' mcs+=id)*
          (('for' | 'FOR') sc=clause)? ('by' gc+=id (',' gc+=id)*)? (('for' | 'FOR') sc=clause)?
          (('against' | 'AGAINST') bc=benchmark)?
          (('using' | 'USING') as=function)?
-         (('labels' | 'labels') l=label)?
+         (('labels' | 'LABELS') l=label)?
           EOF;
 
 id locals[String name] : ID { $name = $ID.text; };

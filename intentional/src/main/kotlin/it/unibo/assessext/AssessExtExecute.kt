@@ -102,7 +102,7 @@ object AssessExecuteExt {
 
             var properties = cube.groupBy("label").summarize("properties") { Pair.of("mean", (it["comparison"].mean() as Double * 100.0).roundToInt() / 100.0) }
             properties = properties.addColumn("interest") { "-" }
-            properties.rows.forEach {
+            properties.sortedBy("label").rows.forEach {
                 val rowJson = JSONObject()
                 rowJson.put("label", "label=" + it["label"].toString())
                 rowJson.put("properties", it["properties"])
