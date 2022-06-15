@@ -102,7 +102,7 @@ object DescribeExecute {
 
     @JvmOverloads
     @Throws(Exception::class)
-    fun execute(d: Intention, path: String, pythonPath: String = "src/main/python/", makePivot: Boolean = true, oldInterest: Boolean = true): Triple<JSONObject, DataFrame, Triple<String, Any, Double>> {
+    fun execute(d: Intention, path: String, pythonPath: String = "src/main/python/", makePivot: Boolean = true, oldInterest: Boolean = false): Triple<JSONObject, DataFrame, Triple<String, Any, Double>> {
         val timeQuery = d.writeMultidimensionalCube(path)
         L.warn("Computing models...")
         val timeModel = d.computePython(pythonPath, path, "describe.py")

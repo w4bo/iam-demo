@@ -56,7 +56,7 @@ class IAMServlet : HttpServlet() {
                             DescribeExecute.Vmemb.clear()
                         }
                         val d = DescribeExecute.parse(cache[sessionID], value, false)
-                        result = DescribeExecute.execute(d, servletContext.getRealPath("WEB-INF/classes/"), PYTHON_PATH, makePivot = true, oldInterest = false).first
+                        result = DescribeExecute.execute(d, servletContext.getRealPath("WEB-INF/classes/"), PYTHON_PATH, makePivot = true).first
                         d
                     } else {
                         val a = AssessExecuteExt.parse(value2key(value), 1)
