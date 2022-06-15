@@ -364,9 +364,9 @@ class TestAssessExt {
                     AssessExecuteExt.execute(b, path)
                     b = AssessExecuteExt.parse("with covid19 assess $m by month, country for country='Italy'", k)
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with covid19 assess $m by week, country for week='2020-JAN-01'", k)
+                    b = AssessExecuteExt.parse("with covid19 assess $m by week, country for week='2020-01-01'", k)
                     AssessExecuteExt.execute(b, path)
-                    b = AssessExecuteExt.parse("with covid19 assess $m by month, country for month='2020-JAN'", k)
+                    b = AssessExecuteExt.parse("with covid19 assess $m by month, country for month='2020-01'", k)
                     AssessExecuteExt.execute(b, path)
                     b = AssessExecuteExt.parse("with covid19 assess $m by year, country for continent = 'Europe' and year='2020'", k)
                     AssessExecuteExt.execute(b, path)
@@ -398,7 +398,7 @@ class TestAssessExt {
     fun testIncremental11() {
         try {
             var b: AssessExt
-            b = AssessExecuteExt.parse("with covid19 assess deaths by year, country for continent = 'Europe' and month='2020-JAN'", 1)
+            b = AssessExecuteExt.parse("with covid19 assess deaths by year, country for continent = 'Europe' and month='2020-01'", 1)
             AssessExecuteExt.execute(b, path)
             fail()
         } catch (e: Exception) {
@@ -410,7 +410,7 @@ class TestAssessExt {
     fun testIncremental12() {
         try {
             var b: AssessExt
-            b = AssessExecuteExt.parse("with covid19 assess deaths by week, country for week='2020-JAN-10'", 1)
+            b = AssessExecuteExt.parse("with covid19 assess deaths by week, country for week='2020-01-10'", 1)
             AssessExecuteExt.execute(b, path)
             fail()
         } catch (e: Exception) {
