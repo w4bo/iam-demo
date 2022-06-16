@@ -51,9 +51,8 @@ class Describe : Intention {
     }
 
     override fun toString(): String {
-        val mea = measures.toList()[0]
         return "with ${cubeSyn} " +
-                "describe $mea " +
+                "describe ${measures.reduce { a, b -> "$a, $b" }} " +
                 "by ${attributes.reduce { a, b -> "$a, $b" }} " +
                 if (clauses.isEmpty()) { "" } else { "for ${clauses.toList().map { clauseToString(it) }.reduce { a, b -> "$a and $b"} } " } +
                 "using ${getModels()}"
