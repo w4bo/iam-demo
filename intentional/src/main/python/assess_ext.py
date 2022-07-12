@@ -168,6 +168,7 @@ def write_to_file(i, byclause, forclause, measure, df, sibling, using, label):
     X = df.copy(True)
     X["zscore_" + measure + "_bc"] = (X[measure] - X[measure].mean()) / X[measure].std()
     X.columns = [x.lower() for x in X.columns]
+    print(X.columns)
     X.sort_values([x.lower() for x in byclause]).to_csv(args.path + "_" + str(i) + "_enhanced.csv", index=False)
     # sys.exit(1)
     enhcube = {
