@@ -1,11 +1,6 @@
 function drawBar(id, prop, data, d1, d2, c, mode, selectedModel, selectedComponent, highlightColor) {
-
-
     // https://bl.ocks.org/tlfrd/187e45e0629711c4560cf6bcd0767b27
-    let rawData = data["raw"].sort(function (a, b) {
-        return b[d2] - a[d2]
-    })
-    // let rawData = data["raw"]
+    let rawData = data["raw"].sort(function (a, b) { return b[d2] - a[d2] })
     let miny = 0, maxy = 0;
     let M = new Set();
     let count = 0
@@ -17,18 +12,17 @@ function drawBar(id, prop, data, d1, d2, c, mode, selectedModel, selectedCompone
         M.add(d[c]);
     }
 
-    prop["height"] = Math.max(400 - prop["margin"]["top"] - prop["margin"]["bottom"], count * 10);
-
     M = Array.from(M);
     // set the dimensions and margins of the graph
-    var margin = prop.margin, width = prop.width, height = prop.height;
-    var div = d3.select("#" + id).append("div");
-    var svg = div
+    let margin = prop.margin, width = prop.width, height = prop.height;
+    height = Math.max(height, count * 10);
+    let div = d3.select("#" + id).append("div");
+    let svg = div
         .append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
         .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     var tooltip = createTooltip(div);
     // Add X axis
     var x = d3.scaleLinear().domain([miny, maxy]).range([0, width]);
@@ -95,4 +89,5 @@ function drawBar(id, prop, data, d1, d2, c, mode, selectedModel, selectedCompone
         .text(function(d) { return d[d1] })
         .style("font-size", "10px");
     // appendLegend(data, svg, M, 20, -40, color);
+    return [height, width]
 }

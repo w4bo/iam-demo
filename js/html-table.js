@@ -27,8 +27,11 @@ function buildHtmlPivot(arr, measures) {
                 td.setAttribute("type", jsonObj["type"]);
                 if (jsonObj["type"] === "header") {
                     td.appendChild(document.createTextNode(jsonObj["attribute"]));
-                    if (i > 0) { // do not make the "horizontal" members sticky! only make the "vertical" ones (i.e., the one in the columns and not in the rows)
+                    if (j == 0) { // do not make the "horizontal" members sticky! only make the "vertical" ones (i.e., the one in the columns and not in the rows)
                         td.setAttribute("class", "sticky-col");
+                    }
+                    if (i == 0) { // do not make the "horizontal" members sticky! only make the "vertical" ones (i.e., the one in the columns and not in the rows)
+                        td.setAttribute("class", "sticky-row");
                     }
                 } else {
                     var txt = ""

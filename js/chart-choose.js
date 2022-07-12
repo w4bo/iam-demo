@@ -4,8 +4,8 @@ function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent
     const z = data["measures"].length;
     const prop = {}
     prop["margin"] = {top: 30, right: 10, bottom: 80, left: 90};
-    prop["height"] = $("#" + id).height() * 0.95 - prop["margin"]["top"] - prop["margin"]["bottom"];
-    prop["width"] = $("#" + id).width() * 0.95 - prop["margin"]["left"] - prop["margin"]["right"];
+    prop["height"] = Math.min(365, $("#" + id).height() * 0.95) - prop["margin"]["top"] - prop["margin"]["bottom"];
+    prop["width"] = Math.min(550, $("#" + id).width() * 0.95) - prop["margin"]["left"] - prop["margin"]["right"];
     let ret = [];
 
     if (n === 1) {
