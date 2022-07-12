@@ -4,7 +4,6 @@ services:
     hostname: oracledb
     container_name: oracledb
     build: dockerimages/oracle11g
-    # image: oracleinanutshell/oracle-xe-11g:latest
     environment:
       - ORACLE_DISABLE_ASYNCH_IO=true
       - ORACLE_ALLOW_REMOTE=true
@@ -13,12 +12,3 @@ services:
       - 5500:5500
     volumes:
       - ./resources/:/data
-
-  # tomcat9:
-  #   hostname: tomcat9
-  #   container_name: tomcat9
-  #   image: tomcat:9.0
-  #   ports:
-  #     - "8080:8080"
-  #   volumes:
-  #     - ./build/libs/:/usr/local/tomcat/webapps/

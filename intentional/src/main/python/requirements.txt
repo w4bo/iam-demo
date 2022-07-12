@@ -1,11 +1,11 @@
 cx-Oracle==8.3.0
-ipykernel==6.14.0
+ipykernel==6.15.1
 matplotlib==3.5.2
-numpy==1.22.4
-pandas==1.4.2
-requests==2.28.0
+numpy==1.23.1
+pandas==1.4.3
+requests==2.28.1
 scikit-learn
 scikit-learn-extra
 scipy==1.8.1
-SQLAlchemy==1.4.37
+SQLAlchemy==1.4.39
 yellowbrick==1.4
