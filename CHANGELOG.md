@@ -1,3 +1,35 @@
+## [1.0.1](https://github.com/w4bo/iam-demo/compare/1.0.0...1.0.1) (2022-07-12)
+
+
+### Bug Fixes
+
+* **demo:** add "sticky" columns and rows ([6f9243c](https://github.com/w4bo/iam-demo/commit/6f9243c0a1f408081b9b5bdde7c23d0ff0d591e8))
+
+
+### Dependency updates
+
+* **deps:** update dependency com.github.doyaaaaaken:kotlin-csv-jvm to v1.4.0 ([e56bd6c](https://github.com/w4bo/iam-demo/commit/e56bd6cb23fdfdd22ef36ed61c2f4e23d08db3f0))
+* **deps:** update dependency com.github.holgerbrandl:krangl to v0.18.1 ([3605dbc](https://github.com/w4bo/iam-demo/commit/3605dbcc25af829673ad3518fe7f58d496c61b23))
+* **deps:** update dependency io.ktor:ktor-server-servlet to v2.0.3 ([64e0447](https://github.com/w4bo/iam-demo/commit/64e044714658bcc9c71c78a869fa50498d9d1102))
+* **deps:** update dependency ipykernel to v6.15.0 ([6d234f5](https://github.com/w4bo/iam-demo/commit/6d234f50fd0febd9b78e2d29f688b9b9d55834f7))
+* **deps:** update dependency ipykernel to v6.15.1 ([ec74621](https://github.com/w4bo/iam-demo/commit/ec746215b3f5958decd7caef0e2d88245db9e893))
+* **deps:** update dependency numpy to v1.23.0 ([423f813](https://github.com/w4bo/iam-demo/commit/423f8136685acacf01f3d75462ba597b34fc1ce4))
+* **deps:** update dependency numpy to v1.23.1 ([e42a1d4](https://github.com/w4bo/iam-demo/commit/e42a1d417f1fe2b7fd905bd21df85969e289950b))
+* **deps:** update dependency pandas to v1.4.3 ([1a74441](https://github.com/w4bo/iam-demo/commit/1a74441376b77700569a2d5ee8c5a1dfa57f52e6))
+* **deps:** update dependency requests to v2.28.1 ([a3c2d5d](https://github.com/w4bo/iam-demo/commit/a3c2d5d5f5d56862e9165493ee7f480306716c61))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.9 ([5e87af7](https://github.com/w4bo/iam-demo/commit/5e87af7b309e6374e09c66164e393a2d7c91f6b4))
+* **deps:** update dependency sqlalchemy to v1.4.38 ([c83098c](https://github.com/w4bo/iam-demo/commit/c83098c309f7c36eb56f093f89b107699f285fc4))
+* **deps:** update dependency sqlalchemy to v1.4.39 ([9b03c48](https://github.com/w4bo/iam-demo/commit/9b03c4821cfd7cdc8b85cd3eb4c989fb7e94c544))
+* **deps:** update node.js to 16.16 ([cd7c963](https://github.com/w4bo/iam-demo/commit/cd7c9636823a2ac1e6ee7a1a357cc454737d6ae5))
+* **deps:** update plugin org.jetbrains.kotlin.jvm to v1.7.10 ([dc1e551](https://github.com/w4bo/iam-demo/commit/dc1e55124206509d31143d192f90f9e33e714626))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-java action to v3.4.0 ([d8483bb](https://github.com/w4bo/iam-demo/commit/d8483bba701640d3138b0921d300bcfa2238567f))
+* **deps:** update actions/setup-java action to v3.4.1 ([7c6ffc1](https://github.com/w4bo/iam-demo/commit/7c6ffc104b305e19b004a6808e2d6c4085a88ec5))
+* **deps:** update jamesives/github-pages-deploy-action action to v4.3.4 ([fed487b](https://github.com/w4bo/iam-demo/commit/fed487b31bacc990ae5cc38d538555938b785c74))
+
 ## 1.0.0 (2022-06-15)
 
 
