@@ -3,13 +3,14 @@ function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent
     const n = data["dimensions"].length;
     const z = data["measures"].length;
     const prop = {}
-    prop["margin"] = {top: 40, right: 90, bottom: 90, left: 90};
-    prop["width"] = 600 - prop["margin"]["left"] - prop["margin"]["right"];
-    prop["height"] = 400 - prop["margin"]["top"] - prop["margin"]["bottom"];
+    prop["margin"] = {top: 30, right: 10, bottom: 80, left: 90};
+    prop["height"] = $("#" + id).height() * 0.95 - prop["margin"]["top"] - prop["margin"]["bottom"];
+    prop["width"] = $("#" + id).width() * 0.95 - prop["margin"]["left"] - prop["margin"]["right"];
+    let ret = [];
 
     if (n === 1) {
         if (data["type"] === "assess") {
-            drawBar(
+            ret = drawBar(
                 id,
                 prop,
                 data,
@@ -18,7 +19,7 @@ function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent
                 model,
                 1, selectedModel, selectedComponent, highlightColor);
         } else if (z === 2) {
-            drawBubble(
+            ret = drawBubble(
                 id,
                 prop,
                 data,
@@ -28,7 +29,7 @@ function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent
                 model,
                 2);
         } else {
-            drawGroupedColumn(
+            ret = drawGroupedColumn(
                 id,
                 prop,
                 data,
@@ -38,7 +39,7 @@ function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent
                 1, selectedModel, selectedComponent, highlightColor);
         }
     } else if (n === 2) {
-        drawBubble(
+        ret = drawBubble(
             id,
             prop,
             data,
@@ -50,6 +51,7 @@ function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent
     } else if (n >= 3) {
         alert("3D visualization is not implemented in this demo yet");
     }
+    return ret;
 }
 
 /* *****************************************************************************
