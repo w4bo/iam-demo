@@ -16,7 +16,7 @@ function drawBar(id, prop, data, d1, d2, c, mode, selectedModel, selectedCompone
     // set the dimensions and margins of the graph
     let margin = prop.margin, width = prop.width, height = prop.height;
     height = Math.max(height, count * 10);
-    let div = d3.select("#" + id).append("div");
+    let div = d3.select("#" + id);
     let svg = div
         .append("svg")
             .attr("width", width + margin.left + margin.right)

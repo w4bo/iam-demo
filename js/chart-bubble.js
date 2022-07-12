@@ -70,7 +70,7 @@ function drawBubble(id, prop, data, c1, c2, c3, c4, mode) {
             .attr("datapoint", "negcolored")
             .attr("r", function (d) {  if (mode > 1 && typeof c3 == "undefined") return 4; else return z(d[c3]); })
             .on("mouseover",  function f (d) { showTooltip(data, d, tooltip) })
-            .on("mousemove",  function f (d) { moveTooltip(d, tooltip) })
+            .on("mousemove",  function f (d) { moveTooltip(d, tooltip, svg) })
             .on("mouseleave", function f (d) { hideTooltip(d, tooltip) });
 
     appendXaxis(svg, x, height);
