@@ -26,6 +26,5 @@ else
     cd -
 fi
 
-
 sed -i "s+\!HOME\!+${P}+g" src/main/resources/config.yml
 sed -i "s+\!HOME\!+${P}+g" .env
