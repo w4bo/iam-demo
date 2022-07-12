@@ -2,7 +2,9 @@
 set -exo
 
 if [ -f .env ]; then
-  export $(cat .env | sed 's/#.*//g' | xargs)
+  set -a
+  source ./.env
+  set +a
 fi
 
 ./stop.sh
