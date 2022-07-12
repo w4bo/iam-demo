@@ -11,22 +11,18 @@
     <link rel="stylesheet" href="libs/jquery.highlighttextarea.min.css">
     <style id="compiled-css" type="text/css">
 
-        .highlight {
-            background-color: #FFFF88;
-        }
-
         th, td {
             border: 1px dotted;
+            background-color: white;
         }
 
         th {
-            font-weight: bold
+            font-weight: bold;
         }
 
-        td.no-border {
-            border-style: none;
-            border-bottom: 1px solid #000;
-            background-color: #eeeeee;
+        .sticky-col {
+            position: sticky;
+            left: -5px;
         }
 
         .line {
@@ -399,7 +395,7 @@
     function createSmallMultipleCard(groupid, type) {
         if (type == "assess") {
             $(
-            '<div class="col-4 card p-1" style="float: left">' +
+            '<div class="col-5 card p-1" style="float: left; overflow: scroll">' +
             '    <div class="d-flex flex-row">' +
             '        <div class="p-1">Labeling color:</div>' +
             '        <div class="p-1">' +
@@ -411,12 +407,12 @@
             '            </select>' +
             '        </div>' +
             '    </div>' +
-            '    <div class="dataviz" id="viz_' + curid + '"></div>' +
+            '    <div class="dataviz w-100 h-100" id="viz_' + curid + '"></div>' +
             '</div>'
             ).appendTo("#card_sm_" + groupid);
         } else if (type == "describe") {
             $(
-            '<div class="col-4 card p-1" style="float: left">' +
+            '<div class="col-5 card p-1" style="float: left; overflow: scroll">' +
             '    <div class="d-flex flex-row">' +
             '        <div class="p-1">Color:</div>' +
             '        <div class="p-1">' +
@@ -425,13 +421,13 @@
             '            </select>' +
             '        </div>' +
             '    </div>' +
-            '    <div class="dataviz" id="viz_' + curid + '"></div>' +
+            '    <div class="dataviz w-100 h-100" id="viz_' + curid + '"></div>' +
             '</div>'
             ).appendTo("#card_sm_" + groupid);
         } else {
             $(
-            '<div class="col-4 card p-1" style="float: left' + (type == "pivot" ? ';overflow: scroll' : "") + '">' +
-            '    <div class="dataviz" id="' + type + '_' + curid + '"></div>' +
+            '<div class="col-' + (type == "pivot" ? '4' : '3') + ' card p-1" style="float: left' + (type == "pivot" ? '; overflow: scroll' : "") + '">' +
+            '    <div class="dataviz w-100" style=" text-align: center; ' + (type == "pivot" ? '' : 'justify-content: center; display: flex;') + '" id="' + type + '_' + curid + '"></div>' +
             '</div>'
             ).appendTo("#card_sm_" + groupid);   
         }
@@ -559,7 +555,10 @@
         // get the color of each label
         allLabels[id] = components
         changeColor(id, components)
-        chooseChart("viz_" + id, data, "label", false, "label", "foo", "bar", color);
+        let ret = chooseChart("viz_" + id, data, "label", false, "label", "foo", "bar", color);
+        $("#pivot_" + id).css({
+            "maxHeight": ret[0]
+        });
         changeColor(id, components)
     }
     //]]>
