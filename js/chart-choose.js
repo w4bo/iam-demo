@@ -3,13 +3,14 @@ function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent
     const n = data["dimensions"].length;
     const z = data["measures"].length;
     const prop = {}
-    prop["margin"] = {top: 40, right: 90, bottom: 90, left: 90};
-    prop["width"] = 600 - prop["margin"]["left"] - prop["margin"]["right"];
-    prop["height"] = 400 - prop["margin"]["top"] - prop["margin"]["bottom"];
+    prop["margin"] = {top: 30, right: 10, bottom: 80, left: 90};
+    prop["height"] = 266; // Math.min(365, $("#" + id).height() * 0.95) - prop["margin"]["top"] - prop["margin"]["bottom"];
+    prop["width"] =  400; // Math.min(550, $("#" + id).width() * 0.95) - prop["margin"]["left"] - prop["margin"]["right"];
+    let ret = [];
 
     if (n === 1) {
         if (data["type"] === "assess") {
-            drawBar(
+            ret = drawBar(
                 id,
                 prop,
                 data,
@@ -18,7 +19,7 @@ function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent
                 model,
                 1, selectedModel, selectedComponent, highlightColor);
         } else if (z === 2) {
-            drawBubble(
+            ret = drawBubble(
                 id,
                 prop,
                 data,
@@ -28,7 +29,7 @@ function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent
                 model,
                 2);
         } else {
-            drawGroupedColumn(
+            ret = drawGroupedColumn(
                 id,
                 prop,
                 data,
@@ -38,7 +39,7 @@ function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent
                 1, selectedModel, selectedComponent, highlightColor);
         }
     } else if (n === 2) {
-        drawBubble(
+        ret = drawBubble(
             id,
             prop,
             data,
@@ -50,6 +51,7 @@ function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent
     } else if (n >= 3) {
         alert("3D visualization is not implemented in this demo yet");
     }
+    return ret;
 }
 
 /* *****************************************************************************
@@ -58,8 +60,8 @@ function chooseChart(id, data, model, isupdate, selectedModel, selectedComponent
 
 // Create a tooltip div that is hidden by default
 function createTooltip(div) {
-    return div
-        .append("div")
+    return d3.select("body").append("div")	
+        // div .append("div")
         .style("opacity", 0)
         .attr("class", "tooltip")
         .style("background-color", "#f0f0f0")
@@ -67,7 +69,7 @@ function createTooltip(div) {
         .style("padding", "10px")
         .style("color", "black")
         .style("display", "inline-block")
-        // .style("position", "fixed")
+        .style("position", "absolute")
 }
 
 var showTooltip = function (data, d, tooltip) {
@@ -83,17 +85,19 @@ var showTooltip = function (data, d, tooltip) {
     tooltip
         .style("opacity", 1)
         .html("<table>" + buildKeyValueTable(newd).innerHTML + "</table>")
-        //.style("left", (d3.event.pageX /*+ 30*/) + "px") // d3.mouse(this)[0]
-        //.style("top",  (d3.event.pageY /*+ 30*/) + "px") // d3.mouse(this)[1]
+    tooltip
+        .style("left", (d3.event.pageX + 10) + "px")
+        .style("top",  (d3.event.pageY + 10) + "px")
 }
 
-var moveTooltip = function (d, tooltip) {
-    console.log(d3.event.pageX + " " + d3.event.pageY)
-    tooltip
-        .style("left", d3.mouse(this)[0] + "px")
-        .style("top", d3.mouse(this)[1] + "px")
-        // .style("left", (d3.event.pageX /*+ 30*/) + "px") // d3.mouse(this)[0]
-        // .style("top", (d3.event.pageY  /*+ 30*/) + "px") // d3.mouse(this)[1]
+var moveTooltip = function (d, tooltip, svg) {
+    // tooltip
+    //     .style("left", d3.select(this).attr("cx") + "px")
+    //     .style("top", d3.select(this).attr("cy") + "px")
+        // .style("left", (d3.event.pageX /*+ 30*/) + "px") 
+        // .style("top", (d3.event.pageY  /*+ 30*/) + "px") 
+        // .style("left", d3.mouse(this)[0])
+        // .style("top", d3.mouse(this)[1])
 }
 
 var hideTooltip = function (d, tooltip) {

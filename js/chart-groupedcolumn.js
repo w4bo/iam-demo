@@ -5,7 +5,9 @@ function drawGroupedColumn(id, prop, data, d1, d2, c, mode, selectedModel, selec
 
     var miny = 0, maxy = 0;
     var X = [], M = new Set(), C = [];
+    let count = 0
     for (var d in rawData) {
+        count += 1
         d = rawData[d];
         miny = Math.min(miny, d[d2]);
         maxy = Math.max(maxy, d[d2]);
@@ -16,6 +18,8 @@ function drawGroupedColumn(id, prop, data, d1, d2, c, mode, selectedModel, selec
 
     // set the dimensions and margins of the graph
     var margin = prop.margin, width = prop.width, height = prop.height;
+    width = Math.max(width, count * 10);
+    console.log(prop)
 
     var div = d3.select("#" + id).append("div");
     var svg = div
@@ -66,8 +70,9 @@ function drawGroupedColumn(id, prop, data, d1, d2, c, mode, selectedModel, selec
     appendXlabel(svg, d1, width, height);
     appendYaxis(svg, y, x0);
     appendYlabel(svg, d2, width, height, x0);
-
+    return [height, width];
     // if (mode == 2) {
     // appendLegend(data, svg, M, width, height, color);
     //}
+    return [height, width]
 }
