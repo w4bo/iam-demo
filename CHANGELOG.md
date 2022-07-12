@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/w4bo/iam-demo/compare/1.0.1...1.0.2) (2022-07-12)
+
+
+### Bug Fixes
+
+* **demo:** sort pivot table by members ([bf0305e](https://github.com/w4bo/iam-demo/commit/bf0305e7e85e3192a5dd2339af97bcb377737f8f))
+
 ## [1.0.1](https://github.com/w4bo/iam-demo/compare/1.0.0...1.0.1) (2022-07-12)
 
 
