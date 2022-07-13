@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/w4bo/iam-demo/compare/1.0.2...1.0.3) (2022-07-13)
+
+
+### Bug Fixes
+
+* **demo:** fix sticky pivot ([0a74dc8](https://github.com/w4bo/iam-demo/commit/0a74dc81a066b24f5bd2693a02f2aa4ae12fcdce))
+
 ## [1.0.2](https://github.com/w4bo/iam-demo/compare/1.0.1...1.0.2) (2022-07-12)
 
 
