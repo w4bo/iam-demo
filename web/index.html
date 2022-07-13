@@ -157,25 +157,6 @@
 </head>
 
 <body>
-<div class="modal fade" id="exampleModal" data-backdrop="static" data-keyboard="false" tabIndex="-1" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header"><h5 class="modal-title" id="exampleModalLabel">Log in</h5></div>
-            <div class="modal-body">
-                <form onsubmit="return false">
-                    <div class="mb-3">
-                        <label for="username">Add your username here:</label>
-                        <input type="text" class="form-control" id="username"/>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close" onclick="saveSession()">Ok</button>
-            </div>
-        </div>
-    </div>
-</div>
-
 <div id="loader" style="display: none;"></div>
 
 <div style="width:95%; margin: auto">
@@ -355,22 +336,6 @@
             $("#btn_ref_" + key).hide();
             $("#btn_com_" + key).hide();
         }
-        // if (text === "") {
-        //     $("#btn_exe_" + key).addClass('disabled')
-        //     $("#btn_ref_" + key).addClass('disabled')
-        //     $("#btn_com_" + key).addClass('disabled')
-        // } else if (text.includes("<") || text.includes(">") || !text.includes("labels") || !text.includes("using") || !text.includes("against")) {
-        //     $("#btn_exe_" + key).addClass('disabled')
-        //     $("#btn_ref_" + key).removeClass('disabled')
-        //     $("#btn_com_" + key).removeClass('disabled')
-        // } else {
-        //     $("#btn_exe_" + key).removeClass('disabled')
-        //     $("#btn_ref_" + key).addClass('disabled')
-        //     $("#btn_com_" + key).addClass('disabled')
-        // }
-        // if (disabled) { // textarea.hasClass('disabled')
-        //     $("#btn_exe_" + key).addClass('disabled')
-        // }
     }
 
     function createCard(intention, siblings, prevId, disabled) {
