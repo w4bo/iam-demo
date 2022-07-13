@@ -19,8 +19,6 @@ function drawGroupedColumn(id, prop, data, d1, d2, c, mode, selectedModel, selec
     // set the dimensions and margins of the graph
     var margin = prop.margin, width = prop.width, height = prop.height;
     width = Math.max(width, count * 10);
-    console.log(prop)
-
     var div = d3.select("#" + id).append("div");
     var svg = div
                 .append("svg")

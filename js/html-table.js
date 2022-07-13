@@ -47,6 +47,9 @@ function buildHtmlPivot(arr, measures) {
                 }
             } else {
                 td.appendChild(document.createTextNode(""));
+                if (i == 0 && j == 0) {
+                    td.setAttribute("class", "sticky-top");
+                }
             }
             // td.onclick = function(e) { update(e.target.getAttribute("content")); };
             tr.appendChild(td);
