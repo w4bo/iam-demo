@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/w4bo/iam-demo/compare/1.0.3...1.0.4) (2022-07-14)
+
+
+### Bug Fixes
+
+* **demo:** fix assess labeling for 2D charts ([76c2afb](https://github.com/w4bo/iam-demo/commit/76c2afb91cd1e8c85977aeb8ebfa177beb5bcc5e))
+
 ## [1.0.3](https://github.com/w4bo/iam-demo/compare/1.0.2...1.0.3) (2022-07-13)
 
 
