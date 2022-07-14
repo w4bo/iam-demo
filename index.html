@@ -358,7 +358,7 @@
     function createSmallMultipleCard(groupid, type) {
         if (type == "assess") {
             $(
-            '<div class="col-5 card p-1" style="float: left; overflow: scroll">' +
+            '<div class="col-5 card p-1" style="float: left; overflow: auto">' +
             '    <div class="d-flex flex-row">' +
             '        <div class="p-1">Labeling color:</div>' +
             '        <div class="p-1">' +
@@ -375,7 +375,7 @@
             ).appendTo("#card_sm_" + groupid);
         } else if (type == "describe") {
             $(
-            '<div class="col-5 card p-1" style="float: left; overflow: scroll">' +
+            '<div class="col-5 card p-1" style="float: left; overflow: auto">' +
             '    <div class="d-flex flex-row">' +
             '        <div class="p-1">Color:</div>' +
             '        <div class="p-1">' +
@@ -389,7 +389,7 @@
             ).appendTo("#card_sm_" + groupid);
         } else {
             $(
-            '<div class="col-' + (type == "pivot" ? '4' : '3') + ' card p-1" style="float: left' + (type == "pivot" ? '; overflow: scroll' : "") + '">' +
+            '<div class="col-' + (type == "pivot" ? '4' : '3') + ' card p-1" style="float: left' + (type == "pivot" ? '; overflow: auto' : "") + '">' +
             '    <div class="dataviz w-100" style=" text-align: center; ' + (type == "pivot" ? '' : 'justify-content: center; display: flex;') + '" id="' + type + '_' + curid + '"></div>' +
             '</div>'
             ).appendTo("#card_sm_" + groupid);   
