@@ -69,8 +69,4 @@ function drawGroupedColumn(id, prop, data, d1, d2, c, mode, selectedModel, selec
     appendYaxis(svg, y, x0);
     appendYlabel(svg, d2, width, height, x0);
     return [height, width];
-    // if (mode == 2) {
-    // appendLegend(data, svg, M, width, height, color);
-    //}
-    return [height, width]
 }

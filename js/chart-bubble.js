@@ -25,7 +25,6 @@ function drawBubble(id, prop, data, c1, c2, c3, c4, mode) {
         height = Math.max(height, distinctY.size * 10);
         width = Math.max(width, distinctX.size * 10);
     }
-    console.log("width: " + width + " height: " + height)
     const div = d3.select("#" + id);
     const svg = div
                 .append("svg")
