@@ -1,3 +1,12 @@
+## [1.0.5](https://github.com/w4bo/iam-demo/compare/1.0.4...1.0.5) (2022-07-14)
+
+
+### Bug Fixes
+
+* **demo:** fix color of 3 labels ([3afbe58](https://github.com/w4bo/iam-demo/commit/3afbe5841a9c0d708c784f9c36bbc1624ca35d94))
+* **demo:** remove scroll where unnecessary ([75c7634](https://github.com/w4bo/iam-demo/commit/75c763498c6c43f6b00d10ade85785b35ed992a7))
+* **demo:** remove useless card style ([80ead23](https://github.com/w4bo/iam-demo/commit/80ead2349b1e57db17c2b989ca4bef2116828546))
+
 ## [1.0.4](https://github.com/w4bo/iam-demo/compare/1.0.3...1.0.4) (2022-07-14)
 
 
