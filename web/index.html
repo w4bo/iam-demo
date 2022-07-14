@@ -246,7 +246,7 @@
             default:
                 range = d3.schemeGnBu[Math.max(components.length, 3)].slice()
         }
-        if (selected != "cat" && (components.length == 2 || range.length == 3)) {
+        if (selected != "cat" && components.length == 2 && range.length == 3) {
             range.splice(1, 1)
         }
         color = d3.scaleOrdinal().domain(components).range(range);
