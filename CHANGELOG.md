@@ -1,3 +1,22 @@
+## [1.0.6](https://github.com/w4bo/iam-demo/compare/1.0.5...1.0.6) (2022-07-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.github.doyaaaaaken:kotlin-csv-jvm to v1.5.1 ([925d641](https://github.com/w4bo/iam-demo/commit/925d641678cf130d82abc04ae2c9c7eddde9593d))
+
+
+### Build and continuous integration
+
+* **deps:** update jamesives/github-pages-deploy-action action to v4.4.0 ([825123b](https://github.com/w4bo/iam-demo/commit/825123b12b4185720ff80694bb7fb2851a533450))
+
+
+### Dependency updates
+
+* **deps:** update dependency com.github.doyaaaaaken:kotlin-csv-jvm to v1.5.0 ([995a893](https://github.com/w4bo/iam-demo/commit/995a8932063a522ba1e81c10f43f44e3fc261b0d))
+* **deps:** update dependency gradle to v7.5 ([#64](https://github.com/w4bo/iam-demo/issues/64)) ([895f9bb](https://github.com/w4bo/iam-demo/commit/895f9bb4611a76d43688b966f3c32cd618274716))
+* **deps:** update dependency mysql:mysql-connector-java to v8.0.30 ([b7bf8e1](https://github.com/w4bo/iam-demo/commit/b7bf8e14f2c8c376baa389c2ab3402e3cf6e8fa2))
+
 ## [1.0.5](https://github.com/w4bo/iam-demo/compare/1.0.4...1.0.5) (2022-07-14)
 
 
