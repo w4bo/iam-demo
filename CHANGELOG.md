@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/w4bo/iam-demo/compare/1.0.6...1.0.7) (2022-07-27)
+
+
+### Bug Fixes
+
+* **deps:** update junit5 monorepo to v5.9.0 ([574355d](https://github.com/w4bo/iam-demo/commit/574355d25ef984abc1f12d4a62538fce35392b71))
+
 ## [1.0.6](https://github.com/w4bo/iam-demo/compare/1.0.5...1.0.6) (2022-07-25)
 
 
