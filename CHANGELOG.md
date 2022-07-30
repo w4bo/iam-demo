@@ -1,3 +1,15 @@
+## [1.0.8](https://github.com/w4bo/iam-demo/compare/1.0.7...1.0.8) (2022-07-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency edu.stanford.nlp:stanford-corenlp to v4.5.0 ([18c1235](https://github.com/w4bo/iam-demo/commit/18c12352cf5f129078d57bfc9ea9fbdce1db0cc0))
+
+
+### Dependency updates
+
+* **deps:** update dependency scipy to v1.9.0 ([93b3982](https://github.com/w4bo/iam-demo/commit/93b39827e0e5d74d0130d366f17585c6518b702e))
+
 ## [1.0.7](https://github.com/w4bo/iam-demo/compare/1.0.6...1.0.7) (2022-07-27)
 
 
