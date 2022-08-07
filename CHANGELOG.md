@@ -1,3 +1,15 @@
+## [1.0.9](https://github.com/w4bo/iam-demo/compare/1.0.8...1.0.9) (2022-08-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.github.doyaaaaaken:kotlin-csv-jvm to v1.6.0 ([bdd9fb2](https://github.com/w4bo/iam-demo/commit/bdd9fb25deca49a68f38e28543c62b6108618678))
+
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v7.5.1 ([986ef34](https://github.com/w4bo/iam-demo/commit/986ef34b4c0f4ee28ed3d502d062287023cb261f))
+
 ## [1.0.8](https://github.com/w4bo/iam-demo/compare/1.0.7...1.0.8) (2022-07-30)
 
 
