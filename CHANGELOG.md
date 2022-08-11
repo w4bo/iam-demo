@@ -1,3 +1,16 @@
+## [1.0.10](https://github.com/w4bo/iam-demo/compare/1.0.9...1.0.10) (2022-08-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.ktor:ktor-server-servlet to v2.1.0 ([82bb59c](https://github.com/w4bo/iam-demo/commit/82bb59c84eb02d1734125dcb2cddf334700aad28))
+
+
+### Dependency updates
+
+* **deps:** update dependency matplotlib to v3.5.3 ([574fe8f](https://github.com/w4bo/iam-demo/commit/574fe8fff568b134411fd016db15b62dee8921e9))
+* **deps:** update dependency sqlalchemy to v1.4.40 ([8d5b3d8](https://github.com/w4bo/iam-demo/commit/8d5b3d8448e9dac5a472b9733cb6c3957122792c))
+
 ## [1.0.9](https://github.com/w4bo/iam-demo/compare/1.0.8...1.0.9) (2022-08-07)
 
 
