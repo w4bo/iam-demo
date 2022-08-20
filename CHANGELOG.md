@@ -1,3 +1,17 @@
+## [1.0.11](https://github.com/w4bo/iam-demo/compare/1.0.10...1.0.11) (2022-08-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.slf4j:slf4j-api to v2 ([4c97d72](https://github.com/w4bo/iam-demo/commit/4c97d721888a383c29177d65005a545deb61f0f4))
+
+
+### Dependency updates
+
+* **deps:** update dependency numpy to v1.23.2 ([501b4d5](https://github.com/w4bo/iam-demo/commit/501b4d52067ab9478638bca2d74fde77bbd4cfa0))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.10 ([193d279](https://github.com/w4bo/iam-demo/commit/193d279464452dc712532dbc9f6e4c3f0dd77f6b))
+* **deps:** update node.js to 16.17 ([7e6e627](https://github.com/w4bo/iam-demo/commit/7e6e627fa189d96b05b0eb9c93307908c7618d59))
+
 ## [1.0.10](https://github.com/w4bo/iam-demo/compare/1.0.9...1.0.10) (2022-08-11)
 
 
