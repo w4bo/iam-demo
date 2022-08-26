@@ -1,3 +1,16 @@
+## [1.0.13](https://github.com/w4bo/iam-demo/compare/1.0.12...1.0.13) (2022-08-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.github.holgerbrandl:krangl to v0.18.2 ([1a9fa8b](https://github.com/w4bo/iam-demo/commit/1a9fa8b19d87b343f3f2f69bd83d17f5bbf73b10))
+
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.11 ([0c08bab](https://github.com/w4bo/iam-demo/commit/0c08babb2998588c1556961eee378285a5a3551b))
+* **deps:** update dependency yellowbrick to v1.5 ([52dce23](https://github.com/w4bo/iam-demo/commit/52dce23ce0a830ffca122754fa765353c3881d9c))
+
 ## [1.0.12](https://github.com/w4bo/iam-demo/compare/1.0.11...1.0.12) (2022-08-21)
 
 
