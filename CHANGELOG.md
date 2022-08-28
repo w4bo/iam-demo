@@ -1,3 +1,15 @@
+## [1.0.14](https://github.com/w4bo/iam-demo/compare/1.0.13...1.0.14) (2022-08-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.github.holgerbrandl:krangl to v0.18.4 ([719af82](https://github.com/w4bo/iam-demo/commit/719af82a9297532d617fcc450e18e46b90c97bb3))
+
+
+### Dependency updates
+
+* **deps:** update dependency scipy to v1.9.1 ([97222ee](https://github.com/w4bo/iam-demo/commit/97222ee9f8e79f3f56fdf587002bebd14e525458))
+
 ## [1.0.13](https://github.com/w4bo/iam-demo/compare/1.0.12...1.0.13) (2022-08-26)
 
 
