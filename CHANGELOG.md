@@ -1,3 +1,16 @@
+## [1.0.15](https://github.com/w4bo/iam-demo/compare/1.0.14...1.0.15) (2022-09-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency edu.stanford.nlp:stanford-corenlp to v4.5.1 ([bad9f94](https://github.com/w4bo/iam-demo/commit/bad9f948741b922aed8482cce6e13c077daff15f))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.15.2 ([4ffaff1](https://github.com/w4bo/iam-demo/commit/4ffaff112927fb1cfb8d6546c7caf4245405eaae))
+* **deps:** update dependency pandas to v1.4.4 ([7d92555](https://github.com/w4bo/iam-demo/commit/7d925558f29037c706fc1bbd3f55dd7193faa7a6))
+
 ## [1.0.14](https://github.com/w4bo/iam-demo/compare/1.0.13...1.0.14) (2022-08-28)
 
 
