@@ -1,3 +1,10 @@
+## [1.0.18](https://github.com/w4bo/iam-demo/compare/1.0.17...1.0.18) (2022-09-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.antlr:antlr4 to v4.11.1 ([371bc67](https://github.com/w4bo/iam-demo/commit/371bc6793219244f1ce2cd6dacb3f533cc6263ea))
+
 ## [1.0.17](https://github.com/w4bo/iam-demo/compare/1.0.16...1.0.17) (2022-09-04)
 
 
