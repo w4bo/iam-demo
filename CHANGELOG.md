@@ -1,3 +1,10 @@
+## [1.0.19](https://github.com/w4bo/iam-demo/compare/1.0.18...1.0.19) (2022-09-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.opencsv:opencsv to v5.7.0 ([0a4994a](https://github.com/w4bo/iam-demo/commit/0a4994a23d0bd6747989c739fa0a641bbc2c32cb))
+
 ## [1.0.18](https://github.com/w4bo/iam-demo/compare/1.0.17...1.0.18) (2022-09-05)
 
 
