@@ -4,7 +4,7 @@ plugins {
     id 'war'
     id 'antlr'
     id 'jacoco'
-    id 'com.github.dawnwords.jacoco.badge'
+    id 'com.github.dawnwords.jacoco.badge' version '0.2.4'
     id 'org.jetbrains.kotlin.jvm' version '1.7.10'
     id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
