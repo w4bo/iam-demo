@@ -112,4 +112,4 @@ jacocoBadgeGenSetting {
     readmePath "../README.md"
 }
 
-defaultTasks 'clean', 'build', 'check', 'testPython', 'war', 'generateJacocoBadge'
+defaultTasks 'clean', 'build', 'check', 'testPython', 'war', 'jacocoTestReport', 'generateJacocoBadge'
