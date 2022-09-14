@@ -111,4 +111,4 @@ if (hasProperty('buildScan')) {
     }
 }
 
-defaultTasks 'clean', 'build', 'check', 'jacocoTestReport', 'war'
+defaultTasks 'clean', 'build', 'check', 'testPython', 'jacocoTestReport', 'war'
