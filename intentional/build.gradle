@@ -1,5 +1,4 @@
 plugins {
-    id 'idea'
     id 'java-library'
     id 'war'
     id 'antlr'
@@ -11,6 +10,7 @@ plugins {
 shadowJar {
     zip64 true
 }
+
 
 java { toolchain {languageVersion = JavaLanguageVersion.of(14) } }
 
@@ -36,7 +36,29 @@ compileTestKotlin {
     }
 }
 
-repositories { mavenCentral() }
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+    finalizedBy jacocoTestReport
+}
+
+jacocoTestReport {
+    dependsOn test
+    reports {
+        xml.enabled true
+        csv.enabled true
+    }
+}
+
+if (hasProperty('buildScan')) {
+    buildScan {
+        termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+        termsOfServiceAgree = 'yes'
+    }
+}
 
 dependencies {
     implementation files('libs/db-migration-0.1.0.jar')
@@ -91,24 +113,4 @@ task testPython(type: Exec) {
     }
 }
 
-test {
-    useJUnitPlatform()
-    finalizedBy jacocoTestReport
-}
-
-jacocoTestReport {
-    dependsOn test
-    reports {
-        xml.enabled true
-        csv.enabled true
-    }
-}
-
-if (hasProperty('buildScan')) {
-    buildScan {
-        termsOfServiceUrl = 'https://gradle.com/terms-of-service'
-        termsOfServiceAgree = 'yes'
-    }
-}
-
-defaultTasks 'clean', 'build', 'check', 'testPython', 'jacocoTestReport', 'war'
+defaultTasks 'clean', 'build', 'check', 'jacocoTestReport', 'testPython', 'war'
