@@ -13,20 +13,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-20.04
-    # strategy:
-    #   matrix:
-    #     java: [ '14', '16' ]
     steps:
       - uses: actions/checkout@v3.0.2
-      # - name: Run init
-      #   run: |
-      #     cd intentional-assess/js
-      #     echo "config = { \"ip\": \"${{secrets.TOMCAT_IP}}\" }" >> config.js
-      #     cat config.js
       - name: Deploy website to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
-          branch: gh-pages # The branch the action should deploy to.
+          branch: gh-pages
           folder: web # The folder the action should deploy.
       - uses: actions/setup-java@v3.5.0
         with:
@@ -34,8 +26,8 @@ jobs:
           java-version: '14' # ${{ matrix.java }}
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.10.4' # Version range or exact version of a Python version to use, using SemVer's version range syntax
-          architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+          python-version: '3.10.4'
+          architecture: 'x64'
       - name: Run docker
         run: |
           cd intentional
@@ -45,12 +37,6 @@ jobs:
           ./download.sh
           ./start.sh
           ./stop.sh
-          pwd
-          ls 
-          ls build
-          ls build/reports
-          ls build/reports/jacoco
-          ls build/reports/jacoco/test
       - name: Generate JaCoCo Badge
         uses: cicirello/jacoco-badge-generator@v2
         with:

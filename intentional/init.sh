@@ -1,3 +1,6 @@
+#!/bin/bash
+set -exo
+
 echo "Replacing .env.example with .env"
 cp .env.example .env
 echo "Replacing src/main/resources/config.example.yml src/main/resources/config.yml"
