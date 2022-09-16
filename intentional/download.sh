@@ -1,6 +1,5 @@
 #!/bin/bash
-set -e
-set -xo
+set -exo
 
 cd resources
 if [ ! -f "foodmart-mysql.sql" ]; then 
