@@ -114,4 +114,4 @@ task testPython(type: Exec) {
     }
 }
 
-defaultTasks 'clean', 'build', 'check', 'jacocoTestReport', 'testPython', 'war'
+defaultTasks 'clean', 'build', 'check', 'jacocoTestReport', 'testPython', 'war', 'sonarqube'
