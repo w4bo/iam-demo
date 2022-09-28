@@ -1,5 +1,5 @@
 cx-Oracle==8.3.0
-ipykernel==6.15.3
+ipykernel==6.16.0
 matplotlib==3.6.0
 numpy==1.23.3
 pandas==1.5.0
