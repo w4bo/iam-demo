@@ -1,3 +1,32 @@
+## [1.0.23](https://github.com/w4bo/iam-demo/compare/1.0.22...1.0.23) (2022-10-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.ktor:ktor-server-servlet to v2.1.2 ([f20ad32](https://github.com/w4bo/iam-demo/commit/f20ad32595966ae0e517f1ed456c2abe97924750))
+* **deps:** update dependency org.json:json to v20220924 ([fd63d63](https://github.com/w4bo/iam-demo/commit/fd63d63aa7e433caa1203a0c9c0f9d28f8ee8316))
+* **deps:** update dependency org.slf4j:slf4j-api to v2.0.2 ([d51b584](https://github.com/w4bo/iam-demo/commit/d51b58479a3511e978d4b4aa3af4ec1088fb402e))
+* **deps:** update dependency org.slf4j:slf4j-api to v2.0.3 ([abbec86](https://github.com/w4bo/iam-demo/commit/abbec86a7f0208e58eb970f7a91b14f840c17b12))
+* **deps:** update dependency org.slf4j:slf4j-log4j12 to v2.0.2 ([b39a17f](https://github.com/w4bo/iam-demo/commit/b39a17f9e5662a5ba758f33984f0fe9210ce058a))
+* **deps:** update dependency org.slf4j:slf4j-log4j12 to v2.0.3 ([a874375](https://github.com/w4bo/iam-demo/commit/a8743759c3a9ed74b98623a93254f8df51cc41da))
+* **deps:** update junit5 monorepo to v5.9.1 ([432a9ef](https://github.com/w4bo/iam-demo/commit/432a9ef49c6813fa8faffca46b250b136c025a42))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.16.0 ([bb730cb](https://github.com/w4bo/iam-demo/commit/bb730cbc024be2ec6086f9b611e95eb01a74326e))
+* **deps:** update dependency matplotlib to v3.6.0 ([c31f300](https://github.com/w4bo/iam-demo/commit/c31f3004937874c5115d14cd6fc5598638f3d3dd))
+* **deps:** update dependency pandas to v1.5.0 ([1b93b89](https://github.com/w4bo/iam-demo/commit/1b93b8914ca09b28e9a9044a446884b367dc7717))
+* **deps:** update plugin org.jetbrains.kotlin.jvm to v1.7.20 ([539262e](https://github.com/w4bo/iam-demo/commit/539262ee29c7ed6e013af3edb66d08da29bcf7b4))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.1.0 ([0a69eea](https://github.com/w4bo/iam-demo/commit/0a69eeacb9f359ed477ae0b8d91a32d2ea68a763))
+* **deps:** update actions/setup-java action to v3.5.1 ([9ee8d73](https://github.com/w4bo/iam-demo/commit/9ee8d731f9493c1307a7aedf19d7de732d7a1c9b))
+* **deps:** update endbug/add-and-commit action to v8 ([ed47f17](https://github.com/w4bo/iam-demo/commit/ed47f172d7781d9caa480c689bfccf6e324ac658))
+* **deps:** update endbug/add-and-commit action to v9 ([e91e417](https://github.com/w4bo/iam-demo/commit/e91e41726edd4636e1eff38221673d8c4cadd0fc))
+
 ## [1.0.22](https://github.com/w4bo/iam-demo/compare/1.0.21...1.0.22) (2022-09-15)
 
 
