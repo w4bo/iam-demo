@@ -1,7 +1,6 @@
 # Intentional Analytics Model
 
 [![build](https://github.com/w4bo/iam-demo/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/w4bo/iam-demo/actions/workflows/build.yml)
-[![coverage](.github/badges/jacoco.svg)](.github/badges/jacoco.svg)
 
 ## Running the tests
 
