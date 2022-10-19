@@ -1,3 +1,28 @@
+## [1.0.24](https://github.com/w4bo/iam-demo/compare/1.0.23...1.0.24) (2022-10-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency mysql:mysql-connector-java to v8.0.31 ([895a174](https://github.com/w4bo/iam-demo/commit/895a17488f4aeb864720d536dd81af46d77abb24))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-java action to v3.6.0 ([48d848b](https://github.com/w4bo/iam-demo/commit/48d848bcade83fc9d8d9c76c2873e6f8be672039))
+* **deps:** update jamesives/github-pages-deploy-action action to v4.4.1 ([e12491b](https://github.com/w4bo/iam-demo/commit/e12491bc01ba2d940fc1ea4ad2425ffd16551cc5))
+
+
+### Dependency updates
+
+* **deps:** update dependency matplotlib to v3.6.1 ([3c373b8](https://github.com/w4bo/iam-demo/commit/3c373b8ee42c4e1cf47d7f248cef4368ee12108f))
+* **deps:** update dependency numpy to v1.23.4 ([28e2113](https://github.com/w4bo/iam-demo/commit/28e21132f297fe420a271a556878bfd25ec71b5d))
+* **deps:** update dependency pandas to v1.5.1 ([5194895](https://github.com/w4bo/iam-demo/commit/51948952f0c985a1df9b32908bd24cb0140fb93c))
+* **deps:** update dependency scipy to v1.9.2 ([c7230ef](https://github.com/w4bo/iam-demo/commit/c7230ef64e455c38350adf6d9803a6fa7e945d67))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.12 ([2482085](https://github.com/w4bo/iam-demo/commit/248208512b0e4488cb22dba49764ecbf8954270c))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.13 ([c0a4a17](https://github.com/w4bo/iam-demo/commit/c0a4a17b27d8ce7e6cb68282f083f25695622439))
+* **deps:** update dependency sqlalchemy to v1.4.42 ([d124817](https://github.com/w4bo/iam-demo/commit/d12481794651ec7403a2cb187a654a64f012084a))
+* **deps:** update node.js to 16.18 ([de4df58](https://github.com/w4bo/iam-demo/commit/de4df589be8b5618b7427036a130009875dbd82e))
+
 ## [1.0.23](https://github.com/w4bo/iam-demo/compare/1.0.22...1.0.23) (2022-10-05)
 
 
