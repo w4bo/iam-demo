@@ -1,3 +1,16 @@
+## [1.0.25](https://github.com/w4bo/iam-demo/compare/1.0.24...1.0.25) (2022-10-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.opencsv:opencsv to v5.7.1 ([d9408c9](https://github.com/w4bo/iam-demo/commit/d9408c904fe5f796afe94a64e3125ec1907bf242))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.16.1 ([00353cb](https://github.com/w4bo/iam-demo/commit/00353cb93f73bd6db33026c8165b3634c553e1c1))
+* **deps:** update dependency scipy to v1.9.3 ([a913998](https://github.com/w4bo/iam-demo/commit/a913998d8a6932a40d5c48a1e46bd66e58c4caa8))
+
 ## [1.0.24](https://github.com/w4bo/iam-demo/compare/1.0.23...1.0.24) (2022-10-19)
 
 
