@@ -1,3 +1,18 @@
+## [1.0.26](https://github.com/w4bo/iam-demo/compare/1.0.25...1.0.26) (2022-10-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.ktor:ktor-server-servlet to v2.1.3 ([73af121](https://github.com/w4bo/iam-demo/commit/73af1211fa4175e2eb308f56c9c8b09aca60c788))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.16.2 ([11089ff](https://github.com/w4bo/iam-demo/commit/11089fff257a0d19be44384ed48226e710a3c0d5))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.14 ([e1a240f](https://github.com/w4bo/iam-demo/commit/e1a240fd7ee920c7007dc477d2863954b506107c))
+* **deps:** update node.js to 18.12 ([377be2b](https://github.com/w4bo/iam-demo/commit/377be2bf6cf831b36ac09b63593790880d0c8e0d))
+* **deps:** update node.js to v18 ([37cd19c](https://github.com/w4bo/iam-demo/commit/37cd19cff0d61305518196b705b594791a55c079))
+
 ## [1.0.25](https://github.com/w4bo/iam-demo/compare/1.0.24...1.0.25) (2022-10-23)
 
 
