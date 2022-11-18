@@ -1,3 +1,17 @@
+## [1.0.29](https://github.com/w4bo/iam-demo/compare/1.0.28...1.0.29) (2022-11-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.slf4j:slf4j-api to v2.0.4 ([8f80107](https://github.com/w4bo/iam-demo/commit/8f801075a611f7dd0a65f6eee76a6e63fd931405))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.17.1 ([7d05b1c](https://github.com/w4bo/iam-demo/commit/7d05b1c51431e9ab0b59810d39307a0507e6607b))
+* **deps:** update dependency sqlalchemy to v1.4.44 ([311ee1d](https://github.com/w4bo/iam-demo/commit/311ee1db25842d38f8f87a855e81fa2d29bfb2bc))
+* **deps:** update plugin org.jetbrains.kotlin.jvm to v1.7.21 ([adf2ef6](https://github.com/w4bo/iam-demo/commit/adf2ef6cd284e5c00a903ee190ca3dc00b9d8d65))
+
 ## [1.0.28](https://github.com/w4bo/iam-demo/compare/1.0.27...1.0.28) (2022-11-06)
 
 
