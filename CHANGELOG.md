@@ -1,3 +1,15 @@
+## [1.0.33](https://github.com/w4bo/iam-demo/compare/1.0.32...1.0.33) (2022-11-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.github.cdimascio:dotenv-kotlin to v6.4.0 ([35d3b4e](https://github.com/w4bo/iam-demo/commit/35d3b4e99312c7b214cdc87f29a449439c8a6e90))
+
+
+### Dependency updates
+
+* **deps:** update dependency pandas to v1.5.2 ([329c9bc](https://github.com/w4bo/iam-demo/commit/329c9bc4ae4bb4844e4e3254399c967a24bb7e4c))
+
 ## [1.0.32](https://github.com/w4bo/iam-demo/compare/1.0.31...1.0.32) (2022-11-22)
 
 
