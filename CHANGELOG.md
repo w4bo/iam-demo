@@ -1,3 +1,10 @@
+## [1.0.34](https://github.com/w4bo/iam-demo/compare/1.0.33...1.0.34) (2022-11-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.slf4j:slf4j-api to v2.0.5 ([23d9073](https://github.com/w4bo/iam-demo/commit/23d90732cd97f181eeb4746134eb1148afd65c9b))
+
 ## [1.0.33](https://github.com/w4bo/iam-demo/compare/1.0.32...1.0.33) (2022-11-24)
 
 
