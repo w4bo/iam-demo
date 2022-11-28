@@ -1,3 +1,15 @@
+## [1.0.35](https://github.com/w4bo/iam-demo/compare/1.0.34...1.0.35) (2022-11-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.slf4j:slf4j-log4j12 to v2.0.5 ([38d37fd](https://github.com/w4bo/iam-demo/commit/38d37fdce40357e673c401e13de570907c46e234))
+
+
+### Dependency updates
+
+* **deps:** update plugin org.jetbrains.kotlin.jvm to v1.7.22 ([9f1c528](https://github.com/w4bo/iam-demo/commit/9f1c5283afc04ecc5b860d0a93509fce5f4e8a3f))
+
 ## [1.0.34](https://github.com/w4bo/iam-demo/compare/1.0.33...1.0.34) (2022-11-25)
 
 
