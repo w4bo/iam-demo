@@ -1,3 +1,24 @@
+## [1.0.36](https://github.com/w4bo/iam-demo/compare/1.0.35...1.0.36) (2022-12-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.github.doyaaaaaken:kotlin-csv-jvm to v1.7.0 ([2251520](https://github.com/w4bo/iam-demo/commit/2251520aa9948d05116682d4872c0a94e14b30c5))
+
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v7.6 ([d163631](https://github.com/w4bo/iam-demo/commit/d163631ce7196f5942e1a24a506cad584384053f))
+* **deps:** update dependency ipykernel to v6.18.1 ([c372f32](https://github.com/w4bo/iam-demo/commit/c372f32abcbd0969d8e5a2d7359672167c98a967))
+* **deps:** update dependency ipykernel to v6.18.2 ([cb589a2](https://github.com/w4bo/iam-demo/commit/cb589a2767e5f21fe74ebfab00f8cd6337af306a))
+* **deps:** update dependency ipykernel to v6.18.3 ([86007ed](https://github.com/w4bo/iam-demo/commit/86007edd9fdefca72bb7d4715ca961be171305b3))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-java action to v3.7.0 ([2fcc3c6](https://github.com/w4bo/iam-demo/commit/2fcc3c6000d0142809e90095b79b4a55b285bb66))
+* **deps:** update actions/setup-java action to v3.8.0 ([5fc1bbd](https://github.com/w4bo/iam-demo/commit/5fc1bbd42b0dce9dc04db7e5b4a26748f6edb560))
+
 ## [1.0.35](https://github.com/w4bo/iam-demo/compare/1.0.34...1.0.35) (2022-11-28)
 
 
