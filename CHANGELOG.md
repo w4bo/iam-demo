@@ -1,3 +1,10 @@
+## [1.0.38](https://github.com/w4bo/iam-demo/compare/1.0.37...1.0.38) (2022-12-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.ktor:ktor-server-servlet to v2.2.1 ([eb3b9b0](https://github.com/w4bo/iam-demo/commit/eb3b9b00575970ecfe8404fdf011fd548e529207))
+
 ## [1.0.37](https://github.com/w4bo/iam-demo/compare/1.0.36...1.0.37) (2022-12-07)
 
 
