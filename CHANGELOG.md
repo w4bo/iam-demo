@@ -1,3 +1,22 @@
+## [1.0.39](https://github.com/w4bo/iam-demo/compare/1.0.38...1.0.39) (2022-12-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.slf4j:slf4j-api to v2.0.6 ([ed9762c](https://github.com/w4bo/iam-demo/commit/ed9762c856c594ab4e8b136cbaf7b1c905914107))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.2.0 ([ed2c256](https://github.com/w4bo/iam-demo/commit/ed2c256d3824756b54ddeb89eae8478dc4e61702))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.19.0 ([353bd30](https://github.com/w4bo/iam-demo/commit/353bd30a6d0e975f4c8904b72ea6c6ad11b7f815))
+* **deps:** update dependency ipykernel to v6.19.2 ([aa81c61](https://github.com/w4bo/iam-demo/commit/aa81c6180bbec0dd8181862be291368de201e631))
+* **deps:** update dependency sqlalchemy to v1.4.45 ([f57da79](https://github.com/w4bo/iam-demo/commit/f57da7947d7035b4e5b1577c1e850d4c4f030769))
+
 ## [1.0.38](https://github.com/w4bo/iam-demo/compare/1.0.37...1.0.38) (2022-12-08)
 
 
