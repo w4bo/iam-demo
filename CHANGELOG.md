@@ -1,3 +1,25 @@
+## [1.0.41](https://github.com/w4bo/iam-demo/compare/1.0.40...1.0.41) (2023-01-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.ktor:ktor-server-servlet to v2.2.2 ([38aa7f1](https://github.com/w4bo/iam-demo/commit/38aa7f15ecec75582b754ef459c94d35a40f0b67))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-java action to v3.9.0 ([afed92b](https://github.com/w4bo/iam-demo/commit/afed92b641993b5bccbd157cf9aac7998aafaefd))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.19.3 ([21c2fcc](https://github.com/w4bo/iam-demo/commit/21c2fcc7bfba429ddab62b8e7073ffd06eda9301))
+* **deps:** update dependency ipykernel to v6.19.4 ([496d36b](https://github.com/w4bo/iam-demo/commit/496d36bde7bb5ea814cb0c718af7a5115cc8006a))
+* **deps:** update dependency ipykernel to v6.20.0 ([9b0bf9a](https://github.com/w4bo/iam-demo/commit/9b0bf9adcefee496b821c8e7f98a105145c20b38))
+* **deps:** update dependency numpy to v1.24.0 ([56fdb29](https://github.com/w4bo/iam-demo/commit/56fdb29594a09a44795de8d65c34ddc7ae5643d2))
+* **deps:** update dependency numpy to v1.24.1 ([eb6ec01](https://github.com/w4bo/iam-demo/commit/eb6ec01de200f2b5f7c5072b95ea8d3a26530900))
+* **deps:** update plugin org.jetbrains.kotlin.jvm to v1.8.0 ([0b3f279](https://github.com/w4bo/iam-demo/commit/0b3f279d65ed479c348ed2ba3304492257962ad6))
+
 ## [1.0.40](https://github.com/w4bo/iam-demo/compare/1.0.39...1.0.40) (2022-12-13)
 
 
