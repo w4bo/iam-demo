@@ -1,3 +1,25 @@
+## [1.0.42](https://github.com/w4bo/iam-demo/compare/1.0.41...1.0.42) (2023-01-12)
+
+
+### Bug Fixes
+
+* **deps:** update junit5 monorepo to v5.9.2 ([690533c](https://github.com/w4bo/iam-demo/commit/690533c482a17b688bdfc8c76f479433a15d7cdc))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.3.0 ([28f542b](https://github.com/w4bo/iam-demo/commit/28f542bc7d7838aefac97b81e66f2647c0732a74))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.20.1 ([4096b06](https://github.com/w4bo/iam-demo/commit/4096b067e3b463e07cb86f833309325bbae339d0))
+* **deps:** update dependency matplotlib to v3.6.3 ([d308ee2](https://github.com/w4bo/iam-demo/commit/d308ee27784d6050a3c9c3e0a8c4ecc3697a531b))
+* **deps:** update dependency scipy to v1.10.0 ([4776b56](https://github.com/w4bo/iam-demo/commit/4776b569b92da1e20db9a51821a07b5c00f7b164))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.16 ([faeb1aa](https://github.com/w4bo/iam-demo/commit/faeb1aabcb46258f0e718dce5eb64961224f1631))
+* **deps:** update dependency sqlalchemy to v1.4.46 ([83e3606](https://github.com/w4bo/iam-demo/commit/83e360637ee6b8dc1daa26d64819456685ce33c1))
+* **deps:** update node.js to 18.13 ([680bea3](https://github.com/w4bo/iam-demo/commit/680bea3ca5e32e80b411743759c76d7133ab6418))
+
 ## [1.0.41](https://github.com/w4bo/iam-demo/compare/1.0.40...1.0.41) (2023-01-03)
 
 
