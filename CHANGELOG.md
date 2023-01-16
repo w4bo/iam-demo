@@ -1,3 +1,15 @@
+## [1.0.43](https://github.com/w4bo/iam-demo/compare/1.0.42...1.0.43) (2023-01-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.github.cdimascio:dotenv-kotlin to v6.4.1 ([44e243e](https://github.com/w4bo/iam-demo/commit/44e243ea2a1e1c2d25baecea6c0f28318150e618))
+
+
+### Dependency updates
+
+* **deps:** update dependency requests to v2.28.2 ([4b95045](https://github.com/w4bo/iam-demo/commit/4b950456fa15d1465e8a69cb6c8a7c9efeed2cb1))
+
 ## [1.0.42](https://github.com/w4bo/iam-demo/compare/1.0.41...1.0.42) (2023-01-12)
 
 
