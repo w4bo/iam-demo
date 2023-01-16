@@ -1,3 +1,16 @@
+## [1.0.1](https://github.com/big-unibo/iam-demo/compare/1.0.0...1.0.1) (2023-01-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.github.cdimascio:dotenv-kotlin to v6.4.1 ([08ef00a](https://github.com/big-unibo/iam-demo/commit/08ef00ac41b3aa809845d272aafaa1622721760d))
+
+
+### Dependency updates
+
+* **deps:** update dependency matplotlib to v3.6.3 ([59beb80](https://github.com/big-unibo/iam-demo/commit/59beb80c5d1db7c8effc87bf71518ce14a882499))
+* **deps:** update dependency requests to v2.28.2 ([dacecf5](https://github.com/big-unibo/iam-demo/commit/dacecf58ee3a433c10956c86b4edde2f9b8de3b3))
+
 ## 1.0.0 (2023-01-11)
 
 
