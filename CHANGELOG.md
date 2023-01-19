@@ -1,3 +1,16 @@
+## [1.0.44](https://github.com/w4bo/iam-demo/compare/1.0.43...1.0.44) (2023-01-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency mysql:mysql-connector-java to v8.0.32 ([99b6bd7](https://github.com/w4bo/iam-demo/commit/99b6bd7325e83d68063e2c2e08b19f264f1bc033))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.20.2 ([bf9c930](https://github.com/w4bo/iam-demo/commit/bf9c9303e9e9fd0ba847227cc844d4476d309377))
+* **deps:** update dependency pandas to v1.5.3 ([d461e4e](https://github.com/w4bo/iam-demo/commit/d461e4edd24048027795678939358a9290a3aaa8))
+
 ## [1.0.43](https://github.com/w4bo/iam-demo/compare/1.0.42...1.0.43) (2023-01-16)
 
 
