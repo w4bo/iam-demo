@@ -1,3 +1,16 @@
+## [1.0.2](https://github.com/big-unibo/iam-demo/compare/1.0.1...1.0.2) (2023-01-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency mysql:mysql-connector-java to v8.0.32 ([11ad0b4](https://github.com/big-unibo/iam-demo/commit/11ad0b4c9d84ee9b14beae3d2b6e5d9422d3bc8a))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.20.2 ([6eb8300](https://github.com/big-unibo/iam-demo/commit/6eb8300d80f26bc0d61a2ec63682db57b9ed9342))
+* **deps:** update dependency pandas to v1.5.3 ([00a9a09](https://github.com/big-unibo/iam-demo/commit/00a9a095e8df6ac22da804ba2c4e02b4ee57d47d))
+
 ## [1.0.1](https://github.com/big-unibo/iam-demo/compare/1.0.0...1.0.1) (2023-01-16)
 
 
