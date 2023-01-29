@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/big-unibo/iam-demo/compare/1.0.4...1.0.5) (2023-01-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.fasterxml.jackson.datatype:jackson-datatype-jsr310 to v2.14.2 ([5383641](https://github.com/big-unibo/iam-demo/commit/5383641e3c17dd794dafa15fc43e7874e7864675))
+
 ## [1.0.4](https://github.com/big-unibo/iam-demo/compare/1.0.3...1.0.4) (2023-01-29)
 
 
