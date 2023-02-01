@@ -1,3 +1,15 @@
+## [1.0.6](https://github.com/big-unibo/iam-demo/compare/1.0.5...1.0.6) (2023-02-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.ktor:ktor-server-servlet to v2.2.3 ([c4644ee](https://github.com/big-unibo/iam-demo/commit/c4644eedb02b173b6c50335a2e39d5bfe7a59d7d))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.21.0 ([a2d85c6](https://github.com/big-unibo/iam-demo/commit/a2d85c67501c06b507c422a0c9bf78572b856499))
+
 ## [1.0.5](https://github.com/big-unibo/iam-demo/compare/1.0.4...1.0.5) (2023-01-29)
 
 
