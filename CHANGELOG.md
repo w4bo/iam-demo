@@ -1,3 +1,15 @@
+## [1.0.48](https://github.com/w4bo/iam-demo/compare/1.0.47...1.0.48) (2023-02-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.ktor:ktor-server-servlet to v2.2.3 ([d2a689b](https://github.com/w4bo/iam-demo/commit/d2a689bad1b6224d6316f89f97cf5c5665301d66))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.21.0 ([4c11756](https://github.com/w4bo/iam-demo/commit/4c117562583e34f396629c7d303cbb76f7272947))
+
 ## [1.0.47](https://github.com/w4bo/iam-demo/compare/1.0.46...1.0.47) (2023-01-29)
 
 
