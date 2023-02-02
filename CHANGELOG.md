@@ -1,3 +1,15 @@
+## [1.0.49](https://github.com/w4bo/iam-demo/compare/1.0.48...1.0.49) (2023-02-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.apache.commons:commons-csv to v1.10.0 ([ba37297](https://github.com/w4bo/iam-demo/commit/ba37297d097b97bb20f244269f1a7d5bfed295e5))
+
+
+### Dependency updates
+
+* **deps:** update dependency sqlalchemy to v2.0.1 ([a0892b3](https://github.com/w4bo/iam-demo/commit/a0892b330f06051f7281b6ed2d0456ad46c5823e))
+
 ## [1.0.48](https://github.com/w4bo/iam-demo/compare/1.0.47...1.0.48) (2023-02-01)
 
 
