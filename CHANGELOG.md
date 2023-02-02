@@ -1,3 +1,15 @@
+## [1.0.7](https://github.com/big-unibo/iam-demo/compare/1.0.6...1.0.7) (2023-02-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.apache.commons:commons-csv to v1.10.0 ([31ccf38](https://github.com/big-unibo/iam-demo/commit/31ccf38241243ea094fb6eafab55d4608bdd346a))
+
+
+### Dependency updates
+
+* **deps:** update dependency sqlalchemy to v2.0.1 ([a5af7b8](https://github.com/big-unibo/iam-demo/commit/a5af7b85a2433d60b9eb2d2ae2a2b0c1b2cf367b))
+
 ## [1.0.6](https://github.com/big-unibo/iam-demo/compare/1.0.5...1.0.6) (2023-02-01)
 
 
