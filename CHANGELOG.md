@@ -1,3 +1,17 @@
+## [1.0.8](https://github.com/big-unibo/iam-demo/compare/1.0.7...1.0.8) (2023-02-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.github.doyaaaaaken:kotlin-csv-jvm to v1.8.0 ([1899c53](https://github.com/big-unibo/iam-demo/commit/1899c53bb1ad4910770b7198c8253c0cde581053))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.21.1 ([ac0f8a2](https://github.com/big-unibo/iam-demo/commit/ac0f8a2fcd84e078c3751ff0b7b34852dafccf7b))
+* **deps:** update node.js to 18.14 ([bea1de9](https://github.com/big-unibo/iam-demo/commit/bea1de9b7ac33b9d575487ed2a37cce7fd97c1b3))
+* **deps:** update plugin org.jetbrains.kotlin.jvm to v1.8.10 ([808b859](https://github.com/big-unibo/iam-demo/commit/808b859aaabc880152e1a500ada028c8d17b22fe))
+
 ## [1.0.7](https://github.com/big-unibo/iam-demo/compare/1.0.6...1.0.7) (2023-02-02)
 
 
