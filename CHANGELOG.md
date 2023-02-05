@@ -1,3 +1,17 @@
+## [1.0.50](https://github.com/w4bo/iam-demo/compare/1.0.49...1.0.50) (2023-02-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.github.doyaaaaaken:kotlin-csv-jvm to v1.8.0 ([bbf284e](https://github.com/w4bo/iam-demo/commit/bbf284e6f22fe52c756e32f10b8870c82afe02db))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.21.1 ([5554509](https://github.com/w4bo/iam-demo/commit/5554509fb38257bad81d320350b4c75f60e3faa6))
+* **deps:** update node.js to 18.14 ([1930afd](https://github.com/w4bo/iam-demo/commit/1930afd7ba78c339985f3ca28cabc5fe0ccd8f6c))
+* **deps:** update plugin org.jetbrains.kotlin.jvm to v1.8.10 ([804fb7e](https://github.com/w4bo/iam-demo/commit/804fb7e83d14214a3e2aea4a6dcd269b076ead92))
+
 ## [1.0.49](https://github.com/w4bo/iam-demo/compare/1.0.48...1.0.49) (2023-02-02)
 
 
