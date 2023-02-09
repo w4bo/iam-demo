@@ -844,4 +844,14 @@ class TestDescribeK {
         // assertTrue(c["novelty"].sum() as Double > 0.0)
         // assertTrue(c["surprise"].sum() as Double > 0.0)
     }
+
+
+    @Test
+    fun testPaper() {
+        var i: Intention = DescribeExecute.parse("with COVID19 describe cases by country, month for continent = 'Europe'")
+        DescribeExecute.execute(i, path, oldInterest = false)
+
+        i = AssessExecuteExt.parse("with COVID19 assess deaths for month = '2021-12' and continent = 'Europe' by country", k=1)
+        AssessExecuteExt.execute(i, path)
+    }
 }

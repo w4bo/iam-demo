@@ -8,11 +8,6 @@ import time
 
 # Library functions
 usings = [difference, ratio, reldifference]  # , absdifference
-# labels = [quartile,  # ok for all comparisons
-#           likert3, likert5,  # ok for difference and relative difference
-#           fixedratio2, fixedratio3, fixedratio5,  # ok for ratio
-#           fixeddiff2, fixeddiff3, fixeddiff5,  # ok for difference
-#           fixedrel3, fixedrel5]  # ok for relative difference
 labels = {
     "ratio":         [quartile, likert3, likert5, fixedratio2, fixedratio3, fixedratio5],  # ok for relative difference
     "difference":    [quartile, likert3, likert5, fixeddiff2,  fixeddiff3,  fixeddiff5],  # ok for relative difference
@@ -21,9 +16,6 @@ labels = {
 features = [avg, std, skew]
 
 def clean_sql_df(df):
-    # if len(df[byclause].drop_duplicates().index) != len(df.index):
-    #     print("Duplicates in the cube")
-    #     sys.exit(1)
     return df.round(5).fillna(0)
 
 
@@ -293,14 +285,3 @@ if __name__ == '__main__':
             df = compute_label(df, label)
             write_to_file(i, byclause, forclause, measure, df, sibling, using, label)
     toprint["label_time"] = time.time() - start_time
-
-    # exists = os.path.exists('resources/intention/time.csv')
-    # with open("resources/intention/time.csv", 'a+') as o:
-    #     header = []
-    #     values = []
-    #     for key, value in toprint.items():
-    #         header.append(key)
-    #         values.append(str(value))
-    #     if not exists:
-    #         o.write(','.join(header) + "\n")
-    #     o.write(','.join(values) + "\n")
