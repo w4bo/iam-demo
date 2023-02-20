@@ -1,3 +1,26 @@
+## [1.0.51](https://github.com/w4bo/iam-demo/compare/1.0.50...1.0.51) (2023-02-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.antlr:antlr4 to v4.12.0 ([f26e768](https://github.com/w4bo/iam-demo/commit/f26e768cbb0c8493c10da8c27f00db4aa9b9d829))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-java action to v3.10.0 ([ebcbd55](https://github.com/w4bo/iam-demo/commit/ebcbd55fef5c614de853c2d7645452c2b8350c23))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.21.2 ([964e791](https://github.com/w4bo/iam-demo/commit/964e79118f19efd58c8dce0f1eb04c14f0513663))
+* **deps:** update dependency matplotlib to v3.7.0 ([003673b](https://github.com/w4bo/iam-demo/commit/003673b4982bc311f5e00ffdb8c5aabe4d6f10db))
+* **deps:** update dependency numpy to v1.24.2 ([6cdc1f7](https://github.com/w4bo/iam-demo/commit/6cdc1f71b15e64b72182f5251752eb45f189b39e))
+* **deps:** update dependency scipy to v1.10.1 ([6be5b38](https://github.com/w4bo/iam-demo/commit/6be5b38eeb6e99a00649a89716c870a05b1c3366))
+* **deps:** update dependency sqlalchemy to v2.0.2 ([c0c57a8](https://github.com/w4bo/iam-demo/commit/c0c57a83d31717efd03645c5336f07088e4424df))
+* **deps:** update dependency sqlalchemy to v2.0.3 ([ae54237](https://github.com/w4bo/iam-demo/commit/ae542371dbf27638d41009da2de6de339845f242))
+* **deps:** update dependency sqlalchemy to v2.0.4 ([f605535](https://github.com/w4bo/iam-demo/commit/f605535b8fb775df0293527f1be294cdd9af1e31))
+
 ## [1.0.50](https://github.com/w4bo/iam-demo/compare/1.0.49...1.0.50) (2023-02-05)
 
 
