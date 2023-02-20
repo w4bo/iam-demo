@@ -1,3 +1,26 @@
+## [1.0.9](https://github.com/big-unibo/iam-demo/compare/1.0.8...1.0.9) (2023-02-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.antlr:antlr4 to v4.12.0 ([f8ea9f5](https://github.com/big-unibo/iam-demo/commit/f8ea9f5f008e54d8a32806892d2fc8874d4ec539))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-java action to v3.10.0 ([e1aa797](https://github.com/big-unibo/iam-demo/commit/e1aa7974934bf557cb6fef59007a27397419231f))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.21.2 ([81a245d](https://github.com/big-unibo/iam-demo/commit/81a245d5432c74e287f40e2d55df57a696eee491))
+* **deps:** update dependency matplotlib to v3.7.0 ([2e84a9b](https://github.com/big-unibo/iam-demo/commit/2e84a9b82a83d7413db57c9faad737683063e5c7))
+* **deps:** update dependency numpy to v1.24.2 ([fa10271](https://github.com/big-unibo/iam-demo/commit/fa102714c9245c1a4dcd484f5499d537b3f9d921))
+* **deps:** update dependency scipy to v1.10.1 ([dd9846c](https://github.com/big-unibo/iam-demo/commit/dd9846c536254cc4494b2259bf7451f45bd1779b))
+* **deps:** update dependency sqlalchemy to v2.0.2 ([436aea0](https://github.com/big-unibo/iam-demo/commit/436aea0a72b98cd25ea603c1c62c9af0cb01cf64))
+* **deps:** update dependency sqlalchemy to v2.0.3 ([07ce94b](https://github.com/big-unibo/iam-demo/commit/07ce94b7d24e33e76ef4a55dd1b1f209ba4647b5))
+* **deps:** update dependency sqlalchemy to v2.0.4 ([eec22ed](https://github.com/big-unibo/iam-demo/commit/eec22ed32b2ab201a8c116d306d3d1078e38794f))
+
 ## [1.0.8](https://github.com/big-unibo/iam-demo/compare/1.0.7...1.0.8) (2023-02-05)
 
 
