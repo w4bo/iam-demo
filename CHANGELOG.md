@@ -1,3 +1,15 @@
+## [1.0.52](https://github.com/w4bo/iam-demo/compare/1.0.51...1.0.52) (2023-02-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.json:json to v20230227 ([511fb5b](https://github.com/w4bo/iam-demo/commit/511fb5bc50582d5ec602f536287aac753de77a0a))
+
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v7.6.1 ([9588f3e](https://github.com/w4bo/iam-demo/commit/9588f3e12a17ed574758a6a097dac693344a943a))
+
 ## [1.0.51](https://github.com/w4bo/iam-demo/compare/1.0.50...1.0.51) (2023-02-20)
 
 
