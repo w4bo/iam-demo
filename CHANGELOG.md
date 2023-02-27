@@ -1,3 +1,15 @@
+## [1.0.10](https://github.com/big-unibo/iam-demo/compare/1.0.9...1.0.10) (2023-02-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.json:json to v20230227 ([a9fd843](https://github.com/big-unibo/iam-demo/commit/a9fd8432d8b1e215b6366a1d70087dd3b6558fad))
+
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v7.6.1 ([cf2351f](https://github.com/big-unibo/iam-demo/commit/cf2351f1953b38c3588163944c8b9116063dff15))
+
 ## [1.0.9](https://github.com/big-unibo/iam-demo/compare/1.0.8...1.0.9) (2023-02-20)
 
 
