@@ -1,3 +1,18 @@
+## [1.0.54](https://github.com/w4bo/iam-demo/compare/1.0.53...1.0.54) (2023-03-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.jooq:jool to v0.9.15 ([8b51a3f](https://github.com/w4bo/iam-demo/commit/8b51a3f8238972ca4e58c22cb6ace6cd550f2cec))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.21.3 ([1c86a51](https://github.com/w4bo/iam-demo/commit/1c86a5192e15e995eb96687df6b54c5060854761))
+* **deps:** update dependency matplotlib to v3.7.1 ([35d9760](https://github.com/w4bo/iam-demo/commit/35d9760d91659a2a6e81d9113b2a629dd7ed21f6))
+* **deps:** update dependency sqlalchemy to v2.0.5.post1 ([fc8ec2d](https://github.com/w4bo/iam-demo/commit/fc8ec2d07b116dd77103214bd3277d030d698451))
+* **deps:** update node.js to 18.15 ([b48a0fd](https://github.com/w4bo/iam-demo/commit/b48a0fd1627bde3efe6a89ccbb211825518b3a15))
+
 ## [1.0.53](https://github.com/w4bo/iam-demo/compare/1.0.52...1.0.53) (2023-02-28)
 
 
