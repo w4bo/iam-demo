@@ -1,3 +1,18 @@
+## [1.0.12](https://github.com/big-unibo/iam-demo/compare/1.0.11...1.0.12) (2023-03-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.jooq:jool to v0.9.15 ([7646073](https://github.com/big-unibo/iam-demo/commit/7646073e06a7bec6e7cdbc08f79f557ff9c80e25))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.21.3 ([6379194](https://github.com/big-unibo/iam-demo/commit/6379194bd88904f597a7f6f4b97804ddda8b7b1b))
+* **deps:** update dependency matplotlib to v3.7.1 ([74b2260](https://github.com/big-unibo/iam-demo/commit/74b2260b8854061cbc744a0e58244a994be90fea))
+* **deps:** update dependency sqlalchemy to v2.0.5.post1 ([ca55cb8](https://github.com/big-unibo/iam-demo/commit/ca55cb8389fa670997c33ecdd3ad493c76b0b6a0))
+* **deps:** update node.js to 18.15 ([3b7a22f](https://github.com/big-unibo/iam-demo/commit/3b7a22fceaba6602b8189f3cc07f70719d949026))
+
 ## [1.0.11](https://github.com/big-unibo/iam-demo/compare/1.0.10...1.0.11) (2023-02-28)
 
 
