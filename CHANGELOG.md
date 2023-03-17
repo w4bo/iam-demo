@@ -1,3 +1,21 @@
+## [1.0.55](https://github.com/w4bo/iam-demo/compare/1.0.54...1.0.55) (2023-03-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.slf4j:slf4j-api to v2.0.7 ([77d87e9](https://github.com/w4bo/iam-demo/commit/77d87e961343a39c7bc8e949c93ec5ed96ba71e8))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.4.0 ([f2d7f9b](https://github.com/w4bo/iam-demo/commit/f2d7f9b7af62b2c8e0da1cff2ebc5ded6abcf2c6))
+
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.17 ([4691239](https://github.com/w4bo/iam-demo/commit/469123987c654574d68286cb3ba27f8df698850f))
+* **deps:** update dependency sqlalchemy to v2.0.6 ([44ae424](https://github.com/w4bo/iam-demo/commit/44ae424239008a7ce462a509d73334cdea8e13b8))
+
 ## [1.0.54](https://github.com/w4bo/iam-demo/compare/1.0.53...1.0.54) (2023-03-08)
 
 
