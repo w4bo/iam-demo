@@ -1,3 +1,21 @@
+## [1.0.13](https://github.com/big-unibo/iam-demo/compare/1.0.12...1.0.13) (2023-03-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.slf4j:slf4j-api to v2.0.7 ([58ca351](https://github.com/big-unibo/iam-demo/commit/58ca3512d81dd4a87e9fd8e2ec9bcb5cd7529adb))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.4.0 ([148894e](https://github.com/big-unibo/iam-demo/commit/148894e36ea0caf6e260781c5e1f4a58050ccae5))
+
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.17 ([abc1238](https://github.com/big-unibo/iam-demo/commit/abc1238f1097caa07934391093c5a6d6f0022647))
+* **deps:** update dependency sqlalchemy to v2.0.6 ([76e25b7](https://github.com/big-unibo/iam-demo/commit/76e25b7054b0396958a41895917b9f71dffd9db0))
+
 ## [1.0.12](https://github.com/big-unibo/iam-demo/compare/1.0.11...1.0.12) (2023-03-08)
 
 
