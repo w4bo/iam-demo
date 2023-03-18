@@ -1,3 +1,10 @@
+## [1.0.14](https://github.com/big-unibo/iam-demo/compare/1.0.13...1.0.14) (2023-03-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.slf4j:slf4j-log4j12 to v2.0.7 ([832a450](https://github.com/big-unibo/iam-demo/commit/832a4501b1b1e57b9acbf99f4e5bad6e72318808))
+
 ## [1.0.13](https://github.com/big-unibo/iam-demo/compare/1.0.12...1.0.13) (2023-03-17)
 
 
