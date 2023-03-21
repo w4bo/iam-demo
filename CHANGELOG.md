@@ -1,3 +1,17 @@
+## [1.0.15](https://github.com/big-unibo/iam-demo/compare/1.0.14...1.0.15) (2023-03-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency edu.stanford.nlp:stanford-corenlp to v4.5.3 ([161f580](https://github.com/big-unibo/iam-demo/commit/161f58071e5f949d6dfde724725b0890811b7f01))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.22.0 ([3770ddb](https://github.com/big-unibo/iam-demo/commit/3770ddb3c87ebe0bf9effac760f3d7df59ee84bf))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.19 ([3a81639](https://github.com/big-unibo/iam-demo/commit/3a816393d8a2e3f76421709e49b122a08bca1dc0))
+* **deps:** update dependency sqlalchemy to v2.0.7 ([52574b8](https://github.com/big-unibo/iam-demo/commit/52574b8e631f57d53c05a6bbe6d061517dc47b72))
+
 ## [1.0.14](https://github.com/big-unibo/iam-demo/compare/1.0.13...1.0.14) (2023-03-18)
 
 
