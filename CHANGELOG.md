@@ -1,3 +1,17 @@
+## [1.0.57](https://github.com/w4bo/iam-demo/compare/1.0.56...1.0.57) (2023-03-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency edu.stanford.nlp:stanford-corenlp to v4.5.3 ([bf10fc8](https://github.com/w4bo/iam-demo/commit/bf10fc8b329dcb06d04c0ec427d10a8cd39507b6))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.22.0 ([0dd5fe8](https://github.com/w4bo/iam-demo/commit/0dd5fe881f4a251fce634df7091a74cbca585780))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.19 ([d2897b5](https://github.com/w4bo/iam-demo/commit/d2897b53b8008ef180878548a9ce7c410a8b8553))
+* **deps:** update dependency sqlalchemy to v2.0.7 ([662c0e8](https://github.com/w4bo/iam-demo/commit/662c0e8ae23f0d6c8b8a40bec3bb79889c70f8a1))
+
 ## [1.0.56](https://github.com/w4bo/iam-demo/compare/1.0.55...1.0.56) (2023-03-18)
 
 
