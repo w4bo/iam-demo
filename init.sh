@@ -4,21 +4,19 @@ set -exo
 ############################################################
 # REMEMBER TO RUN THIS SCRIPT WITH bash AND NOT WITH sh
 ############################################################
-find . -type f -iname "*.sh" -exec chmod +x {} \;
-
 echo "Replacing .env.example with .env"
 cp .env.example .env
-echo "Replacing src/main/resources/config.example.yml src/main/resources/config.yml"
-cp src/main/resources/config.example.yml src/main/resources/config.yml
+echo "Replacing intentional/src/main/resources/config.example.yml intentional/src/main/resources/config.yml"
+cp intentional/src/main/resources/config.example.yml intentional/src/main/resources/config.yml
 echo "Replacing ../web/js/config.example.js ../web/js/config.js"
-cp ../web/js/config.example.js ../web/js/config.js
+cp web/js/config.example.js web/js/config.js
 
 P=$(pwd)
 echo $P
-sed -i "s+\!HOME\!+${P}+g" src/main/resources/config.yml
+sed -i "s+\!HOME\!+${P}+g" intentional/src/main/resources/config.yml
 sed -i "s+\!HOME\!+${P}+g" .env
 
-cd src/main/python
+cd intentional/src/main/python
 if [ -d venv ]; then
     echo "venv already exists"
 else

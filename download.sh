@@ -1,6 +1,6 @@
 #!/bin/bash
 set -exo
-
+cd intentional
 cd resources
 if [ ! -f "foodmart-mysql.sql" ]; then 
     curl -k -o foodmart-mysql.sql https://big.csr.unibo.it/projects/nosql-datasets/foodmart-mysql.sql
@@ -42,3 +42,4 @@ curl -k -o db-migration-0.1.0.jar https://big.csr.unibo.it/projects/nosql-datase
 
 ls -las
 cd -
+cd ..
