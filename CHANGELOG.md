@@ -1,3 +1,23 @@
+## [1.0.58](https://github.com/w4bo/iam-demo/compare/1.0.57...1.0.58) (2023-03-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.github.doyaaaaaken:kotlin-csv-jvm to v1.9.0 ([5e8b0bd](https://github.com/w4bo/iam-demo/commit/5e8b0bddcbd91d10afc131a9093e3daa8ec74971))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.5.0 ([06e75ca](https://github.com/w4bo/iam-demo/commit/06e75ca1ac02f947c16168080b34796cd4643419))
+* **deps:** update actions/setup-java action to v3.11.0 ([cc17e02](https://github.com/w4bo/iam-demo/commit/cc17e02a122c266141f759859486dc408de569a1))
+
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.20 ([3ec3be4](https://github.com/w4bo/iam-demo/commit/3ec3be41a6aeaf90815c4c55f99780de1c0e1ea2))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.21 ([839d77c](https://github.com/w4bo/iam-demo/commit/839d77c38a9298d2b4eb64dd272dfcf1092fd6b5))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.22 ([e42939d](https://github.com/w4bo/iam-demo/commit/e42939da760c272ae5f6cf7dc7043d7e5583e860))
+
 ## [1.0.57](https://github.com/w4bo/iam-demo/compare/1.0.56...1.0.57) (2023-03-21)
 
 
