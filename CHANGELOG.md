@@ -1,3 +1,10 @@
+## [1.0.60](https://github.com/w4bo/iam-demo/compare/1.0.59...1.0.60) (2023-04-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.ktor:ktor-server-servlet to v2.3.0 ([fa341bb](https://github.com/w4bo/iam-demo/commit/fa341bb503617e5be03074ebef89b9de2ebdeb3f))
+
 ## [1.0.59](https://github.com/w4bo/iam-demo/compare/1.0.58...1.0.59) (2023-04-19)
 
 
