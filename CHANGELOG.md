@@ -1,3 +1,26 @@
+## [1.0.59](https://github.com/w4bo/iam-demo/compare/1.0.58...1.0.59) (2023-04-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency mysql:mysql-connector-java to v8.0.33 ([3655406](https://github.com/w4bo/iam-demo/commit/3655406ebb1767b83a1784e86ea8bb9ef9bb316f))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.5.1 ([687613e](https://github.com/w4bo/iam-demo/commit/687613e51133824c5c34e3667e55e8ae3963b5ff))
+* **deps:** update actions/checkout action to v3.5.2 ([db1bbc8](https://github.com/w4bo/iam-demo/commit/db1bbc82c14b316bf5ceb3e77087e426c231f629))
+
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.23 ([d1cb5e7](https://github.com/w4bo/iam-demo/commit/d1cb5e7173916a4442ac239c4df9fd572e9c3a59))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.24 ([9b420a5](https://github.com/w4bo/iam-demo/commit/9b420a5170d98830cdbb231a4424e1ef10e8615a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.25 ([6cc912d](https://github.com/w4bo/iam-demo/commit/6cc912d11a4423f3641e0d2f26bf0200ed612c5e))
+* **deps:** update dependency sqlalchemy to v2.0.8 ([4de19a1](https://github.com/w4bo/iam-demo/commit/4de19a132db88a2f39bff76ddd2b84ac8a91ffcc))
+* **deps:** update dependency sqlalchemy to v2.0.9 ([f8bff89](https://github.com/w4bo/iam-demo/commit/f8bff893a4a8032bedff6ef8ed5f5d3448b7738f))
+* **deps:** update node.js to 18.16 ([6e3c211](https://github.com/w4bo/iam-demo/commit/6e3c21105dc63eac567fd6f9f2bfd0d7c7af1737))
+
 ## [1.0.58](https://github.com/w4bo/iam-demo/compare/1.0.57...1.0.58) (2023-03-28)
 
 
