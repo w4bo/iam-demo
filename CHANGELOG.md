@@ -1,3 +1,10 @@
+## [1.0.63](https://github.com/w4bo/iam-demo/compare/1.0.62...1.0.63) (2023-04-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency edu.stanford.nlp:stanford-corenlp to v4.5.4 ([6125d34](https://github.com/w4bo/iam-demo/commit/6125d34dbfb06e6acb05498555ba5712dc7836e7))
+
 ## [1.0.62](https://github.com/w4bo/iam-demo/compare/1.0.61...1.0.62) (2023-04-24)
 
 
