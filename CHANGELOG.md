@@ -1,3 +1,18 @@
+## [1.0.65](https://github.com/w4bo/iam-demo/compare/1.0.64...1.0.65) (2023-05-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.jgrapht:jgrapht-core to v1.5.2 ([1bf8abf](https://github.com/w4bo/iam-demo/commit/1bf8abff0ec7c3bb56d32a203efa6af01e304119))
+
+
+### Dependency updates
+
+* **deps:** update dependency requests to v2.29.0 ([7430028](https://github.com/w4bo/iam-demo/commit/74300283d3f3ed8c7aa8610d0366522db361f765))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.26 ([6f770f6](https://github.com/w4bo/iam-demo/commit/6f770f65a125a0c2316896f387e2348e95375002))
+* **deps:** update dependency sqlalchemy to v2.0.11 ([a69b51a](https://github.com/w4bo/iam-demo/commit/a69b51ad0ad6579a4bdc50161b9ea4f67d97b25e))
+* **deps:** update dependency sqlalchemy to v2.0.12 ([1889228](https://github.com/w4bo/iam-demo/commit/18892283c8b4ecb94b55fade1ff2e88c2db19677))
+
 ## [1.0.64](https://github.com/w4bo/iam-demo/compare/1.0.63...1.0.64) (2023-04-26)
 
 
