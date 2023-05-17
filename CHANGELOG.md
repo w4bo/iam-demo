@@ -1,3 +1,10 @@
+## [1.0.67](https://github.com/w4bo/iam-demo/compare/1.0.66...1.0.67) (2023-05-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.fasterxml.jackson.datatype:jackson-datatype-jsr310 to v2.15.1 ([cabaa6a](https://github.com/w4bo/iam-demo/commit/cabaa6a8cc08b9bc41c0cb1940263d6362179224))
+
 ## [1.0.66](https://github.com/w4bo/iam-demo/compare/1.0.65...1.0.66) (2023-05-17)
 
 
