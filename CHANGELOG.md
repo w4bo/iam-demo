@@ -1,3 +1,18 @@
+## [1.0.66](https://github.com/w4bo/iam-demo/compare/1.0.65...1.0.66) (2023-05-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.fasterxml.jackson.dataformat:jackson-dataformat-yaml to v2.15.1 ([060d187](https://github.com/w4bo/iam-demo/commit/060d1875d71fbc8201746dc5fe10dbf1289e0825))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.23.0 ([e446ee7](https://github.com/w4bo/iam-demo/commit/e446ee7bd422a63942ebd01f277c54b473ddd0f9))
+* **deps:** update dependency ipykernel to v6.23.1 ([bd3a60e](https://github.com/w4bo/iam-demo/commit/bd3a60e3261205348ecdfb732790dd30c3a0a9ab))
+* **deps:** update dependency requests to v2.30.0 ([5c743e3](https://github.com/w4bo/iam-demo/commit/5c743e31411ba0a735749f08dd5b241578692775))
+* **deps:** update dependency sqlalchemy to v2.0.13 ([e66db10](https://github.com/w4bo/iam-demo/commit/e66db10dd2a1739c24c5675f9325272106dea62c))
+
 ## [1.0.65](https://github.com/w4bo/iam-demo/compare/1.0.64...1.0.65) (2023-05-03)
 
 
