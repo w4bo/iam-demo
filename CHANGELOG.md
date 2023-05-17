@@ -1,3 +1,10 @@
+## [1.0.68](https://github.com/w4bo/iam-demo/compare/1.0.67...1.0.68) (2023-05-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency commons-io:commons-io to v2.12.0 ([b7fb97f](https://github.com/w4bo/iam-demo/commit/b7fb97f4406ccbfc8ac1dd6578eece4ecc592f59))
+
 ## [1.0.67](https://github.com/w4bo/iam-demo/compare/1.0.66...1.0.67) (2023-05-17)
 
 
