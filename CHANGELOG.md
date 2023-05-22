@@ -1,3 +1,16 @@
+## [1.0.69](https://github.com/w4bo/iam-demo/compare/1.0.68...1.0.69) (2023-05-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.antlr:antlr4 to v4.13.0 ([f4633cc](https://github.com/w4bo/iam-demo/commit/f4633cc1010585ae890ab82e9748a1fa9d6fccd5))
+
+
+### Dependency updates
+
+* **deps:** update dependency sqlalchemy to v2.0.14 ([d74204f](https://github.com/w4bo/iam-demo/commit/d74204f83dfaca3753b06fda8fd17122c4ff81b7))
+* **deps:** update dependency sqlalchemy to v2.0.15 ([156a691](https://github.com/w4bo/iam-demo/commit/156a6918aff71e08fac275184dcd846b9e997bd7))
+
 ## [1.0.68](https://github.com/w4bo/iam-demo/compare/1.0.67...1.0.68) (2023-05-17)
 
 
