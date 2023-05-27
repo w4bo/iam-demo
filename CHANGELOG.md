@@ -1,3 +1,15 @@
+## [1.0.71](https://github.com/w4bo/iam-demo/compare/1.0.70...1.0.71) (2023-05-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.google.guava:guava to v32 ([e611b98](https://github.com/w4bo/iam-demo/commit/e611b98b9d701d10b442953e97e2b6678f0c9473))
+
+
+### Build and continuous integration
+
+* **deps:** update jamesives/github-pages-deploy-action action to v4.4.2 ([ba78cbc](https://github.com/w4bo/iam-demo/commit/ba78cbc00ae315c957f145c4227ebfc840105282))
+
 ## [1.0.70](https://github.com/w4bo/iam-demo/compare/1.0.69...1.0.70) (2023-05-26)
 
 
