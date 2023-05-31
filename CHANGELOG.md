@@ -1,3 +1,15 @@
+## [1.0.72](https://github.com/w4bo/iam-demo/compare/1.0.71...1.0.72) (2023-05-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.fasterxml.jackson.dataformat:jackson-dataformat-yaml to v2.15.2 ([985c66e](https://github.com/w4bo/iam-demo/commit/985c66ee71e236b1e0f66390b9d686d7a391ad49))
+
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.27 ([c4438a8](https://github.com/w4bo/iam-demo/commit/c4438a8608c91d94d14d0da11fafe044bea465c2))
+
 ## [1.0.71](https://github.com/w4bo/iam-demo/compare/1.0.70...1.0.71) (2023-05-27)
 
 
