@@ -1,3 +1,16 @@
+## [1.0.75](https://github.com/w4bo/iam-demo/compare/1.0.74...1.0.75) (2023-06-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency commons-io:commons-io to v2.13.0 ([2606358](https://github.com/w4bo/iam-demo/commit/2606358deb71b4c9110f5dd17bc3222389ef8fdb))
+
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.30 ([4385cbd](https://github.com/w4bo/iam-demo/commit/4385cbd3675c76e223ae1df69acf58d3814b5e9f))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.32 ([c95993e](https://github.com/w4bo/iam-demo/commit/c95993eb9c00a9963ffe06561bcf236f4174e7ce))
+
 ## [1.0.74](https://github.com/w4bo/iam-demo/compare/1.0.73...1.0.74) (2023-05-31)
 
 
