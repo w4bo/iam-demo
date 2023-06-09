@@ -1,3 +1,10 @@
+## [1.0.76](https://github.com/w4bo/iam-demo/compare/1.0.75...1.0.76) (2023-06-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.google.guava:guava to v32.0.1-jre ([512f6b1](https://github.com/w4bo/iam-demo/commit/512f6b11f9b50cb8f8e097616825cba9d11c4908))
+
 ## [1.0.75](https://github.com/w4bo/iam-demo/compare/1.0.74...1.0.75) (2023-06-07)
 
 
