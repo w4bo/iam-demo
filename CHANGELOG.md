@@ -1,3 +1,26 @@
+## [1.0.77](https://github.com/w4bo/iam-demo/compare/1.0.76...1.0.77) (2023-06-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.json:json to v20230618 ([ef75c8f](https://github.com/w4bo/iam-demo/commit/ef75c8fe77f97d98b1b131c58241f61a28d5cfd0))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.5.3 ([ddd0ab2](https://github.com/w4bo/iam-demo/commit/ddd0ab205fcc18c399b1ad8e5e9efdbd92e3c2b4))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.23.2 ([1936535](https://github.com/w4bo/iam-demo/commit/193653522551778690897931f56426da2ec4f2d0))
+* **deps:** update dependency numpy to v1.25.0 ([8189a46](https://github.com/w4bo/iam-demo/commit/8189a469a55d0e684a13a76c314788d7039babe8))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.33 ([1eebbfa](https://github.com/w4bo/iam-demo/commit/1eebbfada7b6815e0b9522691aea7f6ad9329793))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.34 ([dd59b14](https://github.com/w4bo/iam-demo/commit/dd59b1468bd5f18997f4978bc2b8182cae2a9699))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.35 ([b7c22a1](https://github.com/w4bo/iam-demo/commit/b7c22a1025d47303861c1c1a39dcd04e98194143))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.37 ([af75ad2](https://github.com/w4bo/iam-demo/commit/af75ad2072f8252db4e606833b720415a83f57c9))
+* **deps:** update dependency sqlalchemy to v2.0.16 ([0e5b957](https://github.com/w4bo/iam-demo/commit/0e5b957eca5fd04c6a68d40c83006dabc02f1137))
+
 ## [1.0.76](https://github.com/w4bo/iam-demo/compare/1.0.75...1.0.76) (2023-06-09)
 
 
