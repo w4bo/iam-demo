@@ -1,3 +1,18 @@
+## [1.0.78](https://github.com/w4bo/iam-demo/compare/1.0.77...1.0.78) (2023-06-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.ktor:ktor-server-servlet to v2.3.2 ([a651691](https://github.com/w4bo/iam-demo/commit/a651691ea0f96a4b38b44938a069bbc1879e00f8))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.23.3 ([bb19b9d](https://github.com/w4bo/iam-demo/commit/bb19b9de56da3cd1d3c59d2c57c8881096f4339b))
+* **deps:** update dependency scipy to v1.11.0 ([352fe6e](https://github.com/w4bo/iam-demo/commit/352fe6e74112670d6da462353e212d6a88f71a28))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.38 ([06765bd](https://github.com/w4bo/iam-demo/commit/06765bd0d753514994b3e43fa9f155b920a24fff))
+* **deps:** update dependency sqlalchemy to v2.0.17 ([83f6767](https://github.com/w4bo/iam-demo/commit/83f67677d69e5438efc29a6df94059d40fe4b543))
+
 ## [1.0.77](https://github.com/w4bo/iam-demo/compare/1.0.76...1.0.77) (2023-06-18)
 
 
