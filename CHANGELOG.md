@@ -1,3 +1,15 @@
+## [1.0.79](https://github.com/w4bo/iam-demo/compare/1.0.78...1.0.79) (2023-06-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.google.guava:guava to v32.1.0-jre ([f247308](https://github.com/w4bo/iam-demo/commit/f247308697bedece2ea69ee65e1d65c51a0a5b3f))
+
+
+### Dependency updates
+
+* **deps:** update dependency scipy to v1.11.1 ([6dd2164](https://github.com/w4bo/iam-demo/commit/6dd216484db005dce1142225992de5b8814899ac))
+
 ## [1.0.78](https://github.com/w4bo/iam-demo/compare/1.0.77...1.0.78) (2023-06-28)
 
 
