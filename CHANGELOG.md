@@ -1,3 +1,15 @@
+## [1.0.80](https://github.com/w4bo/iam-demo/compare/1.0.79...1.0.80) (2023-07-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.google.guava:guava to v32.1.1-jre ([e3d3f33](https://github.com/w4bo/iam-demo/commit/e3d3f337fc043859fb441bb29d0cae1b5b5d51dc))
+
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v7.6.2 ([8800a94](https://github.com/w4bo/iam-demo/commit/8800a9406d519208ce84ac9631d3acc89faa407f))
+
 ## [1.0.79](https://github.com/w4bo/iam-demo/compare/1.0.78...1.0.79) (2023-06-29)
 
 
