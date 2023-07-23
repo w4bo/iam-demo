@@ -1,3 +1,30 @@
+## [1.0.81](https://github.com/w4bo/iam-demo/compare/1.0.80...1.0.81) (2023-07-23)
+
+
+### Bug Fixes
+
+* **deps:** update junit5 monorepo to v5.10.0 ([ebd92d3](https://github.com/w4bo/iam-demo/commit/ebd92d3fcace877f148ab32f92b617511054aaeb))
+
+
+### Build and continuous integration
+
+* **deps:** update jamesives/github-pages-deploy-action action to v4.4.3 ([1f1d3dc](https://github.com/w4bo/iam-demo/commit/1f1d3dc53f32daf538360c88cb3351ff141e23df))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.24.0 ([1fc8f38](https://github.com/w4bo/iam-demo/commit/1fc8f385e589f53d946f418c09cee196e6f3d11d))
+* **deps:** update dependency matplotlib to v3.7.2 ([de6e789](https://github.com/w4bo/iam-demo/commit/de6e789599e78c9b21851b0131bfe79635293254))
+* **deps:** update dependency numpy to v1.25.1 ([3fec17b](https://github.com/w4bo/iam-demo/commit/3fec17b7cc2d02fc2f8b6cad09d3f17e99bd9d81))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.39 ([d11b0ba](https://github.com/w4bo/iam-demo/commit/d11b0ba025b931144e66d14815ca8a91a21a88a0))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.40 ([df1b79b](https://github.com/w4bo/iam-demo/commit/df1b79b55625f089e14591b0a3bfa7450d2eab18))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.41 ([113c059](https://github.com/w4bo/iam-demo/commit/113c059361baceba487fe7df275a0a78e5d3e899))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.42 ([ab5c4d8](https://github.com/w4bo/iam-demo/commit/ab5c4d8df924438ce303449a2224aa21a268b785))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.43 ([cea33db](https://github.com/w4bo/iam-demo/commit/cea33dbfed06c7d216bbac8e1aa17a5114e94589))
+* **deps:** update dependency sqlalchemy to v2.0.18 ([6e5b012](https://github.com/w4bo/iam-demo/commit/6e5b01257745e811e83f957ebf62dcca1eeeae8c))
+* **deps:** update dependency sqlalchemy to v2.0.19 ([449b966](https://github.com/w4bo/iam-demo/commit/449b9660b323772e5f6485370339eada7f65473e))
+* **deps:** update node.js to 18.17 ([6a54ad0](https://github.com/w4bo/iam-demo/commit/6a54ad0e98a9548f8a2b8ceec069a7272c644348))
+
 ## [1.0.80](https://github.com/w4bo/iam-demo/compare/1.0.79...1.0.80) (2023-07-01)
 
 
