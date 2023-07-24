@@ -1,3 +1,10 @@
+## [1.0.82](https://github.com/w4bo/iam-demo/compare/1.0.81...1.0.82) (2023-07-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.opencsv:opencsv to v5.8 ([411f804](https://github.com/w4bo/iam-demo/commit/411f804783a350d03e22fbc80c9167ae3876b9d8))
+
 ## [1.0.81](https://github.com/w4bo/iam-demo/compare/1.0.80...1.0.81) (2023-07-23)
 
 
