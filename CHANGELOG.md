@@ -1,3 +1,20 @@
+## [1.0.83](https://github.com/w4bo/iam-demo/compare/1.0.82...1.0.83) (2023-07-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.apache.commons:commons-lang3 to v3.13.0 ([9bad9e0](https://github.com/w4bo/iam-demo/commit/9bad9e04af1d4b953adac022753ee7b3285718e6))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-java action to v3.12.0 ([43f13a2](https://github.com/w4bo/iam-demo/commit/43f13a23cde6af52570463cbd9ae3710de21f78d))
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.25.0 ([fd86ac2](https://github.com/w4bo/iam-demo/commit/fd86ac2a53e52fdb0c578db4a2da0b2247079e10))
+
 ## [1.0.82](https://github.com/w4bo/iam-demo/compare/1.0.81...1.0.82) (2023-07-24)
 
 
