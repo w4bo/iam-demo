@@ -1,3 +1,10 @@
+## [1.0.84](https://github.com/w4bo/iam-demo/compare/1.0.83...1.0.84) (2023-07-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.github.doyaaaaaken:kotlin-csv-jvm to v1.9.2 ([77edff1](https://github.com/w4bo/iam-demo/commit/77edff105cae9cd6e136cd063f1a56b1c8536694))
+
 ## [1.0.83](https://github.com/w4bo/iam-demo/compare/1.0.82...1.0.83) (2023-07-28)
 
 
