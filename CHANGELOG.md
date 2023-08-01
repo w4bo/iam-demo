@@ -1,3 +1,15 @@
+## [1.0.85](https://github.com/w4bo/iam-demo/compare/1.0.84...1.0.85) (2023-08-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.google.guava:guava to v32.1.2-jre ([6e67f7c](https://github.com/w4bo/iam-demo/commit/6e67f7c7f5b5b1400c5e8079dbd73332c55bdced))
+
+
+### Dependency updates
+
+* **deps:** update dependency numpy to v1.25.2 ([eb37c54](https://github.com/w4bo/iam-demo/commit/eb37c5479ec683ba390d803e222cb57f79d5e540))
+
 ## [1.0.84](https://github.com/w4bo/iam-demo/compare/1.0.83...1.0.84) (2023-07-30)
 
 
