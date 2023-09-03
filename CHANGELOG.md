@@ -1,3 +1,15 @@
+## [1.0.88](https://github.com/w4bo/iam-demo/compare/1.0.87...1.0.88) (2023-09-03)
+
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.53 ([1085c10](https://github.com/w4bo/iam-demo/commit/1085c1069e8bc9326bb71121baaad5cdc9ac935d))
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.slf4j:slf4j-api to v2.0.9 ([73eb70f](https://github.com/w4bo/iam-demo/commit/73eb70f14b07185d11181c4eeee1d3ef13753635))
+
 ## [1.0.87](https://github.com/w4bo/iam-demo/compare/1.0.86...1.0.87) (2023-08-31)
 
 
