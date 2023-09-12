@@ -1,3 +1,21 @@
+## [1.0.90](https://github.com/w4bo/iam-demo/compare/1.0.89...1.0.90) (2023-09-12)
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.25.2 ([1801dfb](https://github.com/w4bo/iam-demo/commit/1801dfb043db95274a6a50fc953918933bba9112))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.54 ([417ce1f](https://github.com/w4bo/iam-demo/commit/417ce1f7283e10a12a052970606f9482c495d3f1))
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.antlr:antlr4 to v4.13.1 ([3faee24](https://github.com/w4bo/iam-demo/commit/3faee24bc77cbbf3565d7e9df95ac091d06bd612))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4 ([80d2dd7](https://github.com/w4bo/iam-demo/commit/80d2dd7ae8125a3d4ad89fb9d16212195085a1c0))
+
 ## [1.0.89](https://github.com/w4bo/iam-demo/compare/1.0.88...1.0.89) (2023-09-04)
 
 
