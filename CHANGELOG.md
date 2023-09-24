@@ -1,3 +1,32 @@
+## [1.0.91](https://github.com/w4bo/iam-demo/compare/1.0.90...1.0.91) (2023-09-24)
+
+
+### Dependency updates
+
+* **deps:** update dependency matplotlib to v3.7.3 ([7d503ed](https://github.com/w4bo/iam-demo/commit/7d503ed058e09ee17c5f6fe3b27e202538efda7c))
+* **deps:** update dependency matplotlib to v3.8.0 ([d474f90](https://github.com/w4bo/iam-demo/commit/d474f90ac2bff92eb10236814f3036348c159b81))
+* **deps:** update dependency numpy to v1.26.0 ([c6112f5](https://github.com/w4bo/iam-demo/commit/c6112f5e39c37dc39e63e7821f58b462e63e8f9d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.55 ([44ddc90](https://github.com/w4bo/iam-demo/commit/44ddc90f948f9c21d5a76457f19b67c240f18403))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.56 ([ab820e5](https://github.com/w4bo/iam-demo/commit/ab820e5ac7a7c6e717a133ea06dd04f3b25ad433))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.58 ([66c5242](https://github.com/w4bo/iam-demo/commit/66c5242aadb2fe0b87fcddbff53c27fd012d2902))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.59 ([208f4cf](https://github.com/w4bo/iam-demo/commit/208f4cf93ad22a429d99d8366a749a668b4f19f4))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.60 ([757971d](https://github.com/w4bo/iam-demo/commit/757971df4d5240d919655f15f0541c204d422e14))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.61 ([83f62fc](https://github.com/w4bo/iam-demo/commit/83f62fcd5a76507eb1210831ba321bd3b951a5d4))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.62 ([b7eea28](https://github.com/w4bo/iam-demo/commit/b7eea28569fd4cebb5331c6d8f1c2e52eb4f686f))
+* **deps:** update dependency sqlalchemy to v2.0.21 ([cf1ecfa](https://github.com/w4bo/iam-demo/commit/cf1ecfae777c12237574b45466a13bcda9caa53c))
+* **deps:** update node.js to 18.18 ([993e15f](https://github.com/w4bo/iam-demo/commit/993e15f1903e8c893e6902e8a48f29c712d90274))
+
+
+### Bug Fixes
+
+* **deps:** update dependency edu.stanford.nlp:stanford-corenlp to v4.5.5 ([af17d71](https://github.com/w4bo/iam-demo/commit/af17d71f437662098701e563e0e3a9b7cd9a6c61))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.1.0 ([2fa60f0](https://github.com/w4bo/iam-demo/commit/2fa60f077f29469b21e03d1043dea5f898ae86a9))
+* **deps:** update actions/setup-java action to v3.13.0 ([17c5026](https://github.com/w4bo/iam-demo/commit/17c50268ffea7db814e896c18376e6b6fb551ba7))
+
 ## [1.0.90](https://github.com/w4bo/iam-demo/compare/1.0.89...1.0.90) (2023-09-12)
 
 
