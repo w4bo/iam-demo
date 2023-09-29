@@ -1,3 +1,19 @@
+## [1.0.92](https://github.com/w4bo/iam-demo/compare/1.0.91...1.0.92) (2023-09-29)
+
+
+### Dependency updates
+
+* **deps:** update dependency scipy to v1.11.3 ([33fe545](https://github.com/w4bo/iam-demo/commit/33fe545c17355f7e48ea40c41a7608058fc3c494))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.63 ([9ec17da](https://github.com/w4bo/iam-demo/commit/9ec17da3942e254a8b2a49584f11054fa3c66144))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.64 ([15dc983](https://github.com/w4bo/iam-demo/commit/15dc9838ca75260b232b95a2d93c9555df0b2175))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.65 ([98ecf7d](https://github.com/w4bo/iam-demo/commit/98ecf7d010f515a5ae31ded23eff53043b6e2a69))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.66 ([4d569c4](https://github.com/w4bo/iam-demo/commit/4d569c4374a89289267bb77563f2d108e26058c4))
+
+
+### Bug Fixes
+
+* **deps:** update dependency commons-io:commons-io to v2.14.0 ([3405759](https://github.com/w4bo/iam-demo/commit/3405759b521b033fc9745206157a6ef660875a51))
+
 ## [1.0.91](https://github.com/w4bo/iam-demo/compare/1.0.90...1.0.91) (2023-09-24)
 
 
