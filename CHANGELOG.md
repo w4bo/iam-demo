@@ -1,3 +1,17 @@
+## [1.0.93](https://github.com/w4bo/iam-demo/compare/1.0.92...1.0.93) (2023-10-05)
+
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v7.6.3 ([0989176](https://github.com/w4bo/iam-demo/commit/09891765933d3821d44293df86535f1b6184af04))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.67 ([9da2615](https://github.com/w4bo/iam-demo/commit/9da261551bd44b8da4e2acfcd114fbbce839d8c8))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.68 ([20fcf5f](https://github.com/w4bo/iam-demo/commit/20fcf5ff2f2b437dbca0e8097c568626caff55c8))
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.ktor:ktor-server-servlet to v2.3.5 ([7a5f45a](https://github.com/w4bo/iam-demo/commit/7a5f45a83709a3ce4f4e7da4414583074ba7d4b9))
+
 ## [1.0.92](https://github.com/w4bo/iam-demo/compare/1.0.91...1.0.92) (2023-09-29)
 
 
