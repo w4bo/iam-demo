@@ -1,3 +1,10 @@
+## [1.0.97](https://github.com/w4bo/iam-demo/compare/1.0.96...1.0.97) (2023-10-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.json:json to v20231013 ([08cce45](https://github.com/w4bo/iam-demo/commit/08cce452ed5f73369a7bef4dbd64c107a54fe04e))
+
 ## [1.0.96](https://github.com/w4bo/iam-demo/compare/1.0.95...1.0.96) (2023-10-16)
 
 
