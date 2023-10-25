@@ -1,3 +1,24 @@
+## [1.0.98](https://github.com/w4bo/iam-demo/compare/1.0.97...1.0.98) (2023-10-25)
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.26.0 ([a16bb21](https://github.com/w4bo/iam-demo/commit/a16bb2149148f08cec53dc27100c9ed4d4a1dcf9))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.69 ([a093634](https://github.com/w4bo/iam-demo/commit/a093634ddd922db850e99edebda1b9b21cbd8a6e))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.70 ([0880e9f](https://github.com/w4bo/iam-demo/commit/0880e9f2ccfc4c1f74286de269cff602b55b3932))
+* **deps:** update node.js to 20.9 ([ba4bff8](https://github.com/w4bo/iam-demo/commit/ba4bff8a19183113398234d1ec923fed5e5d3075))
+* **deps:** update node.js to v20 ([e9b0e00](https://github.com/w4bo/iam-demo/commit/e9b0e00dd26ae5f3e64c67297981a273d29e5d2e))
+
+
+### Bug Fixes
+
+* **deps:** update dependency commons-io:commons-io to v2.15.0 ([1de9c15](https://github.com/w4bo/iam-demo/commit/1de9c15816a269c2c7f2d42c5a09f01b8a34d94b))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.1.1 ([a7d3c12](https://github.com/w4bo/iam-demo/commit/a7d3c120b7b76f6c3345ea63efaff6e10e56c7b4))
+
 ## [1.0.97](https://github.com/w4bo/iam-demo/compare/1.0.96...1.0.97) (2023-10-16)
 
 
