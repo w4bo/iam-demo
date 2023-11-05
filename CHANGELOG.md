@@ -1,3 +1,17 @@
+## [1.0.99](https://github.com/w4bo/iam-demo/compare/1.0.98...1.0.99) (2023-11-05)
+
+
+### Dependency updates
+
+* **deps:** update dependency matplotlib to v3.8.1 ([a9bd393](https://github.com/w4bo/iam-demo/commit/a9bd393ea1af1ae3bad346a4458ecf0377813f23))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.71 ([71ffbdd](https://github.com/w4bo/iam-demo/commit/71ffbddd37f6982eba6c91a7af06f868b31641a9))
+* **deps:** update dependency sqlalchemy to v2.0.23 ([0e2b672](https://github.com/w4bo/iam-demo/commit/0e2b6727a9064579535190d1cb52176bdfb36a93))
+
+
+### Bug Fixes
+
+* **deps:** update junit5 monorepo to v5.10.1 ([1b09f4d](https://github.com/w4bo/iam-demo/commit/1b09f4dbd8a6ecda00f8f72a7c488af4397bbda7))
+
 ## [1.0.98](https://github.com/w4bo/iam-demo/compare/1.0.97...1.0.98) (2023-10-25)
 
 
