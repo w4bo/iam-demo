@@ -1,3 +1,16 @@
+## [1.0.100](https://github.com/w4bo/iam-demo/compare/1.0.99...1.0.100) (2023-11-07)
+
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.72 ([d7a26a4](https://github.com/w4bo/iam-demo/commit/d7a26a4a0a01c059705c0cc74beea9fb36a1899c))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.74 ([9f74c7c](https://github.com/w4bo/iam-demo/commit/9f74c7cb3546ae466f58529e0da46bda041fd4ec))
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.ktor:ktor-server-servlet to v2.3.6 ([e61583b](https://github.com/w4bo/iam-demo/commit/e61583b6d007fe5f93d33a9703c95618f45930eb))
+
 ## [1.0.99](https://github.com/w4bo/iam-demo/compare/1.0.98...1.0.99) (2023-11-05)
 
 
