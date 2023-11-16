@@ -1,3 +1,17 @@
+## [1.0.101](https://github.com/w4bo/iam-demo/compare/1.0.100...1.0.101) (2023-11-16)
+
+
+### Dependency updates
+
+* **deps:** update dependency numpy to v1.26.2 ([0196eba](https://github.com/w4bo/iam-demo/commit/0196eba405e8b3a0405125da724921d23ea05e36))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.75 ([004c278](https://github.com/w4bo/iam-demo/commit/004c27883ba6d5cfa145b1ec3bca778fa21ad9ff))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.76 ([6d66631](https://github.com/w4bo/iam-demo/commit/6d666318ed8d0e368e053aa45a88b662d2d71934))
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.fasterxml.jackson.dataformat:jackson-dataformat-yaml to v2.16.0 ([c9a9dfa](https://github.com/w4bo/iam-demo/commit/c9a9dfaa5a47f5389fd791bb2defaacad872a1f5))
+
 ## [1.0.100](https://github.com/w4bo/iam-demo/compare/1.0.99...1.0.100) (2023-11-07)
 
 
