@@ -1,3 +1,18 @@
+## [1.0.103](https://github.com/w4bo/iam-demo/compare/1.0.102...1.0.103) (2023-11-22)
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.27.0 ([b665790](https://github.com/w4bo/iam-demo/commit/b6657909ef6bf1728c9bc465fe73d421b79d7c35))
+* **deps:** update dependency matplotlib to v3.8.2 ([a5fed2c](https://github.com/w4bo/iam-demo/commit/a5fed2cbcec20ee23ed09790e113f437e20c26c7))
+* **deps:** update dependency scipy to v1.11.4 ([f10ba6a](https://github.com/w4bo/iam-demo/commit/f10ba6a7b61fb235349037b7c26c47fde4192153))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.77 ([7044bdb](https://github.com/w4bo/iam-demo/commit/7044bdbec8aaa95c332399c7718ef9aa1278702a))
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.opencsv:opencsv to v5.9 ([cfbb440](https://github.com/w4bo/iam-demo/commit/cfbb44006737257c46dd30d16d8de3ba607ad606))
+
 ## [1.0.102](https://github.com/w4bo/iam-demo/compare/1.0.101...1.0.102) (2023-11-16)
 
 
