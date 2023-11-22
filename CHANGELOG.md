@@ -1,3 +1,10 @@
+## [1.0.104](https://github.com/w4bo/iam-demo/compare/1.0.103...1.0.104) (2023-11-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.apache.commons:commons-lang3 to v3.14.0 ([ec3a2af](https://github.com/w4bo/iam-demo/commit/ec3a2af42ad1ec5e35f814ad75f62255ee14069e))
+
 ## [1.0.103](https://github.com/w4bo/iam-demo/compare/1.0.102...1.0.103) (2023-11-22)
 
 
