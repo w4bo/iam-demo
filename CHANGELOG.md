@@ -1,3 +1,23 @@
+## [1.0.105](https://github.com/w4bo/iam-demo/compare/1.0.104...1.0.105) (2023-11-30)
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.27.1 ([c9f55f6](https://github.com/w4bo/iam-demo/commit/c9f55f65b7a05361c49a2c0863094240321396bc))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.78 ([6dea587](https://github.com/w4bo/iam-demo/commit/6dea5879fb47ffac3aacba46b96cb755625dd3f1))
+* **deps:** update node.js to 20.10 ([fcc4bef](https://github.com/w4bo/iam-demo/commit/fcc4bef54ed8018bbd6f9a105e33b48e72271ad8))
+
+
+### Bug Fixes
+
+* **deps:** update dependency commons-io:commons-io to v2.15.1 ([558c1a4](https://github.com/w4bo/iam-demo/commit/558c1a448dd30e0106c4e6b54dd3a9fe0738c0cf))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-java action to v4 ([efa15f3](https://github.com/w4bo/iam-demo/commit/efa15f33f4def301bb004b23157ca13c81f4bc01))
+* **deps:** update jamesives/github-pages-deploy-action action to v4.5.0 ([01e275b](https://github.com/w4bo/iam-demo/commit/01e275b1927d8aa7de402cdb5d0334d6f3485cd5))
+
 ## [1.0.104](https://github.com/w4bo/iam-demo/compare/1.0.103...1.0.104) (2023-11-22)
 
 
