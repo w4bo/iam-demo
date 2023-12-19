@@ -1,3 +1,19 @@
+## [1.0.107](https://github.com/w4bo/iam-demo/compare/1.0.106...1.0.107) (2023-12-19)
+
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.80 ([1968b11](https://github.com/w4bo/iam-demo/commit/1968b110e60445801beb3217680798069a25ab72))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.81 ([7fffe2a](https://github.com/w4bo/iam-demo/commit/7fffe2a4a148e26c1b57e6055256303e7a6e0c4d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.82 ([5daa56f](https://github.com/w4bo/iam-demo/commit/5daa56f153b79d54d070582920f07259d0ee1481))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.83 ([c5e8045](https://github.com/w4bo/iam-demo/commit/c5e8045a639182808bd824c775bc0deaa0cb24ab))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.84 ([9becc2b](https://github.com/w4bo/iam-demo/commit/9becc2b6ef6bb8759f4d4177ebc85c8c185fa64e))
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.google.guava:guava to v33 ([1ee4279](https://github.com/w4bo/iam-demo/commit/1ee42793f5556b1f1f93042b950876d7a6b3a3fa))
+
 ## [1.0.106](https://github.com/w4bo/iam-demo/compare/1.0.105...1.0.106) (2023-12-07)
 
 
