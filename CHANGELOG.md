@@ -1,3 +1,17 @@
+## [1.0.110](https://github.com/w4bo/iam-demo/compare/1.0.109...1.0.110) (2023-12-29)
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.28.0 ([d09f7b9](https://github.com/w4bo/iam-demo/commit/d09f7b9e2786fe7952d1be67d32433c8b108f7e3))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.85 ([b15da68](https://github.com/w4bo/iam-demo/commit/b15da680b7714e958a5707eca1a35ce9c9937477))
+* **deps:** update dependency sqlalchemy to v2.0.24 ([d9561a4](https://github.com/w4bo/iam-demo/commit/d9561a4f01999e8985736914c79ba3730a6d87f8))
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.slf4j:slf4j-api to v2.0.10 ([7b6d88e](https://github.com/w4bo/iam-demo/commit/7b6d88e8cb3d64cc2e4e2e6e8495d8449f1f6208))
+
 ## [1.0.109](https://github.com/w4bo/iam-demo/compare/1.0.108...1.0.109) (2023-12-24)
 
 
