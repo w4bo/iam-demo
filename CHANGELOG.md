@@ -1,3 +1,16 @@
+## [1.0.112](https://github.com/w4bo/iam-demo/compare/1.0.111...1.0.112) (2024-01-08)
+
+
+### Dependency updates
+
+* **deps:** update dependency numpy to v1.26.3 ([1a94d03](https://github.com/w4bo/iam-demo/commit/1a94d03f1cfabd59b58a4dde2d1e07df2005d804))
+* **deps:** update dependency sqlalchemy to v2.0.25 ([0f78beb](https://github.com/w4bo/iam-demo/commit/0f78beba00a8e836a0650243e3fba92a8f4f6c79))
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.slf4j:slf4j-api to v2.0.11 ([671a22a](https://github.com/w4bo/iam-demo/commit/671a22a8465520c68fa5639a7610921ac8976b7e))
+
 ## [1.0.111](https://github.com/w4bo/iam-demo/compare/1.0.110...1.0.111) (2023-12-29)
 
 
