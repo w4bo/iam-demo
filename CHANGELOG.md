@@ -1,3 +1,10 @@
+## [1.0.113](https://github.com/w4bo/iam-demo/compare/1.0.112...1.0.113) (2024-01-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.slf4j:slf4j-log4j12 to v2.0.11 ([cb4546b](https://github.com/w4bo/iam-demo/commit/cb4546b667d72fa13c0738c386c9ca7b98bc9a6f))
+
 ## [1.0.112](https://github.com/w4bo/iam-demo/compare/1.0.111...1.0.112) (2024-01-08)
 
 
