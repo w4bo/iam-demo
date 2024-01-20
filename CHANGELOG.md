@@ -1,3 +1,16 @@
+## [1.0.114](https://github.com/w4bo/iam-demo/compare/1.0.113...1.0.114) (2024-01-20)
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.29.0 ([8ab0654](https://github.com/w4bo/iam-demo/commit/8ab0654594d60cac3a33ee16b16e56eec7e92a35))
+* **deps:** update node.js to 20.11 ([bb4122a](https://github.com/w4bo/iam-demo/commit/bb4122aad09cd246968a58fbda9c45da20e3e2cf))
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.github.doyaaaaaken:kotlin-csv-jvm to v1.9.3 ([e953dc3](https://github.com/w4bo/iam-demo/commit/e953dc3fec1487d04519f9203eff32656b373922))
+
 ## [1.0.113](https://github.com/w4bo/iam-demo/compare/1.0.112...1.0.113) (2024-01-09)
 
 
