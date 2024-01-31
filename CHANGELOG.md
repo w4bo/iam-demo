@@ -1,3 +1,15 @@
+## [1.0.115](https://github.com/w4bo/iam-demo/compare/1.0.114...1.0.115) (2024-01-31)
+
+
+### Dependency updates
+
+* **deps:** update dependency scipy to v1.12.0 ([56336bc](https://github.com/w4bo/iam-demo/commit/56336bce8db4649a216e975fb9d04e2c6fe48c1c))
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.ktor:ktor-server-servlet to v2.3.8 ([585fe14](https://github.com/w4bo/iam-demo/commit/585fe145aa8e0ec51156552b3d7e759032bb67aa))
+
 ## [1.0.114](https://github.com/w4bo/iam-demo/compare/1.0.113...1.0.114) (2024-01-20)
 
 
