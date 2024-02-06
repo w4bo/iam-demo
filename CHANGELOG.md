@@ -1,3 +1,17 @@
+## [1.0.118](https://github.com/w4bo/iam-demo/compare/1.0.117...1.0.118) (2024-02-06)
+
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v7.6.4 ([dd451f9](https://github.com/w4bo/iam-demo/commit/dd451f9f30329a58cc0894b20164b3b2e52a5667))
+* **deps:** update dependency ipykernel to v6.29.1 ([99cf14b](https://github.com/w4bo/iam-demo/commit/99cf14b9302c2dbdcd256a48586b5e8c622762a5))
+* **deps:** update dependency numpy to v1.26.4 ([db86708](https://github.com/w4bo/iam-demo/commit/db86708b8c21b1f0156848f3b5d75e81040e3149))
+
+
+### Bug Fixes
+
+* **deps:** update slf4j monorepo to v2.0.12 ([b396ee4](https://github.com/w4bo/iam-demo/commit/b396ee4c7f670ac3bbb3eeadf9af009827112164))
+
 ## [1.0.117](https://github.com/w4bo/iam-demo/compare/1.0.116...1.0.117) (2024-02-04)
 
 
