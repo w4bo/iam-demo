@@ -1,3 +1,24 @@
+## [1.0.120](https://github.com/w4bo/iam-demo/compare/1.0.119...1.0.120) (2024-03-03)
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.29.2 ([7d9e3ff](https://github.com/w4bo/iam-demo/commit/7d9e3ff77e04d6c8c24393a9efa1056f6cc34643))
+* **deps:** update dependency ipykernel to v6.29.3 ([369053e](https://github.com/w4bo/iam-demo/commit/369053e91685774c87893a3721fe2c1233c6a8c2))
+* **deps:** update dependency matplotlib to v3.8.3 ([9646db0](https://github.com/w4bo/iam-demo/commit/9646db00e9925a54a86579bfa69f5794ea850f0a))
+* **deps:** update dependency sqlalchemy to v2.0.26 ([cf7570a](https://github.com/w4bo/iam-demo/commit/cf7570ab62a8a4c1015ae934bf92fe1a5e9ce855))
+* **deps:** update dependency sqlalchemy to v2.0.27 ([4730239](https://github.com/w4bo/iam-demo/commit/4730239fd3d8fe2cb0f5930d185691b5ff9841a3))
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.json:json to v20240303 ([7bd1670](https://github.com/w4bo/iam-demo/commit/7bd167019db46a5bfc0db459aa2ae6cef359aefa))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-java action to v4.1.0 ([70d313f](https://github.com/w4bo/iam-demo/commit/70d313fd21b430447b5e23505ec9f28d28addd09))
+
 ## [1.0.119](https://github.com/w4bo/iam-demo/compare/1.0.118...1.0.119) (2024-02-06)
 
 
