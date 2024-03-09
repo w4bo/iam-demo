@@ -1,3 +1,15 @@
+## [1.0.122](https://github.com/w4bo/iam-demo/compare/1.0.121...1.0.122) (2024-03-09)
+
+
+### Dependency updates
+
+* **deps:** update dependency sqlalchemy to v2.0.28 ([53c641b](https://github.com/w4bo/iam-demo/commit/53c641ba85ad3ba6dcc46e54d3de03e2faee8f41))
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.fasterxml.jackson.dataformat:jackson-dataformat-yaml to v2.16.2 ([1696d1c](https://github.com/w4bo/iam-demo/commit/1696d1c0dfe2d3f7ea75f45925587f95eec6de80))
+
 ## [1.0.121](https://github.com/w4bo/iam-demo/compare/1.0.120...1.0.121) (2024-03-04)
 
 
