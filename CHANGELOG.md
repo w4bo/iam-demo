@@ -1,3 +1,15 @@
+## [1.0.126](https://github.com/w4bo/iam-demo/compare/1.0.125...1.0.126) (2024-03-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.google.guava:guava to v33.1.0-jre ([b3660eb](https://github.com/w4bo/iam-demo/commit/b3660eb82998df86b90a0af3f5d906870610b9be))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-java action to v4.2.0 ([7fba7dc](https://github.com/w4bo/iam-demo/commit/7fba7dcdeeee35ffc0b77f4320788fa572c3c3f3))
+
 ## [1.0.125](https://github.com/w4bo/iam-demo/compare/1.0.124...1.0.125) (2024-03-13)
 
 
