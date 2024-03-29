@@ -1,3 +1,21 @@
+## [1.0.127](https://github.com/w4bo/iam-demo/compare/1.0.126...1.0.127) (2024-03-29)
+
+
+### Dependency updates
+
+* **deps:** update dependency sqlalchemy to v2.0.29 ([f1f9b7a](https://github.com/w4bo/iam-demo/commit/f1f9b7a7bae0a0a453632874d0687a4e88ffd9fd))
+* **deps:** update node.js to 20.12 ([6fda1cc](https://github.com/w4bo/iam-demo/commit/6fda1cc2f6a03bfa622bbae24b90811755db5fbc))
+
+
+### Bug Fixes
+
+* **deps:** update dependency commons-io:commons-io to v2.16.0 ([2534556](https://github.com/w4bo/iam-demo/commit/2534556a48ca77f464ff7edfc30f8de75e047568))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-java action to v4.2.1 ([4336b04](https://github.com/w4bo/iam-demo/commit/4336b04b7e425a23c268f880f1699006152c7c1a))
+
 ## [1.0.126](https://github.com/w4bo/iam-demo/compare/1.0.125...1.0.126) (2024-03-14)
 
 
