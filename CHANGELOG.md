@@ -1,3 +1,17 @@
+## [1.0.128](https://github.com/w4bo/iam-demo/compare/1.0.127...1.0.128) (2024-04-08)
+
+
+### Dependency updates
+
+* **deps:** update dependency ipykernel to v6.29.4 ([f08c09e](https://github.com/w4bo/iam-demo/commit/f08c09ebc27d573fe5e536984acea8328cf36f8c))
+* **deps:** update dependency matplotlib to v3.8.4 ([1770072](https://github.com/w4bo/iam-demo/commit/1770072a62d22d62dfedf823738a00d3d11a177a))
+* **deps:** update dependency scipy to v1.13.0 ([b359a00](https://github.com/w4bo/iam-demo/commit/b359a00a76d6139929a04dbfa87287c17d8014df))
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.ktor:ktor-server-servlet to v2.3.10 ([4827d95](https://github.com/w4bo/iam-demo/commit/4827d95338f75f0191610c8c49a03c763362e3a6))
+
 ## [1.0.127](https://github.com/w4bo/iam-demo/compare/1.0.126...1.0.127) (2024-03-29)
 
 
