@@ -1,3 +1,10 @@
+## [1.0.129](https://github.com/w4bo/iam-demo/compare/1.0.128...1.0.129) (2024-04-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency commons-io:commons-io to v2.16.1 ([51592a4](https://github.com/w4bo/iam-demo/commit/51592a4d39dd2e17e0ee4ae1a0462ab72364e714))
+
 ## [1.0.128](https://github.com/w4bo/iam-demo/compare/1.0.127...1.0.128) (2024-04-08)
 
 
