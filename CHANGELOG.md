@@ -1,3 +1,10 @@
+## [1.0.130](https://github.com/w4bo/iam-demo/compare/1.0.129...1.0.130) (2024-04-12)
+
+
+### Bug Fixes
+
+* **deps:** update slf4j monorepo to v2.0.13 ([5ee2585](https://github.com/w4bo/iam-demo/commit/5ee25853bcac8d6c573c7c73599a8683423bd765))
+
 ## [1.0.129](https://github.com/w4bo/iam-demo/compare/1.0.128...1.0.129) (2024-04-08)
 
 
