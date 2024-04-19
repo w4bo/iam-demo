@@ -1,3 +1,15 @@
+## [1.0.131](https://github.com/w4bo/iam-demo/compare/1.0.130...1.0.131) (2024-04-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency edu.stanford.nlp:stanford-corenlp to v4.5.7 ([49e8825](https://github.com/w4bo/iam-demo/commit/49e882595eac6dcfde9e6855dd44d3af7444770a))
+
+
+### Build and continuous integration
+
+* **deps:** update jamesives/github-pages-deploy-action action to v4.6.0 ([c2c3f7a](https://github.com/w4bo/iam-demo/commit/c2c3f7a9441b59afa9dc770216c1fbc37cea8589))
+
 ## [1.0.130](https://github.com/w4bo/iam-demo/compare/1.0.129...1.0.130) (2024-04-12)
 
 
