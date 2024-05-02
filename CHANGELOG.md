@@ -1,3 +1,16 @@
+## [1.0.132](https://github.com/w4bo/iam-demo/compare/1.0.131...1.0.132) (2024-05-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.google.guava:guava to v33.2.0-jre ([ae3ebf1](https://github.com/w4bo/iam-demo/commit/ae3ebf1d2ca2fb1bf911e1e8cfdd03cb9e8a9680))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.1.3 ([9ec7c3d](https://github.com/w4bo/iam-demo/commit/9ec7c3dfdd5fac88acb17caba06c838d1d3b42ce))
+* **deps:** update actions/checkout action to v4.1.4 ([7f224c2](https://github.com/w4bo/iam-demo/commit/7f224c27d61906019e3aaaa6736a2ac8e48cf0a7))
+
 ## [1.0.131](https://github.com/w4bo/iam-demo/compare/1.0.130...1.0.131) (2024-04-19)
 
 
