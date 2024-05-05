@@ -1,3 +1,10 @@
+## [1.0.134](https://github.com/w4bo/iam-demo/compare/1.0.133...1.0.134) (2024-05-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.fasterxml.jackson.dataformat:jackson-dataformat-yaml to v2.17.1 ([4552019](https://github.com/w4bo/iam-demo/commit/4552019349a372a1843f2cbe6cc576baa192cdb0))
+
 ## [1.0.133](https://github.com/w4bo/iam-demo/compare/1.0.132...1.0.133) (2024-05-03)
 
 
