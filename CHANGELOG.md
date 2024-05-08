@@ -1,3 +1,16 @@
+## [1.0.136](https://github.com/w4bo/iam-demo/compare/1.0.135...1.0.136) (2024-05-08)
+
+
+### Dependency updates
+
+* **deps:** update dependency sqlalchemy to v2.0.30 ([87e3f53](https://github.com/w4bo/iam-demo/commit/87e3f53997230b520e80374ea57b6aac2b445dc5))
+* **deps:** update node.js to 20.13 ([743005f](https://github.com/w4bo/iam-demo/commit/743005fb774aebf10a5dedf8d96003879df74c4a))
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.ktor:ktor-server-servlet to v2.3.11 ([0453b01](https://github.com/w4bo/iam-demo/commit/0453b014c39ce10c9b0d6f823fd7a46fc72cfc70))
+
 ## [1.0.135](https://github.com/w4bo/iam-demo/compare/1.0.134...1.0.135) (2024-05-05)
 
 
