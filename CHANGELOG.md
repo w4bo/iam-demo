@@ -1,3 +1,24 @@
+## [1.0.137](https://github.com/w4bo/iam-demo/compare/1.0.136...1.0.137) (2024-05-31)
+
+
+### Dependency updates
+
+* **deps:** update dependency matplotlib to v3.9.0 ([decfdf3](https://github.com/w4bo/iam-demo/commit/decfdf35df2f43d4842e66549ce7dd701a12dfcc))
+* **deps:** update dependency scipy to v1.13.1 ([4322477](https://github.com/w4bo/iam-demo/commit/432247730b7231352334e7f67ad6f3e48b2736f4))
+* **deps:** update node.js to 20.14 ([f087f3d](https://github.com/w4bo/iam-demo/commit/f087f3d8414d145307394c7f3f9feddc9adcfdf7))
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.google.guava:guava to v33.2.1-jre ([7ae107b](https://github.com/w4bo/iam-demo/commit/7ae107b06b31405e2aec84b0439eca6d05bcbdf7))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.1.5 ([b2285a8](https://github.com/w4bo/iam-demo/commit/b2285a858ae5d47c4e2092fc1c9b9c8154e00842))
+* **deps:** update actions/checkout action to v4.1.6 ([9202027](https://github.com/w4bo/iam-demo/commit/9202027271dc59c9431b2c16eca385e92af0845d))
+* **deps:** update jamesives/github-pages-deploy-action action to v4.6.1 ([3eb7da7](https://github.com/w4bo/iam-demo/commit/3eb7da7fdd28ffb2ba49bb20aa60438a6f560e06))
+
 ## [1.0.136](https://github.com/w4bo/iam-demo/compare/1.0.135...1.0.136) (2024-05-08)
 
 
