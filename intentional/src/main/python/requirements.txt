@@ -3,7 +3,7 @@ ipykernel==6.29.4
 matplotlib==3.9.0
 numpy==1.26.4
 pandas==1.5.3
-requests==2.31.0
+requests==2.32.2
 scikit-learn
 scikit-learn-extra
 scipy==1.13.1
