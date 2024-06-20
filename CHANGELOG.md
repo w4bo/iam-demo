@@ -1,3 +1,22 @@
+## [1.0.138](https://github.com/w4bo/iam-demo/compare/1.0.137...1.0.138) (2024-06-20)
+
+
+### Dependency updates
+
+* **deps:** update dependency requests to v2.32.2 [security] ([3e38738](https://github.com/w4bo/iam-demo/commit/3e387386fdd382696b8ab72b2d4f969ad3b5762f))
+* **deps:** update dependency requests to v2.32.3 ([3184b7e](https://github.com/w4bo/iam-demo/commit/3184b7eeefc0b75014a018d3906fa7974b36e926))
+* **deps:** update dependency sqlalchemy to v2.0.31 ([bbe5894](https://github.com/w4bo/iam-demo/commit/bbe5894c920573a6366bfd47106cb732207f7361))
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.ktor:ktor-server-servlet to v2.3.12 ([da0a877](https://github.com/w4bo/iam-demo/commit/da0a87791bd8e4b754e452b6f85fc2c2bf1a4b2a))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.1.7 ([f614b9a](https://github.com/w4bo/iam-demo/commit/f614b9aa03d81f99cc9077052a5ccc237a2e54d5))
+
 ## [1.0.137](https://github.com/w4bo/iam-demo/compare/1.0.136...1.0.137) (2024-05-31)
 
 
