@@ -1,3 +1,16 @@
+## [1.0.139](https://github.com/w4bo/iam-demo/compare/1.0.138...1.0.139) (2024-06-27)
+
+
+### Dependency updates
+
+* **deps:** update dependency scipy to v1.14.0 ([8526e5a](https://github.com/w4bo/iam-demo/commit/8526e5ab08cfca5c55bdd3a70004d757094b1cf0))
+* **deps:** update node.js to 20.15 ([9910374](https://github.com/w4bo/iam-demo/commit/99103748fd414196f67fadb4309f0b653d31e90c))
+
+
+### Bug Fixes
+
+* **deps:** update junit5 monorepo to v5.10.3 ([266ddd1](https://github.com/w4bo/iam-demo/commit/266ddd1f747254942633524ec448f96412bdf244))
+
 ## [1.0.138](https://github.com/w4bo/iam-demo/compare/1.0.137...1.0.138) (2024-06-20)
 
 
